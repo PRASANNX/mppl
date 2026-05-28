@@ -7,10 +7,26 @@ import crypto from "crypto";
  * Supports UPI, Cards, Net Banking for Indian market
  */
 
-export const razorpay = new Razorpay({
-  key_id: process.env.RAZORPAY_KEY_ID || "",
-  key_secret: process.env.RAZORPAY_KEY_SECRET || "",
-});
+let razorpayInstance: Razorpay | null = null;
+
+function getRazorpay(): Razorpay {
+  if (!razorpayInstance) {
+    const keyId = process.env.RAZORPAY_KEY_ID;
+    const keySecret = process.env.RAZORPAY_KEY_SECRET;
+
+    if (!keyId || !keySecret) {
+      throw new Error(
+        "Razorpay credentials (RAZORPAY_KEY_ID and RAZORPAY_KEY_SECRET) are missing."
+      );
+    }
+
+    razorpayInstance = new Razorpay({
+      key_id: keyId,
+      key_secret: keySecret,
+    });
+  }
+  return razorpayInstance;
+}
 
 /**
  * Create a Razorpay Order (one-time payment)
@@ -21,7 +37,7 @@ export async function createOrder(params: {
   receipt: string;
   notes?: Record<string, string>;
 }) {
-  const order = await razorpay.orders.create({
+  const order = await getRazorpay().orders.create({
     amount: params.amount,
     currency: params.currency || "INR",
     receipt: params.receipt,

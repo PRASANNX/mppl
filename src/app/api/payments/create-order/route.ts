@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { createOrder } from "@/lib/razorpay";
 import { createClient } from "@/lib/supabase/server";
 
+export const dynamic = "force-dynamic";
+
 /**
  * POST /api/payments/create-order
  * Body: { invoiceId: string, amount: number, currency?: string }

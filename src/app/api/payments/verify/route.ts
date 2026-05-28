@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { verifyPaymentSignature } from "@/lib/razorpay";
 import { createClient } from "@/lib/supabase/server";
 
+export const dynamic = "force-dynamic";
+
 /**
  * POST /api/payments/verify
  * Body: { orderId, paymentId, signature }

@@ -1,13 +1,20 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat } from "next/font/google";
+import { Bebas_Neue, DM_Sans, Montserrat, Hind } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/components/auth/auth-provider";
 import { Providers } from "./providers";
 
-const inter = Inter({
+const bebas = Bebas_Neue({
   subsets: ["latin"],
-  variable: "--font-inter",
-  weight: ["400", "500", "600"],
+  variable: "--font-bebas",
+  weight: ["400"],
+  display: "swap",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
+  weight: ["400", "500", "700"],
   display: "swap",
 });
 
@@ -18,20 +25,27 @@ const montserrat = Montserrat({
   display: "swap",
 });
 
+const hind = Hind({
+  subsets: ["devanagari", "latin"],
+  variable: "--font-hind",
+  weight: ["700"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "PRX Startup OS — India's Executive Startup Engine",
+  title: "MPPL — Madhya Pradesh Pickleball League",
   description:
-    "Launch, digitize, and scale your business with PRX Startup OS. Multi-tenant infrastructure built for India's founders.",
+    "India's most serious regional pickleball league. India's Heart. The Court's Soul. 10 teams fight for one crown.",
   keywords: [
-    "startup os",
-    "india saas",
-    "business digitization",
-    "multi-tenant",
-    "prx",
+    "MPPL",
+    "Pickleball",
+    "Madhya Pradesh Pickleball League",
+    "Sports",
+    "India",
   ],
   openGraph: {
-    title: "PRX Startup OS",
-    description: "India's Executive Startup Engine",
+    title: "MPPL — Madhya Pradesh Pickleball League",
+    description: "India's Heart. The Court's Soul.",
     type: "website",
   },
 };
@@ -42,8 +56,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} ${montserrat.variable} font-[Inter]`}>
+    <html lang="en" suppressHydrationWarning className="dark">
+      <body className={`${bebas.variable} ${dmSans.variable} ${montserrat.variable} ${hind.variable} font-sans bg-deep-court text-net-white`}>
         <Providers>
           <AuthProvider>{children}</AuthProvider>
         </Providers>
