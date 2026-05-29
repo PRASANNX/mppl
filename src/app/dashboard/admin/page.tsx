@@ -1,6 +1,5 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
-import { ViralHookGenerator } from "@/components/executive/ViralHookGenerator";
 import { CopywritingCoPilot } from "@/components/dashboard/cms/CopywritingCoPilot";
 import { ComplianceGenerator } from "@/components/executive/ComplianceGenerator";
 
@@ -120,8 +119,7 @@ export default async function AdminPage() {
             </h2>
             <div className="h-px bg-gray-100 flex-1" />
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <ViralHookGenerator />
+          <div className="grid grid-cols-1 gap-6">
             <CopywritingCoPilot onSave={(copy) => console.log('Compiled copy:', copy)} />
           </div>
         </section>
