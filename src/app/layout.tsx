@@ -57,7 +57,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className="dark">
-      <body className={`${bebas.variable} ${dmSans.variable} ${montserrat.variable} ${hind.variable} font-sans bg-deep-court text-net-white`}>
+      <body className={`${bebas.variable} ${dmSans.variable} ${montserrat.variable} ${hind.variable} font-sans bg-deep-court text-net-white section-noise`}>
         <Providers>
           <AuthProvider>{children}</AuthProvider>
         </Providers>

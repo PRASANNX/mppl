@@ -3,23 +3,11 @@
 import Link from 'next/link';
 import MPPLLogo from './MPPLLogo';
 
-const stats = [
-  { value: '₹18L+', label: 'Prize Pool' },
-  { value: '10', label: 'Teams' },
-  { value: '15+', label: 'Categories' },
-  { value: '4', label: 'Cities' },
-];
-
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-deep-court flex items-center pt-24 pb-32 px-6 lg:px-16">
-      {/* ── Micki 7 Background Elements ── */}
-      <div className="absolute left-[-20px] top-[40px] bg-number">01</div>
-      <div className="absolute right-[20px] top-[50%] side-label hidden lg:block">MADHYA PRADESH PICKLEBALL LEAGUE</div>
+    <section className="relative min-h-screen overflow-hidden bg-deep-court flex items-center pt-24 pb-32 px-6 lg:px-16 pattern-arcs-bold">
       
       {/* ── Background Effects ── */}
-
-      {/* Diagonal neon beam */}
       <div
         className="pointer-events-none absolute inset-0 animate-glow-pulse"
         aria-hidden="true"
@@ -33,81 +21,98 @@ export default function HeroSection() {
         />
       </div>
 
-      {/* Court grid lines */}
       <div
-        className="pointer-events-none absolute inset-0"
+        className="pointer-events-none absolute inset-0 opacity-20"
         aria-hidden="true"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(202, 255, 0, 0.04) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(202, 255, 0, 0.04) 1px, transparent 1px)
+            linear-gradient(rgba(202, 255, 0, 0.1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(202, 255, 0, 0.1) 1px, transparent 1px)
           `,
-          backgroundSize: '80px 80px',
+          backgroundSize: '40px 40px',
         }}
       />
 
-      {/* ── Content ── */}
-      <div className="relative z-10 mx-auto w-full max-w-7xl lg:grid lg:grid-cols-2 lg:items-center lg:gap-12">
-        {/* Left Column */}
-        <div className="flex flex-col gap-6">
-          {/* Section label */}
-          <span className="section-label">MADHYA PRADESH · INDIA · 2026</span>
+      {/* Background Watermark Logo */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] pointer-events-none z-0">
+        <MPPLLogo variant="light" watermark />
+      </div>
 
-          {/* Headline */}
-          <h1 className="font-bebas text-net-white leading-[0.95]">
-            THE{' '}
-            <span className="neon-text-green animate-neon-flicker">LEAGUE</span>
-            <br />
-            IS HERE.
-          </h1>
-
-          {/* Hindi tagline */}
-          <p className="hindi text-xl lg:text-2xl">
-            MP का अपना Pickleball League।
-          </p>
-
-          {/* Body */}
-          <p className="font-dm-sans max-w-lg text-net-white/75">
-            India&apos;s most serious regional pickleball league. 10 teams. 4
-            cities. One crown. This isn&apos;t a hobby tournament — this is MPPL.
-          </p>
-
-          {/* CTAs */}
-          <div className="mt-2 flex flex-wrap gap-4">
-            <Link href="#register" className="btn-primary">
-              Register Now
-            </Link>
-            <Link href="#register" className="btn-secondary">
-              Watch Teaser ▶
-            </Link>
+      {/* ── Main Content Grid ── */}
+      <div className="relative z-10 w-full max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 pattern-content">
+        
+        {/* Left Sidebar (Desktop Only) */}
+        <div className="hidden lg:flex flex-col justify-between col-span-2 border-l border-neon-green/20 pl-6 h-full min-h-[60vh] py-10">
+          <div>
+            <ul className="space-y-6 font-dm-sans text-xs font-bold uppercase tracking-[3px] text-net-white/40">
+              <li className="text-neon-green flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-neon-green animate-pulse"></span>
+                Season 2026
+              </li>
+              <li className="hover:text-net-white transition-colors cursor-pointer"><a href="#register" className="block w-full">Register</a></li>
+              <li className="hover:text-net-white transition-colors cursor-pointer"><a href="#teams" className="block w-full">Teams</a></li>
+              <li className="hover:text-net-white transition-colors cursor-pointer"><a href="#about" className="block w-full">About</a></li>
+            </ul>
+          </div>
+          <div className="font-bebas text-net-white/20 text-6xl tracking-widest -rotate-90 origin-bottom-left absolute bottom-10 -left-6 whitespace-nowrap">
+            MADHYA PRADESH
           </div>
         </div>
 
-        {/* Right Column — Logo & Floating Cards */}
-        <div className="hidden lg:flex lg:items-center lg:justify-center relative">
+        {/* Center/Main Content */}
+        <div className="col-span-1 lg:col-span-10 flex flex-col justify-center relative">
           
-          {/* Move App Style Floating Pills */}
-          <div className="absolute -top-10 -right-10 z-20 floating-pill bg-white text-pure-black border-white/20 animate-float">
-            🏆 ₹18L+ Prize Pool
+          {/* Top Label */}
+          <div className="flex items-center gap-4 mb-8">
+            <div className="w-12 h-[2px] bg-neon-green"></div>
+            <span className="font-dm-sans text-sm font-bold uppercase tracking-[4px] text-neon-green">
+              The Premier Pickleball League
+            </span>
           </div>
-          <div className="absolute -bottom-10 -left-10 z-20 floating-pill bg-pure-black text-neon-green border-neon-green/30 animate-float-delayed shadow-[0_0_20px_rgba(202,255,0,0.2)]">
-            📅 June 2026
+
+          {/* Massive Typography Headline */}
+          <div className="relative">
+            {/* Background offset text */}
+            <h1 className="absolute top-4 left-4 font-bebas text-[clamp(80px,12vw,180px)] text-transparent leading-[0.85] tracking-tight pointer-events-none select-none z-0" style={{ WebkitTextStroke: '2px rgba(202, 255, 0, 0.1)' }}>
+              MPPL<br />2026
+            </h1>
+            
+            {/* Foreground text */}
+            <h1 className="relative font-bebas text-[clamp(80px,12vw,180px)] text-net-white leading-[0.85] tracking-tight z-10 mb-6 uppercase">
+              The <span className="text-neon-green">League</span><br />
+              Is Here.
+            </h1>
           </div>
-          <div className="absolute top-1/2 -right-16 z-20 floating-pill bg-neon-green text-pure-black border-neon-green animate-float">
-            👥 Ages 10–60
+
+          {/* Subheading & Stats Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-8 max-w-4xl relative z-10">
+            <div>
+              <p className="font-dm-sans text-lg text-net-white/70 leading-relaxed">
+                India's most serious regional pickleball league. This isn't a hobby tournament — this is MPPL. Built for everyone from beginners to pros.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a href="#register" className="btn-primary px-10 py-4 text-lg">
+                  Register Now
+                </a>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="btn-secondary px-8 py-4 text-lg">
+                  Watch Teaser
+                </a>
+              </div>
+            </div>
+
+            {/* Quick Stats Block matching reference style */}
+            <div className="flex flex-col justify-center border-l-2 border-neon-orange/30 pl-8">
+              <div className="mb-6">
+                <div className="font-bebas text-5xl md:text-7xl text-neon-orange leading-none">₹18L+</div>
+                <div className="font-dm-sans text-xs font-bold uppercase tracking-[3px] text-net-white/50 mt-1">Prize Pool</div>
+              </div>
+              <div>
+                <div className="font-bebas text-5xl md:text-7xl text-neon-orange leading-none">10</div>
+                <div className="font-dm-sans text-xs font-bold uppercase tracking-[3px] text-net-white/50 mt-1">Franchise Teams</div>
+              </div>
+            </div>
           </div>
-          <div className="relative w-[280px] h-[373px] xl:w-[330px] xl:h-[440px] rounded-lg overflow-hidden animate-glow-pulse shadow-glow-green">
-            <MPPLLogo variant="light" priority />
-            {/* Extra ambient glow ring */}
-            <div
-              className="pointer-events-none absolute -inset-8 rounded-full animate-glow-pulse"
-              aria-hidden="true"
-              style={{
-                background:
-                  'radial-gradient(circle, rgba(57,255,20,0.08) 0%, transparent 70%)',
-              }}
-            />
-          </div>
+          
         </div>
       </div>
     </section>

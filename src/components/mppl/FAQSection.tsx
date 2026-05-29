@@ -43,8 +43,8 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="bg-deep-court w-full py-24 px-6 lg:px-16">
-      <div className="max-w-3xl mx-auto">
+    <section className="bg-deep-court w-full py-24 px-6 lg:px-16 pattern-arcs-bl">
+      <div className="max-w-3xl mx-auto pattern-content">
         {/* Section label */}
         <span className="section-label">FAQ</span>
 

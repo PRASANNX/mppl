@@ -3,59 +3,79 @@
 import Image from 'next/image';
 
 interface MPPLLogoProps {
-  variant?: 'light' | 'dark';
+  variant?: 'light' | 'dark'; // 'light' means the logo should appear light (e.g. white text for dark bg). 'dark' means black text.
   className?: string;
-  height?: number; // Optional height in px. If omitted, it will fill the parent container.
+  height?: number;
   priority?: boolean;
+  /** Use as a watermark/pattern element with very low opacity */
+  watermark?: boolean;
+  /** Glow color around logo */
+  glow?: 'green' | 'orange' | 'none';
 }
 
-export default function MPPLLogo({ variant = 'light', className = '', height, priority = false }: MPPLLogoProps) {
+export default function MPPLLogo({
+  variant = 'light',
+  className = '',
+  height,
+  priority = false,
+  watermark = false,
+  glow = 'none',
+}: MPPLLogoProps) {
+  const glowStyles: Record<string, string> = {
+    green: '0 0 60px rgba(202, 255, 0, 0.3), 0 0 120px rgba(202, 255, 0, 0.1)',
+    orange: '0 0 60px rgba(255, 96, 0, 0.3), 0 0 120px rgba(255, 96, 0, 0.1)',
+    none: 'none',
+  };
+
+  // If the source image is black text on transparent, we invert it for the 'light' variant
+  const filterStyle = variant === 'light' 
+    ? 'invert(1) brightness(2)' // Makes black text white and pops
+    : 'none';
+
+  const containerStyle: React.CSSProperties = {
+    opacity: watermark ? 0.05 : 1,
+    boxShadow: glowStyles[glow],
+    borderRadius: glow !== 'none' ? '12px' : undefined,
+    mixBlendMode: 'lighten', // Restored to remove black background from the image
+  };
+
   if (height) {
-    const width = Math.round(height * 0.75);
+    const width = Math.round(height * 0.75); // Approximate aspect ratio
     return (
       <div
-        className={`relative overflow-hidden select-none ${className}`}
+        className={`relative select-none ${className}`}
         style={{
           width: `${width}px`,
           height: `${height}px`,
+          ...containerStyle,
         }}
       >
-        <div
-          className="absolute top-0 h-full w-[200%] max-w-none"
-          style={{
-            left: variant === 'light' ? '-100%' : '0%',
-          }}
-        >
-          <Image
-            src="/images/mppl-logo-dark.jpeg"
-            alt="MPPL Logo"
-            width={width * 2}
-            height={height}
-            className="h-full w-full object-cover"
-            priority={priority}
-          />
-        </div>
+        <Image
+          src="/images/logo-transparent.png"
+          alt="MPPL Logo"
+          fill
+          className="object-contain"
+          style={{ filter: filterStyle }}
+          priority={priority}
+        />
       </div>
     );
   }
 
   return (
-    <div className={`relative overflow-hidden select-none w-full h-full ${className}`}>
-      <div
-        className="absolute top-0 h-full w-[200%] max-w-none"
-        style={{
-          left: variant === 'light' ? '-100%' : '0%',
-        }}
-      >
-        <Image
-          src="/images/mppl-logo-dark.jpeg"
-          alt="MPPL Logo"
-          fill
-          className="object-cover"
-          sizes="(max-width: 1024px) 100vw, 50vw"
-          priority={priority}
-        />
-      </div>
+    <div
+      className={`relative select-none w-full h-full ${className}`}
+      style={containerStyle}
+    >
+      <Image
+        src="/images/logo-transparent.png"
+        alt="MPPL Logo"
+        fill
+        className="object-contain"
+        style={{ filter: filterStyle }}
+        sizes="(max-width: 1024px) 100vw, 50vw"
+        priority={priority}
+      />
     </div>
   );
 }

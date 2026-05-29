@@ -2,7 +2,7 @@
 
 export default function QualifyingSection() {
   return (
-    <section style={{
+    <section className="pattern-sawtooth-orange" style={{
       background: '#FF6000',
       padding: '120px 40px',
       position: 'relative',
@@ -21,7 +21,7 @@ export default function QualifyingSection() {
         userSelect: 'none'
       }}>4</div>
 
-      <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
+      <div className="pattern-content" style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
 
         {/* Label */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '32px' }}>

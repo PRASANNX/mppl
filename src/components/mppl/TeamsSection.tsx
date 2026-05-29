@@ -4,67 +4,74 @@ const teams = Array.from({ length: 10 }, (_, i) => i + 1);
 
 export default function TeamsSection() {
   return (
-    <section className="bg-league-black py-24 px-6 lg:px-16 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto relative z-10">
+    <section id="teams" className="bg-[#111111] min-h-screen py-32 px-6 lg:px-16 relative overflow-hidden pattern-arcs-tr">
+      
+      {/* Massive Background Typography */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center pointer-events-none select-none z-0">
+        <h2 className="font-bebas text-[clamp(150px,30vw,400px)] text-net-white/[0.03] leading-[0.75] m-0 p-0 tracking-tighter whitespace-nowrap">
+          TEN TEAMS
+        </h2>
+        <h2 className="font-bebas text-[clamp(150px,30vw,400px)] text-neon-green/[0.03] leading-[0.75] m-0 p-0 tracking-tighter whitespace-nowrap">
+          ONE CROWN
+        </h2>
+      </div>
+
+      <div className="max-w-[1400px] mx-auto relative z-10 pattern-content flex flex-col items-center">
         
-        {/* Section Label */}
-        <div className="flex items-center gap-3 mb-10">
-          <div className="w-10 h-[1px] bg-neon-green shadow-glow-green" />
-          <span className="font-dm-sans text-xs font-semibold tracking-[4px] uppercase text-neon-green">
-            THE FRANCHISES
-          </span>
+        {/* Section Header */}
+        <div className="w-full flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8">
+          <div className="max-w-2xl">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-12 h-[2px] bg-neon-green"></div>
+              <span className="font-dm-sans text-sm font-bold uppercase tracking-[4px] text-neon-green">
+                The Franchises
+              </span>
+            </div>
+            <h2 className="font-bebas text-[clamp(60px,10vw,140px)] text-net-white leading-[0.85] uppercase tracking-tighter">
+              10 TEAMS.<br />
+              <span className="text-neon-green">ONE CROWN.</span>
+            </h2>
+          </div>
+          
+          <div className="md:text-right max-w-sm">
+            <p className="font-dm-sans text-lg text-net-white/60 mb-6">
+              Franchises and team names announcing soon. Player auctions to follow qualifying rounds.
+            </p>
+            <a href="#register" className="inline-block text-center bg-net-white text-pure-black font-bebas text-2xl px-8 py-3 hover:bg-neon-green transition-colors w-full md:w-auto uppercase tracking-wide">
+              GET AUCTION ALERTS
+            </a>
+          </div>
         </div>
 
-        {/* Heading & Sub */}
-        <h2 className="font-bebas text-[clamp(48px,7vw,80px)] text-net-white leading-[1] mb-4">
-          10 TEAMS.<br />ONE CROWN.
-        </h2>
-        <p className="font-dm-sans text-lg text-net-white/60 max-w-lg mb-16">
-          Franchises and team names announcing soon.<br />
-          Player auctions after qualifying rounds.
-        </p>
-
-        {/* Team Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-16">
+        {/* Typographic Teams Grid */}
+        <div className="w-full grid grid-cols-2 md:grid-cols-5 gap-px bg-net-white/10 border border-net-white/10 p-px">
           {teams.map((num) => (
             <div
               key={num}
-              className="relative bg-white/5 border border-white/10 rounded-lg p-6 flex flex-col justify-end aspect-[4/5] overflow-hidden group cursor-pointer transition-all duration-300 hover:border-neon-green/50 hover:-translate-y-1"
+              className="bg-[#111111] aspect-[4/5] p-6 flex flex-col justify-between group hover:bg-neon-green transition-colors cursor-pointer relative overflow-hidden"
             >
-              {/* Massive background number */}
-              <div className="absolute -top-10 -right-4 font-bebas text-[180px] leading-none text-neon-green opacity-10 select-none group-hover:opacity-20 transition-opacity duration-300">
+              {/* Massive Team Number inside card */}
+              <div className="absolute -bottom-6 -right-4 font-bebas text-[140px] text-net-white/5 leading-none group-hover:text-pure-black/10 transition-colors">
                 {num.toString().padStart(2, '0')}
               </div>
               
-              <div className="relative z-10">
-                <span className="inline-block bg-neon-green/10 border border-neon-green/30 text-neon-green text-[10px] font-dm-sans font-bold px-3 py-1 rounded-full tracking-widest uppercase mb-3">
-                  COMING SOON
+              <div className="relative z-10 flex justify-between items-start">
+                <span className="font-dm-sans text-[10px] font-bold uppercase tracking-widest px-2 py-1 border border-net-white/20 text-net-white/50 group-hover:border-pure-black/20 group-hover:text-pure-black/50 rounded-full">
+                  TBA
                 </span>
-                <h3 className="font-bebas text-2xl text-white tracking-wide">
+              </div>
+
+              <div className="relative z-10">
+                <h3 className="font-bebas text-4xl text-net-white group-hover:text-pure-black mb-1">
                   TEAM {num.toString().padStart(2, '0')}
                 </h3>
-                <p className="font-dm-sans text-sm text-white/40 mt-1 uppercase tracking-wider">
-                  City TBA
+                <div className="w-8 h-[2px] bg-neon-green group-hover:bg-pure-black mb-2 transition-colors"></div>
+                <p className="font-dm-sans text-xs font-bold tracking-widest text-net-white/40 group-hover:text-pure-black/60 uppercase">
+                  City Announcing Soon
                 </p>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Auction Info Strip */}
-        <div className="bg-white/5 border border-white/10 rounded-lg p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
-          <div>
-            <h3 className="font-bebas text-3xl text-white mb-2 tracking-wide">PLAYER AUCTIONS</h3>
-            <p className="font-dm-sans text-white/60 max-w-2xl leading-relaxed">
-              After qualifying rounds — top players enter the MPPL Player Auction. 
-              10 franchises. One draft. Zero limits. Every player has a price.
-            </p>
-          </div>
-          <div className="shrink-0">
-            <button className="bg-neon-green text-league-black font-bebas text-xl px-8 py-4 rounded hover:bg-white transition-colors duration-300 tracking-wide">
-              AUCTION DETAILS →
-            </button>
-          </div>
         </div>
 
       </div>

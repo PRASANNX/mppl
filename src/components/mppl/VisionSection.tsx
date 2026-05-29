@@ -1,46 +1,67 @@
 'use client';
 
-import MPPLLogo from './MPPLLogo';
-
 export default function VisionSection() {
   return (
-    <section className="bg-league-black min-h-[80vh] flex flex-col items-center justify-center py-32 px-6 lg:px-16 text-center relative overflow-hidden">
+    <section className="bg-pure-black min-h-screen py-32 relative overflow-hidden pattern-arcs-bold flex items-center">
       
-      {/* Background glow */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-20">
-        <div className="w-[60vw] h-[60vw] max-w-[800px] max-h-[800px] rounded-full bg-neon-green blur-[120px]" />
-      </div>
+      {/* Massive Background Glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] max-w-[1200px] max-h-[1200px] bg-neon-green/5 rounded-full blur-[150px] pointer-events-none -z-0"></div>
 
-      <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
+      <div className="w-full max-w-[1600px] mx-auto px-6 lg:px-16 relative z-10 pattern-content">
         
-        {/* Massive Headline */}
-        <h2 className="font-bebas text-[clamp(64px,10vw,140px)] text-net-white leading-[0.85] mb-12 tracking-tight">
-          MP KA COURT.<br />
-          <span className="text-neon-green">INDIA KI NAZAR.</span>
-        </h2>
+        {/* Split Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+          
+          {/* Left: Massive Typography Block */}
+          <div className="relative">
+            {/* Outline Text */}
+            <h2 className="absolute -top-10 -left-10 font-bebas text-[clamp(100px,15vw,220px)] leading-[0.8] text-transparent select-none pointer-events-none" style={{ WebkitTextStroke: '2px rgba(255, 255, 255, 0.05)' }}>
+              NOT A<br />TOURNAMENT
+            </h2>
+            
+            <h2 className="font-bebas text-[clamp(80px,12vw,180px)] text-net-white leading-[0.85] tracking-tighter relative z-10">
+              NOT A<br />
+              <span className="text-pure-black" style={{ WebkitTextStroke: '3px #caff00', color: 'transparent', textShadow: '6px 6px 0px rgba(0,0,0,0.2)' }}>
+                TOURNAMENT.
+              </span>
+            </h2>
+            
+            <div className="mt-8 ml-0 lg:ml-24">
+              <h2 className="font-bebas text-[clamp(80px,12vw,180px)] text-neon-green leading-[0.85] tracking-tighter">
+                A LEAGUE.
+              </h2>
+            </div>
+          </div>
 
-        {/* Vision Statement */}
-        <p className="font-dm-sans text-xl md:text-2xl text-white/80 leading-relaxed mb-8 max-w-2xl font-light">
-          We are building more than a league.<br />
-          We are building a culture. A community. A movement.
-        </p>
-        
-        <p className="font-dm-sans text-xl md:text-2xl text-white/80 leading-relaxed mb-16 max-w-2xl font-light">
-          Where sport is not a privilege.<br />
-          Where the court belongs to everyone.<br />
-          Where MP writes its name in Indian sports history.
-        </p>
+          {/* Right: Content Block */}
+          <div className="flex flex-col border-l-4 border-neon-green pl-8 lg:pl-12 py-4">
+            <div className="flex items-center gap-4 mb-8">
+              <span className="font-dm-sans text-sm font-bold uppercase tracking-[4px] text-net-white/50">
+                The Vision
+              </span>
+            </div>
+            
+            <p className="font-dm-sans text-xl md:text-2xl text-net-white font-bold leading-relaxed mb-8 max-w-xl">
+              MPPL is India's first structured pickleball league in Madhya Pradesh. Built for everyone — from 10-year-old beginners to 60-year-old pros.
+            </p>
+            
+            <p className="font-dm-sans text-lg text-net-white/60 leading-relaxed mb-12 max-w-xl">
+              This isn't a one-day event. It's a season. It's about establishing a legacy, creating heroes, and bringing the fastest-growing sport in the world to the heart of India.
+            </p>
 
-        {/* Hindi Tagline */}
-        <p className="font-hind text-3xl md:text-4xl font-bold text-neon-green mb-20 drop-shadow-[0_0_15px_rgba(202,255,0,0.5)]">
-          दिल से खेलो। MP से खेलो।
-        </p>
+            <div className="grid grid-cols-2 gap-8">
+              <div>
+                <div className="font-bebas text-5xl text-neon-green mb-2">04</div>
+                <div className="font-dm-sans text-sm font-bold uppercase tracking-widest text-net-white/50">Qualifying<br/>Cities</div>
+              </div>
+              <div>
+                <div className="font-bebas text-5xl text-neon-green mb-2">10</div>
+                <div className="font-dm-sans text-sm font-bold uppercase tracking-widest text-net-white/50">Pro<br/>Franchises</div>
+              </div>
+            </div>
+          </div>
 
-        {/* Logo */}
-        <div className="w-[180px] opacity-80 mix-blend-screen">
-          <MPPLLogo variant="light" height={64} />
         </div>
-
       </div>
     </section>
   );

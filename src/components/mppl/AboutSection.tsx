@@ -2,212 +2,64 @@
 
 export default function AboutSection() {
   return (
-    <section style={{
-      background: '#0D0B1F',
-      padding: '120px 40px',
-      position: 'relative',
-      overflow: 'hidden'
-    }}>
-      {/* Background section number — Micki 7 style */}
-      <div style={{
-        position: 'absolute',
-        left: '-20px',
-        top: '40px',
-        fontFamily: 'Bebas Neue, sans-serif',
-        fontSize: '300px',
-        color: '#caff00',
-        opacity: 0.03,
-        lineHeight: 1,
-        pointerEvents: 'none'
-      }}>01</div>
+    <section id="about" className="bg-[#111111] min-h-screen py-32 px-6 lg:px-16 relative overflow-hidden pattern-arcs-br-orange flex items-center">
+      
+      {/* Massive Background Typography */}
+      <div className="absolute top-0 right-0 p-10 font-bebas text-[clamp(150px,30vw,400px)] leading-[0.75] text-net-white/[0.03] pointer-events-none select-none text-right flex flex-col items-end w-full overflow-hidden">
+        <div>THIS IS</div>
+        <div>MPPL</div>
+      </div>
 
-      {/* Side label — Micki 7 style */}
-      <div style={{
-        position: 'absolute',
-        right: '20px',
-        top: '50%',
-        transform: 'translateY(-50%) rotate(90deg)',
-        fontFamily: 'DM Sans, sans-serif',
-        fontSize: '11px',
-        letterSpacing: '4px',
-        textTransform: 'uppercase',
-        color: 'rgba(202,255,0,0.4)',
-        transformOrigin: 'center'
-      }}>MADHYA PRADESH PICKLEBALL LEAGUE</div>
+      <div className="max-w-[1400px] mx-auto w-full relative z-10 pattern-content">
+        
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          
+          {/* Left: Huge Text */}
+          <div className="lg:col-span-7">
+            <div className="flex items-center gap-4 mb-8">
+              <div className="w-12 h-[2px] bg-neon-orange"></div>
+              <span className="font-dm-sans text-sm font-bold uppercase tracking-[4px] text-neon-orange">
+                About The League
+              </span>
+            </div>
+            
+            <h2 className="font-bebas text-[clamp(60px,10vw,140px)] text-net-white leading-[0.85] uppercase tracking-tighter mb-8">
+              A NEW ERA<br />
+              <span className="text-neon-orange" style={{ WebkitTextStroke: '3px #FF6000', color: 'transparent', textShadow: '6px 6px 0px rgba(0,0,0,0.2)' }}>
+                FOR MP.
+              </span>
+            </h2>
+            
+            <p className="font-dm-sans text-xl md:text-2xl text-net-white/80 font-bold leading-relaxed max-w-2xl mb-8">
+              Bringing the fastest-growing sport in the world to the heart of India. 
+              MPPL is a structured, professional pickleball league designed to elevate the game.
+            </p>
 
-      <div style={{
-        maxWidth: '1200px',
-        margin: '0 auto',
-        display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
-        gap: '100px',
-        alignItems: 'center'
-      }}>
-
-        {/* LEFT */}
-        <div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '32px' }}>
-            <div style={{ width: '40px', height: '1px', background: '#FF6000' }} />
-            <span style={{
-              fontFamily: 'DM Sans, sans-serif',
-              fontSize: '12px',
-              fontWeight: 600,
-              letterSpacing: '4px',
-              textTransform: 'uppercase',
-              color: '#FF6000'
-            }}>ABOUT THE LEAGUE</span>
-          </div>
-
-          <h2 style={{
-            fontFamily: 'Bebas Neue, sans-serif',
-            fontSize: 'clamp(48px, 6vw, 72px)',
-            color: '#F5F5F5',
-            lineHeight: 1.0,
-            marginBottom: '32px'
-          }}>
-            THE FIRST<br />
-            OF ITS KIND.<br />
-            <span style={{ color: '#caff00' }}>IN THE WORLD.</span>
-          </h2>
-
-          <p style={{
-            fontFamily: 'DM Sans, sans-serif',
-            fontSize: '17px',
-            color: 'rgba(245,245,245,0.75)',
-            lineHeight: 1.8,
-            marginBottom: '24px'
-          }}>
-            The Madhya Pradesh Pickleball League is the first league
-            in the world designed to welcome everyone — from a
-            10-year-old discovering the sport for the first time,
-            to a 60-year-old playing the game of their life.
-          </p>
-
-          <p style={{
-            fontFamily: 'DM Sans, sans-serif',
-            fontSize: '17px',
-            color: 'rgba(245,245,245,0.75)',
-            lineHeight: 1.8,
-            marginBottom: '40px'
-          }}>
-            Beginner or pro. Young or seasoned.
-            This is the de-privatisation of competitive sport.
-            A struggle killer. A dream enabler.
-            MP's court. India's spotlight.
-          </p>
-
-          {/* Hindi tagline */}
-          <p style={{
-            fontFamily: 'Hind, sans-serif',
-            fontSize: '22px',
-            fontWeight: 700,
-            color: '#FF6000',
-            textShadow: '0 0 20px rgba(255,96,0,0.3)',
-            marginBottom: '48px'
-          }}>दिल से खेलो। MP से खेलो।</p>
-
-          {/* Key points */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            {[
-              '🏓 First-ever open-age pickleball league in the world',
-              '👶 Ages 10 to 60 — everyone competes',
-              '🏆 ₹18 Lac+ prize pool — biggest in MP history',
-              '🗺️ 4 qualifying rounds across Madhya Pradesh'
-            ].map((point, i) => (
-              <div key={i} style={{
-                display: 'flex',
-                alignItems: 'flex-start',
-                gap: '12px',
-                fontFamily: 'DM Sans, sans-serif',
-                fontSize: '15px',
-                color: 'rgba(245,245,245,0.8)',
-                lineHeight: 1.5
-              }}>
-                <span>{point}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* RIGHT — Visual placeholder */}
-        <div style={{ position: 'relative' }}>
-          <div style={{
-            width: '100%',
-            aspectRatio: '4/5',
-            background: 'rgba(255,255,255,0.03)',
-            border: '1px solid rgba(202,255,0,0.15)',
-            borderRadius: '8px',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: '16px',
-            position: 'relative',
-            overflow: 'hidden'
-          }}>
-            <div style={{
-              position: 'absolute',
-              bottom: '0',
-              left: '0',
-              width: '100%',
-              height: '3px',
-              background: '#caff00',
-              boxShadow: '0 0 20px #caff00'
-            }} />
-            <div style={{ fontSize: '64px' }}>🏓</div>
-            <div style={{
-              fontFamily: 'Bebas Neue, sans-serif',
-              fontSize: '24px',
-              color: '#caff00',
-              letterSpacing: '2px'
-            }}>ACTION PHOTO</div>
-            <div style={{
-              fontFamily: 'DM Sans, sans-serif',
-              fontSize: '12px',
-              color: 'rgba(245,245,245,0.3)',
-              letterSpacing: '2px'
-            }}>Replace with player action shot</div>
-          </div>
-
-          {/* Floating stat card — Move app style */}
-          <div style={{
-            position: 'absolute',
-            bottom: '-20px',
-            left: '-30px',
-            background: '#080808',
-            border: '1px solid rgba(202,255,0,0.3)',
-            borderRadius: '12px',
-            padding: '16px 20px',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '12px',
-            boxShadow: '0 8px 32px rgba(0,0,0,0.5)'
-          }}>
-            <div style={{
-              width: '40px',
-              height: '40px',
-              borderRadius: '50%',
-              background: 'rgba(202,255,0,0.15)',
-              border: '1px solid rgba(202,255,0,0.4)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '18px'
-            }}>🌍</div>
-            <div>
-              <div style={{
-                fontFamily: 'Bebas Neue, sans-serif',
-                fontSize: '20px',
-                color: '#caff00',
-                lineHeight: 1
-              }}>WORLD FIRST</div>
-              <div style={{
-                fontFamily: 'DM Sans, sans-serif',
-                fontSize: '11px',
-                color: 'rgba(245,245,245,0.5)'
-              }}>Open-age league</div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-px bg-net-white/10 border border-net-white/10 p-px mt-16 max-w-3xl">
+              {[
+                { val: '10-60', label: 'Age Group' },
+                { val: '4', label: 'Qualifiers' },
+                { val: '10', label: 'Pro Teams' },
+                { val: '1', label: 'Crown' }
+              ].map((stat, i) => (
+                <div key={i} className="bg-[#111111] p-6 text-center hover:bg-neon-orange group transition-colors cursor-pointer">
+                  <div className="font-bebas text-4xl text-net-white group-hover:text-pure-black mb-1">{stat.val}</div>
+                  <div className="font-dm-sans text-[10px] font-bold uppercase tracking-widest text-net-white/40 group-hover:text-pure-black/60">{stat.label}</div>
+                </div>
+              ))}
             </div>
           </div>
+
+          {/* Right: Image / Visual */}
+          <div className="lg:col-span-5 relative">
+            <div className="w-full aspect-[4/5] bg-pure-black border-2 border-neon-orange relative p-8 flex flex-col justify-between shadow-[20px_20px_0px_rgba(255,96,0,1)]">
+              <div className="font-bebas text-8xl text-neon-orange/20 leading-none">2026</div>
+              <div className="font-bebas text-5xl text-net-white leading-[0.9]">
+                "IT'S TIME<br />TO PLAY<br />FOR REAL."
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

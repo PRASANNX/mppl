@@ -224,13 +224,7 @@
     box-shadow: var(--glow-green);
   }
 
-  /* Hindi text */
-  .hindi {
-    font-family: var(--font-hind), 'Hind', sans-serif;
-    font-weight: 700;
-    color: var(--neon-orange);
-    text-shadow: var(--glow-orange);
-  }
+  /* Hindi text removed */
 
   /* Micki 7 Styles */
   .side-label {
@@ -268,6 +262,19 @@
 @layer utilities {
   .bg-deep-court { background-color: var(--deep-court); }
   .bg-pure-black { background-color: var(--pure-black); }
+
+  .section-noise {
+    position: relative;
+  }
+  .section-noise::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    z-index: 1;
+  }
 
   .section-neon-green {
     background-color: var(--neon-green);
@@ -328,6 +335,199 @@
   }
 }
 
+/* ─── GEOMETRIC BACKGROUND PATTERNS ─── */
+/* Inspired by Expo Futebol bold geometric overlays */
+
+/* Concentric arcs from bottom-left corner */
+.pattern-arcs-bl {
+  position: relative;
+  overflow: hidden;
+}
+.pattern-arcs-bl::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-radial-gradient(
+    ellipse at 0% 100%,
+    transparent 0px,
+    transparent 45px,
+    rgba(202, 255, 0, 0.08) 45px,
+    rgba(202, 255, 0, 0.12) 49px,
+    transparent 49px,
+    transparent 50px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Concentric arcs from top-right corner */
+.pattern-arcs-tr {
+  position: relative;
+  overflow: hidden;
+}
+.pattern-arcs-tr::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-radial-gradient(
+    ellipse at 100% 0%,
+    transparent 0px,
+    transparent 45px,
+    rgba(202, 255, 0, 0.08) 45px,
+    rgba(202, 255, 0, 0.12) 49px,
+    transparent 49px,
+    transparent 50px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Concentric arcs from bottom-right — orange variant */
+.pattern-arcs-br-orange {
+  position: relative;
+  overflow: hidden;
+}
+.pattern-arcs-br-orange::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-radial-gradient(
+    ellipse at 100% 100%,
+    transparent 0px,
+    transparent 45px,
+    rgba(255, 96, 0, 0.08) 45px,
+    rgba(255, 96, 0, 0.12) 49px,
+    transparent 49px,
+    transparent 50px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Diagonal sawtooth stripes — lime on dark */
+.pattern-sawtooth {
+  position: relative;
+  overflow: hidden;
+}
+.pattern-sawtooth::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      -55deg,
+      transparent 0px,
+      transparent 28px,
+      rgba(202, 255, 0, 0.06) 28px,
+      rgba(202, 255, 0, 0.1) 32px,
+      transparent 32px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      -35deg,
+      transparent 0px,
+      transparent 18px,
+      rgba(202, 255, 0, 0.04) 18px,
+      rgba(202, 255, 0, 0.07) 21px,
+      transparent 21px,
+      transparent 40px
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Diagonal sawtooth stripes — dark on neon-green bg */
+.pattern-sawtooth-dark {
+  position: relative;
+  overflow: hidden;
+}
+.pattern-sawtooth-dark::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      -55deg,
+      transparent 0px,
+      transparent 28px,
+      rgba(0, 0, 0, 0.06) 28px,
+      rgba(0, 0, 0, 0.1) 32px,
+      transparent 32px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      -35deg,
+      transparent 0px,
+      transparent 18px,
+      rgba(0, 0, 0, 0.04) 18px,
+      rgba(0, 0, 0, 0.07) 21px,
+      transparent 21px,
+      transparent 40px
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Diagonal sawtooth — orange variant on dark */
+.pattern-sawtooth-orange {
+  position: relative;
+  overflow: hidden;
+}
+.pattern-sawtooth-orange::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      -55deg,
+      transparent 0px,
+      transparent 28px,
+      rgba(255, 96, 0, 0.06) 28px,
+      rgba(255, 96, 0, 0.1) 32px,
+      transparent 32px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      -35deg,
+      transparent 0px,
+      transparent 18px,
+      rgba(255, 96, 0, 0.04) 18px,
+      rgba(255, 96, 0, 0.07) 21px,
+      transparent 21px,
+      transparent 40px
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Bold concentric arcs — higher opacity for hero-level sections */
+.pattern-arcs-bold {
+  position: relative;
+  overflow: hidden;
+}
+.pattern-arcs-bold::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-radial-gradient(
+    ellipse at 90% 110%,
+    transparent 0px,
+    transparent 40px,
+    rgba(202, 255, 0, 0.1) 40px,
+    rgba(202, 255, 0, 0.18) 45px,
+    transparent 45px,
+    transparent 50px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure content inside patterned sections sits above the pattern */
+.pattern-content {
+  position: relative;
+  z-index: 1;
+}
+
 /* ─── ANIMATIONS ─── */
 @keyframes glow-pulse {
   0%, 100% { opacity: 0.4; }
@@ -364,13 +564,4 @@
   transform: translateY(0);
 }
 
-/* ─── MOBILE ─── */
-@media (max-width: 768px) {
-  h1 { font-size: 48px !important; }
-  h2 { font-size: 36px !important; }
-}
-
-@media (max-width: 375px) {
-  h1 { font-size: 36px !important; }
-  h2 { font-size: 28px !important; }
-}
+/* Removed hardcoded mobile breakpoints in favor of component-level clamp() typography */

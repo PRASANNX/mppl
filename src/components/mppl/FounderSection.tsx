@@ -2,178 +2,49 @@
 
 export default function FounderSection() {
   return (
-    <section style={{
-      background: '#080808',
-      padding: '120px 40px',
-      position: 'relative',
-      overflow: 'hidden'
-    }}>
-      {/* Background large quote mark */}
-      <div style={{
-        position: 'absolute',
-        top: '40px',
-        left: '40px',
-        fontSize: '400px',
-        fontFamily: 'Georgia, serif',
-        color: '#caff00',
-        opacity: 0.04,
-        lineHeight: 1,
-        pointerEvents: 'none',
-        userSelect: 'none'
-      }}>"</div>
-
-      {/* Section label */}
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '12px',
-        marginBottom: '60px'
-      }}>
-        <div style={{ width: '40px', height: '1px', background: '#caff00' }} />
-        <span style={{
-          fontFamily: 'DM Sans, sans-serif',
-          fontSize: '12px',
-          fontWeight: 600,
-          letterSpacing: '4px',
-          textTransform: 'uppercase',
-          color: '#caff00'
-        }}>FOUNDER'S NOTE</span>
+    <section className="bg-pure-black min-h-[80vh] py-32 px-6 lg:px-16 relative overflow-hidden pattern-arcs-bl flex items-center">
+      
+      {/* Massive Quotation Mark */}
+      <div className="absolute top-10 left-10 font-bebas text-[clamp(200px,40vw,600px)] text-neon-green/[0.04] leading-none pointer-events-none select-none">
+        "
       </div>
 
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
-        gap: '80px',
-        alignItems: 'center',
-        maxWidth: '1200px',
-        margin: '0 auto'
-      }}>
-
-        {/* LEFT — Quote */}
-        <div>
-          <blockquote style={{
-            fontFamily: 'Cormorant Garamond, Georgia, serif',
-            fontSize: 'clamp(20px, 2.5vw, 28px)',
-            fontStyle: 'italic',
-            color: 'rgba(245,245,245,0.9)',
-            lineHeight: 1.7,
-            marginBottom: '48px',
-            borderLeft: '3px solid #caff00',
-            paddingLeft: '32px'
-          }}>
-            "I grew up watching sport belong to a certain kind of person.
-            The right school. The right family. The right connections.
-            Pickleball gave me a different vision.
-            <br /><br />
-            A sport where a 10-year-old and a 60-year-old
-            can compete in the same league.
-            Where a beginner's first serve matters
-            as much as a champion's winning shot.
-            <br /><br />
-            MPPL is not just a league.
-            It is my answer to every player
-            who was told the court wasn't for them.
-            <br /><br />
-            The court is for everyone.
-            That's not a tagline. That's the rule."
-          </blockquote>
-
-          {/* Founder attribution */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-            {/* Founder photo placeholder */}
-            <div style={{
-              width: '72px',
-              height: '72px',
-              borderRadius: '50%',
-              background: 'linear-gradient(135deg, #caff00 0%, #0D0B1F 100%)',
-              border: '2px solid #caff00',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '24px',
-              fontFamily: 'Bebas Neue, sans-serif',
-              color: '#080808',
-              boxShadow: '0 0 20px rgba(202,255,0,0.3)'
-            }}>SS</div>
-            <div>
-              <div style={{
-                fontFamily: 'Bebas Neue, sans-serif',
-                fontSize: '22px',
-                color: '#F5F5F5',
-                letterSpacing: '1px'
-              }}>SURYAN SHAYADAV</div>
-              <div style={{
-                fontFamily: 'DM Sans, sans-serif',
-                fontSize: '13px',
-                color: '#caff00',
-                letterSpacing: '2px',
-                textTransform: 'uppercase'
-              }}>Founder, MPPL</div>
+      <div className="w-full max-w-[1400px] mx-auto relative z-10 pattern-content">
+        
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          
+          <div className="lg:col-span-8">
+            <div className="flex items-center gap-4 mb-12">
+              <div className="w-12 h-[2px] bg-neon-green"></div>
+              <span className="font-dm-sans text-sm font-bold uppercase tracking-[4px] text-neon-green">
+                Founder's Note
+              </span>
             </div>
-          </div>
-        </div>
-
-        {/* RIGHT — Founder photo placeholder */}
-        <div style={{
-          position: 'relative',
-          display: 'flex',
-          justifyContent: 'center'
-        }}>
-          {/* Placeholder image box */}
-          <div style={{
-            width: '100%',
-            maxWidth: '420px',
-            aspectRatio: '3/4',
-            background: 'linear-gradient(135deg, #0D0B1F 0%, #1a1a2e 100%)',
-            border: '1px solid rgba(202,255,0,0.2)',
-            borderRadius: '8px',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: '16px',
-            position: 'relative',
-            overflow: 'hidden'
-          }}>
-            {/* Diagonal neon line decoration */}
-            <div style={{
-              position: 'absolute',
-              bottom: '0',
-              left: '0',
-              width: '100%',
-              height: '4px',
-              background: '#caff00',
-              boxShadow: '0 0 20px #caff00'
-            }} />
-            <div style={{ fontSize: '48px' }}>📸</div>
-            <div style={{
-              fontFamily: 'DM Sans, sans-serif',
-              fontSize: '13px',
-              color: 'rgba(245,245,245,0.4)',
-              letterSpacing: '2px',
-              textTransform: 'uppercase'
-            }}>Founder Photo</div>
-            <div style={{
-              fontFamily: 'DM Sans, sans-serif',
-              fontSize: '11px',
-              color: 'rgba(245,245,245,0.25)',
-            }}>Replace with actual photo</div>
+            
+            <h2 className="font-bebas text-[clamp(50px,8vw,110px)] text-net-white leading-[0.9] tracking-tighter mb-12">
+              "WE DIDN'T START<br />
+              A TOURNAMENT.<br />
+              <span className="text-neon-green">WE STARTED A REVOLUTION."</span>
+            </h2>
+            
+            <p className="font-dm-sans text-xl text-net-white/80 font-bold leading-relaxed max-w-2xl">
+              MPPL was born out of a simple idea: Madhya Pradesh deserves its own premier sporting property. Pickleball is taking over the world, and it's time we put MP on the global map.
+            </p>
           </div>
 
-          {/* Floating badge */}
-          <div style={{
-            position: 'absolute',
-            bottom: '40px',
-            right: '-20px',
-            background: '#caff00',
-            color: '#080808',
-            padding: '12px 20px',
-            borderRadius: '8px',
-            fontFamily: 'Bebas Neue, sans-serif',
-            fontSize: '18px',
-            letterSpacing: '1px',
-            boxShadow: '0 0 30px rgba(202,255,0,0.4)'
-          }}>MPPL FOUNDER</div>
+          <div className="lg:col-span-4 flex flex-col items-start lg:items-end text-left lg:text-right border-l-4 lg:border-l-0 lg:border-r-4 border-neon-green pl-6 lg:pl-0 lg:pr-6 py-4">
+            <div className="w-32 h-32 bg-net-white/10 rounded-full mb-6 relative overflow-hidden">
+              {/* Placeholder for founder image */}
+              <div className="absolute inset-0 bg-neon-green/20"></div>
+            </div>
+            <h3 className="font-bebas text-4xl text-net-white tracking-wide mb-1">
+              SURYANSH YADAV
+            </h3>
+            <p className="font-dm-sans text-sm font-bold uppercase tracking-widest text-neon-green">
+              Founder, MPPL
+            </p>
+          </div>
+
         </div>
       </div>
     </section>

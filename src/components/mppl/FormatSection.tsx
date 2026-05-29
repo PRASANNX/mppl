@@ -1,108 +1,79 @@
 'use client';
 
-const steps = [
-  {
-    number: '01',
-    title: 'Qualifying Rounds',
-    description: '4 rounds held across 4 different cities in Madhya Pradesh',
-  },
-  {
-    number: '02',
-    title: 'Player Auctions',
-    description: 'Top performers get drafted into franchise teams',
-  },
-  {
-    number: '03',
-    title: 'League Matches',
-    description: '10 teams compete in a structured head-to-head format',
-  },
-  {
-    number: '04',
-    title: 'Grand Finals',
-    description: 'One team. One crown. ₹18 Lac+ prize pool',
-  },
-];
+import { MapPin, Gavel, Swords, Crown } from 'lucide-react';
 
 export default function FormatSection() {
   return (
-    <section className="section-neon-orange py-24 px-6 lg:px-16">
-      <div className="max-w-6xl mx-auto">
-        {/* Section Label — black variant for orange background */}
-        <div className="inline-flex items-center gap-3 mb-5">
-          <span className="block w-10 h-px bg-black/60" />
-          <span className="font-dm-sans text-xs font-semibold tracking-[4px] uppercase text-league-black">
-            How It Works
-          </span>
-        </div>
-
-        {/* Heading */}
-        <h2 className="font-bebas text-league-black leading-none mb-16">
-          The Road To
-          <br />
-          The Crown
+    <section id="schedule" className="bg-neon-orange py-32 px-6 lg:px-16 relative overflow-hidden pattern-sawtooth-dark text-pure-black">
+      
+      {/* Massive Background Typography */}
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-full pointer-events-none select-none z-0 overflow-hidden">
+        <h2 className="font-bebas text-[clamp(200px,40vw,600px)] text-pure-black/[0.04] leading-[0.75] m-0 p-0 tracking-tighter whitespace-nowrap text-center">
+          THE FORMAT
         </h2>
+      </div>
 
-        {/* ═══ DESKTOP TIMELINE (lg+) ═══ */}
-        <div className="hidden lg:grid lg:grid-cols-4 gap-0">
-          {steps.map((step, i) => (
-            <div key={step.number} className="flex items-stretch">
-              {/* Step card */}
-              <div className="relative flex-1 px-5">
-                {/* Watermark number */}
-                <span className="font-bebas text-[80px] leading-none text-black/10 select-none pointer-events-none">
-                  {step.number}
-                </span>
-
-                {/* Title */}
-                <h4 className="font-montserrat font-extrabold uppercase text-league-black text-sm tracking-wide mt-2 mb-2">
-                  {step.title}
-                </h4>
-
-                {/* Description */}
-                <p className="font-dm-sans text-sm text-black/70 leading-relaxed">
-                  {step.description}
-                </p>
-              </div>
-
-              {/* Connecting line between steps */}
-              {i < steps.length - 1 && (
-                <div className="flex items-center">
-                  <div className="w-px h-16 bg-black/20 lg:w-12 lg:h-px" />
-                </div>
-              )}
-            </div>
-          ))}
+      <div className="max-w-[1400px] mx-auto relative z-10 pattern-content text-center">
+        
+        {/* Section Header */}
+        <div className="mb-24 flex flex-col items-center">
+          <h2 className="font-bebas text-[clamp(60px,10vw,140px)] leading-[0.8] uppercase tracking-tighter">
+            4 ROUNDS.<br />
+            4 CITIES.<br />
+            <span className="text-pure-black" style={{ WebkitTextStroke: '3px #080808', color: 'transparent', textShadow: '6px 6px 0px rgba(0,0,0,0.1)' }}>
+              ONE DESTINATION.
+            </span>
+          </h2>
         </div>
 
-        {/* ═══ MOBILE/TABLET TIMELINE (<lg) ═══ */}
-        <div className="lg:hidden relative pl-10">
-          {/* Vertical connecting line */}
-          <div className="absolute left-3 top-0 bottom-0 w-px bg-black/20" />
-
-          <div className="flex flex-col gap-12">
-            {steps.map((step) => (
-              <div key={step.number} className="relative">
-                {/* Dot on the vertical line */}
-                <div className="absolute -left-[29px] top-4 w-2.5 h-2.5 rounded-full bg-league-black" />
-
-                {/* Watermark number */}
-                <span className="font-bebas text-[80px] leading-none text-black/10 select-none pointer-events-none block -mb-4">
-                  {step.number}
-                </span>
-
+        {/* Timeline Grid */}
+        <div className="relative mt-32 mb-16 max-w-6xl mx-auto">
+          {/* Connecting Line */}
+          <div className="absolute top-12 left-0 w-full h-[2px] bg-pure-black/20 hidden md:block z-0"></div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 relative z-10">
+            
+            {[
+              { num: '01', title: 'QUALIFYING ROUNDS', desc: '4 rounds across 4 cities in Madhya Pradesh. Every player gets their shot.', icon: <MapPin size={24} className="text-neon-orange" /> },
+              { num: '02', title: 'PLAYER AUCTIONS', desc: 'Top qualifiers enter the MPPL auction. 10 franchises. One draft. Zero limits.', icon: <Gavel size={24} className="text-net-white" /> },
+              { num: '03', title: 'LEAGUE MATCHES', desc: '10 teams. 15+ categories. Full-scale league competition across MP.', icon: <Swords size={24} className="text-net-white" /> },
+              { num: '04', title: 'GRAND FINALS', desc: 'One city. One court. ₹18 Lac+ on the line. One team takes the crown.', icon: <Crown size={24} className="text-neon-green" /> }
+            ].map((step, i) => (
+              <div key={i} className="flex flex-col items-center relative group">
+                {/* Circular Icon */}
+                <div className="w-24 h-24 rounded-full bg-pure-black border-4 border-neon-orange flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(0,0,0,0.2)] group-hover:scale-110 transition-transform">
+                  {step.icon}
+                </div>
+                
+                {/* Step Number */}
+                <div className="font-dm-sans text-xs font-bold text-pure-black/60 tracking-[4px] mb-2">
+                  {step.num}
+                </div>
+                
                 {/* Title */}
-                <h4 className="font-montserrat font-extrabold uppercase text-league-black text-sm tracking-wide mb-2">
-                  {step.title}
-                </h4>
-
+                <h3 className="font-bebas text-3xl md:text-4xl mb-4 tracking-wide leading-none">{step.title}</h3>
+                
                 {/* Description */}
-                <p className="font-dm-sans text-sm text-black/70 leading-relaxed">
-                  {step.description}
+                <p className="font-dm-sans text-sm md:text-base font-bold opacity-80 leading-relaxed max-w-[250px]">
+                  {step.desc}
                 </p>
               </div>
             ))}
+
           </div>
         </div>
+        
+        {/* Registration CTA Block */}
+        <div className="mt-24 max-w-5xl mx-auto bg-neon-orange/80 border-4 border-pure-black p-8 md:p-12 flex flex-col md:flex-row items-center justify-between text-left backdrop-blur-sm">
+          <div>
+            <h3 className="font-bebas text-4xl md:text-5xl tracking-wide mb-2">ROUNDS STARTING JUNE 2026</h3>
+            <p className="font-dm-sans font-bold text-pure-black/80">First qualifying date announcing soon. Stay tuned.</p>
+          </div>
+          <a href="#register" className="inline-block text-center bg-pure-black text-neon-orange font-bebas text-2xl px-10 py-4 hover:bg-white hover:text-pure-black transition-colors mt-8 md:mt-0 shadow-[8px_8px_0px_rgba(0,0,0,0.5)]">
+            REGISTER INTEREST →
+          </a>
+        </div>
+
       </div>
     </section>
   );

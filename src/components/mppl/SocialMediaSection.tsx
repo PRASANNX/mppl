@@ -2,8 +2,8 @@
 
 export default function SocialMediaSection() {
   return (
-    <section className="bg-[#050505] py-24 px-6 lg:px-16 border-t border-white/5">
-      <div className="max-w-6xl mx-auto">
+    <section className="bg-[#050505] py-24 px-6 lg:px-16 border-t border-white/5 pattern-sawtooth">
+      <div className="max-w-6xl mx-auto pattern-content">
         
         {/* Header */}
         <div className="text-center mb-16">
