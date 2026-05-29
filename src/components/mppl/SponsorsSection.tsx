@@ -65,10 +65,9 @@ export default function SponsorsSection() {
                 </h3>
                 <div className="flex flex-col items-start gap-4">
                   <img
-                    src="/franklin-logo.png"
+                    src="/images/dark_franklin_logo.avif"
                     alt="Franklin Pickleball"
-                    className="w-[200px] h-auto group-hover:invert group-hover:brightness-[0.3] group-hover:sepia group-hover:hue-rotate-[25deg] group-hover:saturate-[20] transition-all"
-                    style={{ filter: 'none' }}
+                    className="w-[200px] h-auto transition-all mix-blend-multiply group-hover:invert"
                   />
                 </div>
               </a>
