@@ -10,31 +10,64 @@ import { NextResponse, type NextRequest } from "next/server";
 export async function middleware(request: NextRequest) {
   let supabaseResponse = NextResponse.next({ request });
 
-  const supabase = createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL || "",
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "",
-    {
-      cookies: {
-        getAll() {
-          return request.cookies.getAll();
-        },
-        setAll(cookiesToSet) {
-          cookiesToSet.forEach(({ name, value }) =>
-            request.cookies.set(name, value)
-          );
-          supabaseResponse = NextResponse.next({ request });
-          cookiesToSet.forEach(({ name, value, options }) =>
-            supabaseResponse.cookies.set(name, value, options)
-          );
-        },
-      },
-    }
-  );
+  // Create Supabase client for middleware with defensive cookie handlers
+  let supabase: any = null;
+  try {
+    supabase = createServerClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL || "",
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "",
+      {
+        cookies: {
+          getAll() {
+            try {
+              return request.cookies.getAll();
+            } catch {
+              return [];
+            }
+          },
+          setAll(cookiesToSet) {
+            try {
+              // Some runtimes don't allow mutating request.cookies — guard it
+              cookiesToSet.forEach(({ name, value }) => {
+                try {
+                  // @ts-ignore
+                  if (typeof request.cookies?.set === "function") {
+                    // @ts-ignore
+                    request.cookies.set(name, value);
+                  }
+                } catch (_) {}
+              });
+            } catch (_) {}
 
-  // Refresh session
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+            // Ensure the response copies cookies so the browser receives them
+            supabaseResponse = NextResponse.next({ request });
+            cookiesToSet.forEach(({ name, value, options }) => {
+              try {
+                supabaseResponse.cookies.set(name, value, options);
+              } catch (_) {}
+            });
+          },
+        },
+      }
+    );
+  } catch (err) {
+    console.error("Supabase createServerClient error in middleware:", err);
+    supabase = null;
+  }
+
+  // Refresh session (defensive) — if Supabase client fails, treat as unauthenticated
+  let user: any = null;
+  if (supabase) {
+    try {
+      const {
+        data: { user: gotUser },
+      } = await supabase.auth.getUser();
+      user = gotUser;
+    } catch (err) {
+      console.error("Supabase auth.getUser() error in middleware:", err);
+      user = null;
+    }
+  }
 
   const pathname = request.nextUrl.pathname;
 
@@ -84,19 +117,25 @@ export async function middleware(request: NextRequest) {
     !reservedPaths.includes(potentialSlug) &&
     !isStaticRoute
   ) {
-    // Look up org by slug to inject x-org headers
-    const { data: org } = await supabase
-      .from("organizations")
-      .select("id, accent_color, is_active")
-      .eq("slug", potentialSlug)
-      .single();
+    // Look up org by slug to inject x-org headers (guarded if Supabase client unavailable)
+    if (supabase) {
+      try {
+        const { data: org } = await supabase
+          .from("organizations")
+          .select("id, accent_color, is_active")
+          .eq("slug", potentialSlug)
+          .single();
 
-    if (org) {
-      supabaseResponse.headers.set("x-org-id", org.id);
-      supabaseResponse.headers.set(
-        "x-org-accent",
-        org.accent_color || "#FF5F1F"
-      );
+        if (org) {
+          supabaseResponse.headers.set("x-org-id", org.id);
+          supabaseResponse.headers.set(
+            "x-org-accent",
+            org.accent_color || "#FF5F1F"
+          );
+        }
+      } catch (err) {
+        console.error("Supabase org lookup failed in middleware:", err);
+      }
     }
   }
 
