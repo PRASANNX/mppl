@@ -34,8 +34,13 @@ export default function FounderSection() {
 
           <div className="lg:col-span-4 flex flex-col items-start lg:items-end text-left lg:text-right border-l-4 lg:border-l-0 lg:border-r-4 border-neon-green pl-6 lg:pl-0 lg:pr-6 py-4">
             <div className="w-32 h-32 bg-net-white/10 rounded-full mb-6 relative overflow-hidden">
-              {/* Placeholder for founder image */}
-              <div className="absolute inset-0 bg-neon-green/20"></div>
+              <img
+                src="/images/founder.jpg"
+                alt="Founder"
+                className="w-full h-full object-cover block"
+                onError={(e: any) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
+              />
+              <div className="absolute inset-0 bg-neon-green/20 pointer-events-none"></div>
             </div>
             <h3 className="font-bebas text-4xl text-net-white tracking-wide mb-1">
               SURYANSH YADAV
