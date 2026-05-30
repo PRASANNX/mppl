@@ -96,7 +96,7 @@ export default function ViralHooksPage() {
             {/* Time to Build */}
             <div>
               <label className="font-['Inter'] text-xs font-bold text-gray-400 uppercase tracking-wider block mb-2">
-                ⚡ Time to Build
+                Time to Build
               </label>
               <input
                 type="text"
@@ -110,7 +110,7 @@ export default function ViralHooksPage() {
             {/* Client Price */}
             <div>
               <label className="font-['Inter'] text-xs font-bold text-gray-400 uppercase tracking-wider block mb-2">
-                💸 Client Price Charged
+                Client Price Charged
               </label>
               <input
                 type="text"
@@ -124,7 +124,7 @@ export default function ViralHooksPage() {
             {/* Previous Workflow */}
             <div>
               <label className="font-['Inter'] text-xs font-bold text-gray-400 uppercase tracking-wider block mb-2">
-                🐌 Previous Workflow
+                Previous Workflow
               </label>
               <textarea
                 rows={3}
@@ -175,9 +175,10 @@ export default function ViralHooksPage() {
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
               {/* Card Header */}
               <div className="p-4 flex items-center gap-3 border-b border-gray-100">
-                <div className="w-11 h-11 rounded-full bg-[#121212] flex items-center justify-center flex-shrink-0">
-                  <span className="font-['Montserrat'] text-sm font-black text-white">P</span>
-                </div>
+                <div className="w-11 h-11 rounded-full bg-[#121212] flex items-center justify-center flex-shrink-0 overflow-hidden relative">
+                        <img src="/images/founder.jpg" alt="Founder" className="w-full h-full object-cover block" onError={(e:any)=>{ (e.currentTarget as HTMLImageElement).style.display='none'; }} />
+                        <span className="absolute inset-0 flex items-center justify-center font-['Montserrat'] text-sm font-black text-white">P</span>
+                      </div>
                 <div>
                   <p className="font-['Montserrat'] text-sm font-bold text-black">
                     Prasann — PRX

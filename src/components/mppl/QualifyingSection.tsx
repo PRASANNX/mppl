@@ -70,26 +70,22 @@ export default function QualifyingSection() {
             {
               num: '01',
               title: 'QUALIFYING ROUNDS',
-              desc: '4 rounds across 4 cities in Madhya Pradesh. Every player gets their shot.',
-              icon: '📍'
+              desc: '4 rounds across 4 cities in Madhya Pradesh. Every player gets their shot.'
             },
             {
               num: '02',
               title: 'PLAYER AUCTIONS',
-              desc: 'Top qualifiers enter the MPPL auction. 10 franchises. One draft. Zero limits.',
-              icon: '🔨'
+              desc: 'Top qualifiers enter the MPPL auction. 10 franchises. One draft. Zero limits.'
             },
             {
               num: '03',
               title: 'LEAGUE MATCHES',
-              desc: '10 teams. 15+ categories. Full-scale league competition across MP.',
-              icon: '⚔️'
+              desc: '10 teams. 15+ categories. Full-scale league competition across MP.'
             },
             {
               num: '04',
               title: 'GRAND FINALS',
-              desc: 'One city. One court. ₹18 Lac+ on the line. One team takes the crown.',
-              icon: '👑'
+              desc: 'One city. One court. ₹18 Lac+ on the line. One team takes the crown.'
             }
           ].map((step, i) => (
             <div key={i} style={{
@@ -110,14 +106,6 @@ export default function QualifyingSection() {
                 margin: '0 auto 24px',
                 fontSize: '24px',
                 border: '3px solid #080808'
-              }}>{step.icon}</div>
-
-              <div style={{
-                fontFamily: 'Bebas Neue, sans-serif',
-                fontSize: '14px',
-                color: 'rgba(0,0,0,0.4)',
-                letterSpacing: '2px',
-                marginBottom: '8px'
               }}>{step.num}</div>
 
               <h3 style={{

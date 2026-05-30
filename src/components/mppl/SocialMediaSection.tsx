@@ -15,22 +15,19 @@ export default function SocialMediaSection() {
           </a>
         </div>
 
-        {/* Social Links Row */}
+        {/* Social Links Row (removed follower counts and emoji icons) */}
         <div className="flex flex-wrap justify-center gap-6 md:gap-12 mb-16">
           {[
-            { name: 'Instagram', followers: '10K+', icon: '📸' },
-            { name: 'YouTube', followers: '5K+', icon: '🎥' },
-            { name: 'X / Twitter', followers: '2K+', icon: '🐦' }
+            { name: 'Instagram', href: '#' },
+            { name: 'YouTube', href: '#' },
+            { name: 'X / Twitter', href: '#' }
           ].map((social) => (
-            <a key={social.name} href="#" className="flex flex-col items-center group">
-              <div className="w-16 h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-2xl mb-3 group-hover:border-neon-green group-hover:bg-neon-green/10 transition-all duration-300">
-                {social.icon}
+            <a key={social.name} href={social.href} className="flex flex-col items-center group">
+              <div className="w-16 h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mb-3 group-hover:border-neon-green group-hover:bg-neon-green/10 transition-all duration-300">
+                <span className="text-sm font-black text-white">{social.name.charAt(0)}</span>
               </div>
               <span className="font-dm-sans text-sm font-bold text-white group-hover:text-neon-green transition-colors">
                 {social.name}
-              </span>
-              <span className="font-dm-sans text-xs text-white/40 mt-1 uppercase tracking-widest">
-                {social.followers} Followers
               </span>
             </a>
           ))}
@@ -40,13 +37,13 @@ export default function SocialMediaSection() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 mb-20">
           {[1, 2, 3, 4, 5, 6].map((i) => (
             <div key={i} className="aspect-square bg-white/5 relative group cursor-pointer overflow-hidden rounded">
-              <div className="absolute inset-0 bg-league-black flex items-center justify-center">
-                <span className="text-4xl opacity-20">🖼️</span>
+              <div className="absolute inset-0 bg-league-black flex items-center justify-center" aria-hidden>
+                <div className="w-12 h-8 bg-white/5" />
               </div>
-              
-              {/* Hover overlay */}
-              <div className="absolute inset-0 bg-neon-green/90 translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex items-center justify-center">
-                <span className="text-3xl text-league-black">📸</span>
+
+              {/* Hover overlay (decorative only) */}
+              <div className="absolute inset-0 bg-neon-green/90 translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex items-center justify-center" aria-hidden>
+                <div className="w-6 h-6 bg-league-black rounded" />
               </div>
             </div>
           ))}

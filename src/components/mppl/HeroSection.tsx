@@ -78,7 +78,7 @@ export default function HeroSection() {
             </h1>
             
             {/* Foreground text */}
-            <h1 className="relative font-bebas text-[clamp(80px,12vw,180px)] text-black leading-[0.85] tracking-tight z-10 mb-6 uppercase">
+            <h1 className="relative font-bebas text-[clamp(80px,12vw,180px)] text-net-white leading-[0.85] tracking-tight z-10 mb-6 uppercase">
               The <span className="text-neon-green">League</span><br />
               Is Here.
             </h1>
@@ -87,7 +87,7 @@ export default function HeroSection() {
           {/* Subheading & Stats Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-8 max-w-4xl relative z-10">
             <div>
-              <p className="font-dm-sans text-lg text-black/70 leading-relaxed">
+              <p className="font-dm-sans text-lg text-net-white/70 leading-relaxed">
                 India's most serious regional pickleball league. This isn't a hobby tournament — this is MPPL. Built for everyone from beginners to pros.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
@@ -104,11 +104,11 @@ export default function HeroSection() {
             <div className="flex flex-col justify-center border-l-2 border-neon-orange/30 pl-8">
               <div className="mb-6">
                 <div className="font-bebas text-5xl md:text-7xl text-neon-orange leading-none">₹18L+</div>
-                <div className="font-dm-sans text-xs font-bold uppercase tracking-[3px] text-black/50 mt-1">Prize Pool</div>
+                <div className="font-dm-sans text-xs font-bold uppercase tracking-[3px] text-net-white/50 mt-1">Prize Pool</div>
               </div>
               <div>
                 <div className="font-bebas text-5xl md:text-7xl text-neon-orange leading-none">10</div>
-                <div className="font-dm-sans text-xs font-bold uppercase tracking-[3px] text-black/50 mt-1">Franchise Teams</div>
+                <div className="font-dm-sans text-xs font-bold uppercase tracking-[3px] text-net-white/50 mt-1">Franchise Teams</div>
               </div>
             </div>
           </div>

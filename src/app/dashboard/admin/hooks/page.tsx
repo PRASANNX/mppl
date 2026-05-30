@@ -31,10 +31,14 @@ function LinkedInPostCard({ content, isLoading }: { content: string; isLoading: 
     <div className="border border-gray-200 rounded-xl overflow-hidden bg-white">
       {/* Post Header */}
       <div className="p-4 flex items-center gap-3 border-b border-gray-100">
-        <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center flex-shrink-0">
-          <span className="text-sm font-black text-white" style={{ fontFamily: "Montserrat, sans-serif" }}>
-            P
-          </span>
+        <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center flex-shrink-0 overflow-hidden relative">
+          <img
+            src="/images/founder.jpg"
+            alt="Founder"
+            className="w-full h-full object-cover block"
+            onError={(e: any) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
+          />
+          <span className="absolute inset-0 flex items-center justify-center text-sm font-black text-white" style={{ fontFamily: "Montserrat, sans-serif" }}>P</span>
         </div>
         <div>
           <p className="text-sm font-bold text-black" style={{ fontFamily: "Montserrat, sans-serif" }}>
@@ -203,7 +207,7 @@ export default function ViralHookPage() {
                   className="block text-xs font-bold text-gray-600 mb-1.5 uppercase tracking-wider"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
-                  ⚡ Time to Build
+                  Time to Build
                 </label>
                 <input
                   type="text"
@@ -219,7 +223,7 @@ export default function ViralHookPage() {
                   className="block text-xs font-bold text-gray-600 mb-1.5 uppercase tracking-wider"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
-                  💸 Cost
+                  Cost
                 </label>
                 <input
                   type="text"
@@ -235,7 +239,7 @@ export default function ViralHookPage() {
                   className="block text-xs font-bold text-gray-600 mb-1.5 uppercase tracking-wider"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
-                  🐌 Old Workflow (What You Replaced)
+                  Old Workflow (What You Replaced)
                 </label>
                 <textarea
                   rows={3}
