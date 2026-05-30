@@ -175,7 +175,7 @@ export default function ViralHooksPage() {
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
               {/* Card Header */}
               <div className="p-4 flex items-center gap-3 border-b border-gray-100">
-                <div className="w-11 h-11 rounded-full bg-[#121212] flex items-center justify-center flex-shrink-0 overflow-hidden relative">
+                <div className="w-[3.85rem] h-[3.85rem] rounded-full bg-[#121212] flex items-center justify-center flex-shrink-0 overflow-hidden relative">
                         <img src="/images/founder.jpg" alt="Founder" className="w-full h-full object-cover block" onError={(e:any)=>{ (e.currentTarget as HTMLImageElement).style.display='none'; }} />
                         <span className="absolute inset-0 flex items-center justify-center font-['Montserrat'] text-sm font-black text-white">P</span>
                       </div>

@@ -31,7 +31,7 @@ function LinkedInPostCard({ content, isLoading }: { content: string; isLoading: 
     <div className="border border-gray-200 rounded-xl overflow-hidden bg-white">
       {/* Post Header */}
       <div className="p-4 flex items-center gap-3 border-b border-gray-100">
-        <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center flex-shrink-0 overflow-hidden relative">
+        <div className="w-14 h-14 rounded-full bg-black flex items-center justify-center flex-shrink-0 overflow-hidden relative">
           <img
             src="/images/founder.jpg"
             alt="Founder"

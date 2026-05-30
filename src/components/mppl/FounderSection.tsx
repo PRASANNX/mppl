@@ -33,7 +33,7 @@ export default function FounderSection() {
           </div>
 
           <div className="lg:col-span-4 flex flex-col items-start lg:items-end text-left lg:text-right border-l-4 lg:border-l-0 lg:border-r-4 border-neon-green pl-6 lg:pl-0 lg:pr-6 py-4">
-            <div className="w-32 h-32 bg-net-white/10 rounded-full mb-6 relative overflow-hidden">
+            <div className="w-[11.2rem] h-[11.2rem] bg-net-white/10 rounded-full mb-6 relative overflow-hidden">
               <img
                 src="/images/founder.jpg"
                 alt="Founder"
