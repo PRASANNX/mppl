@@ -148,7 +148,7 @@
   .btn-secondary {
     @apply inline-flex items-center justify-center cursor-pointer;
     padding: 14px 30px;
-    background-color: transparent;
+    background-color: var(--pure-black);
     color: var(--net-white);
     font-family: var(--font-montserrat), 'Montserrat', sans-serif;
     font-weight: 800;
@@ -287,6 +287,20 @@
   .section-neon-green span {
     color: var(--pure-black);
     text-shadow: none;
+  }
+
+  /* Force black text on any neon-green background section (Tailwind bg-neon-green) */
+  section.bg-neon-green,
+  section.bg-\[var\(--neon-green\)\] {
+    color: var(--pure-black);
+  }
+  section.bg-neon-green h1,
+  section.bg-neon-green h2,
+  section.bg-neon-green h3,
+  section.bg-neon-green p,
+  section.bg-neon-green span,
+  section.bg-neon-green a {
+    color: var(--pure-black);
   }
 
   .section-neon-orange {

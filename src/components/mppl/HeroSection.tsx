@@ -44,14 +44,14 @@ export default function HeroSection() {
         {/* Left Sidebar (Desktop Only) */}
         <div className="hidden lg:flex flex-col justify-between col-span-2 border-l border-neon-green/20 pl-6 h-full min-h-[60vh] py-10">
           <div>
-            <ul className="space-y-6 font-dm-sans text-xs font-bold uppercase tracking-[3px] text-net-white/40">
+            <ul className="space-y-6 font-dm-sans text-xs font-bold uppercase tracking-[3px] text-net-white/90">
               <li className="text-neon-green flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-neon-green animate-pulse"></span>
                 Season 2026
               </li>
-              <li className="hover:text-net-white transition-colors cursor-pointer"><a href="#register" className="block w-full">Register</a></li>
-              <li className="hover:text-net-white transition-colors cursor-pointer"><a href="#teams" className="block w-full">Teams</a></li>
-              <li className="hover:text-net-white transition-colors cursor-pointer"><a href="#about" className="block w-full">About</a></li>
+              <li className="hover:text-neon-green transition-colors cursor-pointer"><a href="#register" className="block w-full">Register</a></li>
+              <li className="hover:text-neon-green transition-colors cursor-pointer"><a href="#teams" className="block w-full">Teams</a></li>
+              <li className="hover:text-neon-green transition-colors cursor-pointer"><a href="#about" className="block w-full">About</a></li>
             </ul>
           </div>
           <div className="font-bebas text-net-white/20 text-6xl tracking-widest -rotate-90 origin-bottom-left absolute bottom-10 -left-6 whitespace-nowrap">
@@ -94,7 +94,7 @@ export default function HeroSection() {
                 <a href="#register" className="btn-primary px-10 py-4 text-lg">
                   Register Now
                 </a>
-                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="btn-secondary px-8 py-4 text-lg">
+                <a href="https://www.instagram.com/reel/Daxu8b2oRaw/" target="_blank" rel="noopener noreferrer" className="btn-secondary px-8 py-4 text-lg">
                   Watch Teaser
                 </a>
               </div>
@@ -104,11 +104,11 @@ export default function HeroSection() {
             <div className="flex flex-col justify-center border-l-2 border-neon-orange/30 pl-8">
               <div className="mb-6">
                 <div className="font-bebas text-5xl md:text-7xl text-neon-orange leading-none">₹18L+</div>
-                <div className="font-dm-sans text-xs font-bold uppercase tracking-[3px] text-net-white/50 mt-1">Prize Pool</div>
+                <div className="font-dm-sans text-xs font-bold uppercase tracking-[3px] text-net-white/90 mt-1">Prize Pool</div>
               </div>
               <div>
-                <div className="font-bebas text-5xl md:text-7xl text-neon-orange leading-none">10</div>
-                <div className="font-dm-sans text-xs font-bold uppercase tracking-[3px] text-net-white/50 mt-1">Franchise Teams</div>
+                <div className="font-bebas text-5xl md:text-7xl text-neon-orange leading-none">8</div>
+                <div className="font-dm-sans text-xs font-bold uppercase tracking-[3px] text-net-white/90 mt-1">Franchise Teams</div>
               </div>
             </div>
           </div>

@@ -8,7 +8,6 @@ import CategoriesSection from "@/components/mppl/CategoriesSection";
 import PrizePoolSection from "@/components/mppl/PrizePoolSection";
 import TeamsSection from "@/components/mppl/TeamsSection";
 import SponsorsSection from "@/components/mppl/SponsorsSection";
-import SocialMediaSection from "@/components/mppl/SocialMediaSection";
 import VisionSection from "@/components/mppl/VisionSection";
 import CTASection from "@/components/mppl/CTASection";
 import FAQSection from "@/components/mppl/FAQSection";
@@ -28,7 +27,6 @@ export default function HomePage() {
         <PrizePoolSection />
         <TeamsSection />
         <SponsorsSection />
-        <SocialMediaSection />
         <VisionSection />
         <CTASection />
         <FAQSection />

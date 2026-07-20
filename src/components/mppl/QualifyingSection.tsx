@@ -70,22 +70,22 @@ export default function QualifyingSection() {
             {
               num: '01',
               title: 'QUALIFYING ROUNDS',
-              desc: '4 rounds across 4 cities in Madhya Pradesh. Every player gets their shot.'
+              desc: '4 legs across Indore, Bhopal, Jabalpur & Gwalior. Winner & Runner-up of each category qualify.'
             },
             {
               num: '02',
               title: 'PLAYER AUCTIONS',
-              desc: 'Top qualifiers enter the MPPL auction. 10 franchises. One draft. Zero limits.'
+              desc: '48 total qualified players enter the MPPL auction pool. 8 franchises. One draft.'
             },
             {
               num: '03',
               title: 'LEAGUE MATCHES',
-              desc: '10 teams. 15+ categories. Full-scale league competition across MP.'
+              desc: '8 franchise squads. 15+ categories. Intense league championship matches.'
             },
             {
               num: '04',
               title: 'GRAND FINALS',
-              desc: 'One city. One court. ₹18 Lac+ on the line. One team takes the crown.'
+              desc: 'One court. One champion. ₹18 Lakhs prize pool. One franchise takes the crown.'
             }
           ].map((step, i) => (
             <div key={i} style={{

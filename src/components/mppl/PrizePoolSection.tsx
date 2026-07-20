@@ -37,10 +37,10 @@ export default function PrizePoolSection() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-net-white/10 border border-net-white/10 p-px">
             
             {[
-              { label: 'Pro Categories', val: 'Massive Payouts', icon: <Trophy size={48} /> },
-              { label: 'Amateur Brackets', val: 'Cash & Gear', icon: <Zap size={48} /> },
-              { label: 'Franchise Bonus', val: 'Team Rewards', icon: <Coins size={48} /> },
-              { label: 'MVP Award', val: 'Special Prize', icon: <Star size={48} /> }
+              { label: 'Franchise: ₹5.50 Lakhs | Players: ₹4.50 Lakhs', val: '🥇 ₹10.00L', icon: <Trophy size={48} /> },
+              { label: 'Franchise: ₹3.50 Lakhs | Players: ₹2.50 Lakhs', val: '🥈 ₹6.00L', icon: <Zap size={48} /> },
+              { label: 'Franchise: ₹1.00 Lakh | Players: ₹1.00 Lakh', val: '🥉 ₹2.00L', icon: <Coins size={48} /> },
+              { label: 'Player cash rewards distributed directly by organizers', val: 'Direct Payouts', icon: <Star size={48} /> }
             ].map((item, i) => (
               <div key={i} className="bg-pure-black p-10 flex flex-col justify-between min-h-[250px] group hover:bg-neon-green transition-colors cursor-pointer">
                 <div className="text-4xl mb-8 group-hover:scale-110 transition-transform origin-left">
@@ -50,7 +50,7 @@ export default function PrizePoolSection() {
                   <h3 className="font-bebas text-3xl text-net-white group-hover:text-pure-black mb-2 tracking-wide">
                     {item.val}
                   </h3>
-                  <p className="font-dm-sans text-xs font-bold uppercase tracking-widest text-net-white/40 group-hover:text-pure-black/60">
+                  <p className="font-dm-sans text-xs font-bold uppercase tracking-widest text-net-white/55 group-hover:text-pure-black/60">
                     {item.label}
                   </p>
                 </div>

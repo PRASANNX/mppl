@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 
 const STATS = [
   { value: '18L+', label: 'Prize Pool', prefix: '₹' },
-  { value: '10', label: 'Teams', prefix: '' },
+  { value: '8', label: 'Teams', prefix: '' },
   { value: '15+', label: 'Categories', prefix: '' },
   { value: '4', label: 'Cities', prefix: '' },
 ];

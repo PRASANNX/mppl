@@ -35,7 +35,7 @@ const hind = Hind({
 export const metadata: Metadata = {
   title: "MPPL — Madhya Pradesh Pickleball League",
   description:
-    "India's most serious regional pickleball league. India's Heart. The Court's Soul. 10 teams fight for one crown.",
+    "India's most serious regional pickleball league. India's Heart. The Court's Soul. 8 teams fight for one crown.",
   keywords: [
     "MPPL",
     "Pickleball",

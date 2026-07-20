@@ -1,6 +1,6 @@
 'use client';
 
-const teams = Array.from({ length: 10 }, (_, i) => i + 1);
+const teams = Array.from({ length: 8 }, (_, i) => i + 1);
 
 export default function TeamsSection() {
   return (
@@ -9,7 +9,7 @@ export default function TeamsSection() {
       {/* Massive Background Typography */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center pointer-events-none select-none z-0">
         <h2 className="font-bebas text-[clamp(150px,30vw,400px)] text-net-white/[0.03] leading-[0.75] m-0 p-0 tracking-tighter whitespace-nowrap">
-          TEN TEAMS
+          EIGHT TEAMS
         </h2>
         <h2 className="font-bebas text-[clamp(150px,30vw,400px)] text-neon-green/[0.03] leading-[0.75] m-0 p-0 tracking-tighter whitespace-nowrap">
           ONE CROWN
@@ -28,7 +28,7 @@ export default function TeamsSection() {
               </span>
             </div>
             <h2 className="font-bebas text-[clamp(60px,10vw,140px)] text-net-white leading-[0.85] uppercase tracking-tighter">
-              10 TEAMS.<br />
+              8 TEAMS.<br />
               <span className="text-neon-green">ONE CROWN.</span>
             </h2>
           </div>
@@ -37,7 +37,7 @@ export default function TeamsSection() {
             <p className="font-dm-sans text-lg text-net-white/60 mb-6">
               Franchises and team names announcing soon. Player auctions to follow qualifying rounds.
             </p>
-            <a href="#register" className="inline-block text-center bg-net-white text-pure-black font-bebas text-2xl px-8 py-3 hover:bg-neon-green transition-colors w-full md:w-auto uppercase tracking-wide">
+            <a href="#register" className="inline-block text-center bg-pure-black text-neon-green border-2 border-neon-green font-bebas text-2xl px-8 py-3 hover:bg-neon-green hover:text-pure-black transition-colors w-full md:w-auto uppercase tracking-wide">
               GET AUCTION ALERTS
             </a>
           </div>

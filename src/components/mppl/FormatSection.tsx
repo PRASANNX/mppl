@@ -34,10 +34,10 @@ export default function FormatSection() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 relative z-10">
             
             {[
-              { num: '01', title: 'QUALIFYING ROUNDS', desc: '4 rounds across 4 cities in Madhya Pradesh. Every player gets their shot.', icon: <MapPin size={24} className="text-neon-orange" /> },
-              { num: '02', title: 'PLAYER AUCTIONS', desc: 'Top qualifiers enter the MPPL auction. 10 franchises. One draft. Zero limits.', icon: <Gavel size={24} className="text-net-white" /> },
-              { num: '03', title: 'LEAGUE MATCHES', desc: '10 teams. 15+ categories. Full-scale league competition across MP.', icon: <Swords size={24} className="text-net-white" /> },
-              { num: '04', title: 'GRAND FINALS', desc: 'One city. One court. ₹18 Lac+ on the line. One team takes the crown.', icon: <Crown size={24} className="text-neon-green" /> }
+              { num: '01', title: 'QUALIFYING ROUNDS', desc: '4 legs across Indore, Bhopal, Jabalpur & Gwalior. Winner & Runner-up of each category qualify.', icon: <MapPin size={24} className="text-neon-orange" /> },
+              { num: '02', title: 'PLAYER AUCTIONS', desc: '48 total qualified players enter the MPPL auction pool. 8 franchises. One draft.', icon: <Gavel size={24} className="text-net-white" /> },
+              { num: '03', title: 'LEAGUE MATCHES', desc: '8 franchise squads. 15+ categories. Intense league championship matches.', icon: <Swords size={24} className="text-net-white" /> },
+              { num: '04', title: 'GRAND FINALS', desc: 'One court. One champion. ₹18 Lakhs prize pool. One franchise takes the crown.', icon: <Crown size={24} className="text-neon-green" /> }
             ].map((step, i) => (
               <div key={i} className="flex flex-col items-center relative group">
                 {/* Circular Icon */}
@@ -66,7 +66,7 @@ export default function FormatSection() {
         {/* Registration CTA Block */}
         <div className="mt-24 max-w-5xl mx-auto bg-neon-orange/80 border-4 border-pure-black p-8 md:p-12 flex flex-col md:flex-row items-center justify-between text-left backdrop-blur-sm">
           <div>
-            <h3 className="font-bebas text-4xl md:text-5xl tracking-wide mb-2">ROUNDS STARTING JUNE 2026</h3>
+            <h3 className="font-bebas text-4xl md:text-5xl tracking-wide mb-2">ROUNDS STARTING 2026</h3>
             <p className="font-dm-sans font-bold text-pure-black/80">First qualifying date announcing soon. Stay tuned.</p>
           </div>
           <a href="#register" className="inline-block text-center bg-pure-black text-neon-orange font-bebas text-2xl px-10 py-4 hover:bg-white hover:text-pure-black transition-colors mt-8 md:mt-0 shadow-[8px_8px_0px_rgba(0,0,0,0.5)]">

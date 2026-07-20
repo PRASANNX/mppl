@@ -42,11 +42,11 @@ export default function VisionSection() {
             </div>
             
             <p className="font-dm-sans text-xl md:text-2xl text-net-white font-bold leading-relaxed mb-8 max-w-xl">
-              MPPL is India's first structured pickleball league in Madhya Pradesh. Built for everyone — from 10-year-old beginners to 60-year-old pros.
+              To establish the Madhya Pradesh Pickleball League as Central India's premier franchise-based pickleball championship.
             </p>
             
             <p className="font-dm-sans text-lg text-net-white/60 leading-relaxed mb-12 max-w-xl">
-              This isn't a one-day event. It's a season. It's about establishing a legacy, creating heroes, and bringing the fastest-growing sport in the world to the heart of India.
+              By creating professional opportunities for players, delivering world-class competition, and building a sustainable ecosystem for franchises, sponsors, and the sport's long-term growth.
             </p>
 
             <div className="grid grid-cols-2 gap-8">
@@ -55,7 +55,7 @@ export default function VisionSection() {
                 <div className="font-dm-sans text-sm font-bold uppercase tracking-widest text-net-white/50">Qualifying<br/>Cities</div>
               </div>
               <div>
-                <div className="font-bebas text-5xl text-neon-green mb-2">10</div>
+                <div className="font-bebas text-5xl text-neon-green mb-2">8</div>
                 <div className="font-dm-sans text-sm font-bold uppercase tracking-widest text-net-white/50">Pro<br/>Franchises</div>
               </div>
             </div>

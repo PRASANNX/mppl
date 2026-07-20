@@ -1,4 +1,4 @@
-'use client';
+import MPPLLogo from './MPPLLogo';
 
 export default function AboutSection() {
   return (
@@ -39,7 +39,7 @@ export default function AboutSection() {
               {[
                 { val: '10-60', label: 'Age Group' },
                 { val: '4', label: 'Qualifiers' },
-                { val: '10', label: 'Pro Teams' },
+                { val: '8', label: 'Pro Teams' },
                 { val: '1', label: 'Crown' }
               ].map((stat, i) => (
                 <div key={i} className="bg-[#111111] p-6 text-center hover:bg-neon-orange group transition-colors cursor-pointer">
@@ -52,9 +52,15 @@ export default function AboutSection() {
 
           {/* Right: Image / Visual */}
           <div className="lg:col-span-5 relative">
-            <div className="w-full aspect-[4/5] bg-pure-black border-2 border-neon-orange relative p-8 flex flex-col justify-between shadow-[20px_20px_0px_rgba(255,96,0,1)]">
-              <div className="font-bebas text-8xl text-neon-orange/20 leading-none">2026</div>
-              <div className="font-bebas text-5xl text-net-white leading-[0.9]">
+            <div className="w-full aspect-[4/5] bg-pure-black border-2 border-neon-orange relative p-8 flex flex-col justify-between shadow-[20px_20px_0px_rgba(255,96,0,1)] overflow-hidden">
+              <div className="font-bebas text-8xl text-neon-orange/20 leading-none z-10">2026</div>
+              
+              {/* Big background watermark logo covering the placeholder */}
+              <div className="absolute inset-0 flex items-center justify-center p-12 z-0 opacity-15 pointer-events-none">
+                <MPPLLogo variant="light" />
+              </div>
+              
+              <div className="font-bebas text-5xl text-net-white leading-[0.9] z-10">
                 "IT'S TIME<br />TO PLAY<br />FOR REAL."
               </div>
             </div>
