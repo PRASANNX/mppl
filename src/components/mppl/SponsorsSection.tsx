@@ -33,12 +33,12 @@ export default function SponsorsSection() {
               <p className="font-dm-sans text-sm font-bold uppercase tracking-widest text-pure-black/70 mb-2">
                 Contact for sponsorships
               </p>
-              <a href="mailto:partners@mppl.in" className="font-bebas text-4xl text-pure-black hover:opacity-50 transition-opacity">
-                PARTNERS@MPPL.IN
+              <a href="mailto:mppbl2026@gmail.com" className="font-bebas text-4xl text-pure-black hover:opacity-50 transition-opacity">
+                MPPBL2026@GMAIL.COM
               </a>
             </div>
             
-            <a href="mailto:partners@mppl.in" className="inline-block text-center bg-net-white text-pure-black border-2 border-pure-black font-bebas text-3xl px-8 py-6 hover:bg-pure-black hover:text-neon-green hover:border-neon-green transition-colors w-full mt-12 lg:mt-0 shadow-[10px_10px_0px_rgba(0,0,0,0.3)]">
+            <a href="mailto:mppbl2026@gmail.com" className="inline-block text-center bg-net-white text-pure-black border-2 border-pure-black font-bebas text-3xl px-8 py-6 hover:bg-pure-black hover:text-neon-green hover:border-neon-green transition-colors w-full mt-12 lg:mt-0 shadow-[10px_10px_0px_rgba(0,0,0,0.3)]">
               BECOME A SPONSOR →
             </a>
           </div>
