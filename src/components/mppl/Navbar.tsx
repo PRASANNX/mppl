@@ -43,7 +43,7 @@ export default function Navbar() {
 
           {/* Right: CTA + Mobile Hamburger */}
           <div className="flex items-center gap-4">
-            <Link href="#register" className="btn-primary hidden text-sm md:inline-flex">
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform" target="_blank" rel="noopener noreferrer" className="btn-primary hidden text-sm md:inline-flex">
               Register Now
             </Link>
 
@@ -106,7 +106,9 @@ export default function Navbar() {
             ))}
 
             <Link
-              href="#register"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMobileOpen(false)}
               className="btn-primary mt-4"
             >

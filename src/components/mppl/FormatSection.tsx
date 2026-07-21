@@ -69,7 +69,7 @@ export default function FormatSection() {
             <h3 className="font-bebas text-4xl md:text-5xl tracking-wide mb-2">ROUNDS STARTING 2026</h3>
             <p className="font-dm-sans font-bold text-pure-black/80">First qualifying date announcing soon. Stay tuned.</p>
           </div>
-          <a href="#register" className="inline-block text-center bg-pure-black text-neon-orange font-bebas text-2xl px-10 py-4 hover:bg-white hover:text-pure-black transition-colors mt-8 md:mt-0 shadow-[8px_8px_0px_rgba(0,0,0,0.5)]">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform" target="_blank" rel="noopener noreferrer" className="inline-block text-center bg-pure-black text-neon-orange font-bebas text-2xl px-10 py-4 hover:bg-white hover:text-pure-black transition-colors mt-8 md:mt-0 shadow-[8px_8px_0px_rgba(0,0,0,0.5)]">
             REGISTER INTEREST →
           </a>
         </div>

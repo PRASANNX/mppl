@@ -33,15 +33,15 @@ export default function FounderSection() {
           </div>
 
           <div className="lg:col-span-4 flex flex-col items-center lg:items-center text-center lg:text-center lg:border-l-4 lg:border-r-0 lg:pl-6 lg:pr-0 border-neon-green py-4">
-            <div className="w-72 h-72 bg-pure-black border-2 border-neon-green relative p-4 shadow-[20px_20px_0px_rgba(202,255,0,1)] mb-10">
-              <div className="w-full h-full relative overflow-hidden">
+            <div className="bg-pure-black border-2 border-neon-green relative p-4 shadow-[20px_20px_0px_rgba(202,255,0,1)] mb-10 inline-block">
+              <div className="relative">
                 <img
                   src="/images/founder.jpg"
                   alt="Founder"
-                  className="w-full h-full object-cover block"
+                  className="block w-full max-w-[280px] h-auto"
                   onError={(e: any) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
                 />
-                <div className="absolute inset-0 bg-neon-green/20 pointer-events-none"></div>
+                <div className="absolute inset-0 bg-neon-green/10 pointer-events-none"></div>
               </div>
             </div>
             <h3 className="font-bebas text-4xl text-net-white tracking-wide mb-1">

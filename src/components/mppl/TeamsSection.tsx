@@ -37,7 +37,7 @@ export default function TeamsSection() {
             <p className="font-dm-sans text-lg text-net-white/60 mb-6">
               Franchises and team names announcing soon. Player auctions to follow qualifying rounds.
             </p>
-            <a href="#register" className="inline-block text-center bg-pure-black text-neon-green border-2 border-neon-green font-bebas text-2xl px-8 py-3 hover:bg-neon-green hover:text-pure-black transition-colors w-full md:w-auto uppercase tracking-wide">
+            <a href="https://wa.me/919754544265?text=Hi%21%20I%27d%20like%20to%20get%20Auction%20Alerts%20for%20MPPL%202026.%20Please%20add%20me%20to%20the%20notification%20list.%20%F0%9F%8F%93%E2%9C%85" target="_blank" rel="noopener noreferrer" className="inline-block text-center bg-pure-black text-neon-green border-2 border-neon-green font-bebas text-2xl px-8 py-3 hover:bg-neon-green hover:text-pure-black transition-colors w-full md:w-auto uppercase tracking-wide">
               GET AUCTION ALERTS
             </a>
           </div>

@@ -49,7 +49,7 @@ export default function HeroSection() {
                 <span className="w-2 h-2 rounded-full bg-neon-green animate-pulse"></span>
                 Season 2026
               </li>
-              <li className="hover:text-neon-green transition-colors cursor-pointer"><a href="#register" className="block w-full">Register</a></li>
+              <li className="hover:text-neon-green transition-colors cursor-pointer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform" target="_blank" rel="noopener noreferrer" className="block w-full">Register</a></li>
               <li className="hover:text-neon-green transition-colors cursor-pointer"><a href="#teams" className="block w-full">Teams</a></li>
               <li className="hover:text-neon-green transition-colors cursor-pointer"><a href="#about" className="block w-full">About</a></li>
             </ul>
@@ -91,7 +91,7 @@ export default function HeroSection() {
                 India's most serious regional pickleball league. This isn't a hobby tournament — this is MPPL. Built for everyone from beginners to pros.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
-                <a href="#register" className="btn-primary px-10 py-4 text-lg">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform" target="_blank" rel="noopener noreferrer" className="btn-primary px-10 py-4 text-lg">
                   Register Now
                 </a>
                 <a href="https://www.instagram.com/reel/Daxu8b2oRaw/" target="_blank" rel="noopener noreferrer" className="btn-secondary px-8 py-4 text-lg">
