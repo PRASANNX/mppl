@@ -50,7 +50,6 @@ export default function HeroSection() {
                 Season 2026
               </li>
               <li className="hover:text-neon-green transition-colors cursor-pointer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform" target="_blank" rel="noopener noreferrer" className="block w-full">Register</a></li>
-              <li className="hover:text-neon-green transition-colors cursor-pointer"><a href="#teams" className="block w-full">Teams</a></li>
               <li className="hover:text-neon-green transition-colors cursor-pointer"><a href="#about" className="block w-full">About</a></li>
             </ul>
           </div>

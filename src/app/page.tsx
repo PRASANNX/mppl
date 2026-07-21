@@ -6,7 +6,6 @@ import FounderSection from "@/components/mppl/FounderSection";
 import QualifyingSection from "@/components/mppl/QualifyingSection";
 import CategoriesSection from "@/components/mppl/CategoriesSection";
 import PrizePoolSection from "@/components/mppl/PrizePoolSection";
-import TeamsSection from "@/components/mppl/TeamsSection";
 import SponsorsSection from "@/components/mppl/SponsorsSection";
 import VisionSection from "@/components/mppl/VisionSection";
 import CTASection from "@/components/mppl/CTASection";
@@ -25,7 +24,6 @@ export default function HomePage() {
         <QualifyingSection />
         <CategoriesSection />
         <PrizePoolSection />
-        <TeamsSection />
         <SponsorsSection />
         <VisionSection />
         <CTASection />
