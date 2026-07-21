@@ -26,7 +26,7 @@ const faqs = [
   {
     question: 'When does MPPL start?',
     answer:
-      'The qualifying rounds are planned to start in June 2026. Exact dates and registration details will be announced on our social channels.',
+      'The qualifying rounds are planned to start in August 2026. Exact dates and registration details will be announced on our social channels.',
   },
   {
     question: 'How many categories are there?',
