@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 export default function QualifyingSection() {
   return (
     <section id="schedule" className="pattern-sawtooth-orange" style={{
@@ -301,17 +303,31 @@ export default function QualifyingSection() {
               color: 'rgba(0,0,0,0.6)'
             }}>First qualifying date Indore (Aug 21-23) announced. Register now.</div>
           </div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform" target="_blank" rel="noopener noreferrer" style={{
-            background: '#080808',
-            color: '#FF6000',
-            padding: '14px 28px',
-            borderRadius: '4px',
-            fontFamily: 'Bebas Neue, sans-serif',
-            fontSize: '18px',
-            letterSpacing: '1px',
-            cursor: 'pointer',
-            textDecoration: 'none'
-          }}>REGISTER NOW →</a>
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            <Link href="/format" style={{
+              background: '#ffffff',
+              color: '#080808',
+              border: '2px solid #080808',
+              padding: '14px 24px',
+              borderRadius: '4px',
+              fontFamily: 'Bebas Neue, sans-serif',
+              fontSize: '18px',
+              letterSpacing: '1px',
+              cursor: 'pointer',
+              textDecoration: 'none'
+            }}>FULL FORMAT &amp; RULES →</Link>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform" target="_blank" rel="noopener noreferrer" style={{
+              background: '#080808',
+              color: '#FF6000',
+              padding: '14px 28px',
+              borderRadius: '4px',
+              fontFamily: 'Bebas Neue, sans-serif',
+              fontSize: '18px',
+              letterSpacing: '1px',
+              cursor: 'pointer',
+              textDecoration: 'none'
+            }}>REGISTER NOW →</a>
+          </div>
         </div>
       </div>
     </section>

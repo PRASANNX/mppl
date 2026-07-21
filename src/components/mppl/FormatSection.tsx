@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { MapPin, Gavel, Swords, Crown } from 'lucide-react';
 
 export default function FormatSection() {
@@ -69,9 +70,14 @@ export default function FormatSection() {
             <h3 className="font-bebas text-4xl md:text-5xl tracking-wide mb-2">ROUNDS STARTING 2026</h3>
             <p className="font-dm-sans font-bold text-pure-black/80">First qualifying date announcing soon. Stay tuned.</p>
           </div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform" target="_blank" rel="noopener noreferrer" className="inline-block text-center bg-pure-black text-neon-orange font-bebas text-2xl px-10 py-4 hover:bg-white hover:text-pure-black transition-colors mt-8 md:mt-0 shadow-[8px_8px_0px_rgba(0,0,0,0.5)]">
-            REGISTER INTEREST →
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 mt-8 md:mt-0">
+            <Link href="/format" className="inline-block text-center bg-net-white text-pure-black border-2 border-pure-black font-bebas text-2xl px-8 py-4 hover:bg-pure-black hover:text-neon-orange transition-colors shadow-[8px_8px_0px_rgba(0,0,0,0.5)]">
+              MORE ABOUT FORMAT →
+            </Link>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform" target="_blank" rel="noopener noreferrer" className="inline-block text-center bg-pure-black text-neon-orange font-bebas text-2xl px-8 py-4 hover:bg-white hover:text-pure-black transition-colors shadow-[8px_8px_0px_rgba(0,0,0,0.5)]">
+              REGISTER INTEREST →
+            </a>
+          </div>
         </div>
 
       </div>
