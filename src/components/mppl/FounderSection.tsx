@@ -48,7 +48,7 @@ export default function FounderSection() {
               SURYANSH YADAV
             </h3>
             <p className="font-dm-sans text-sm font-bold uppercase tracking-widest text-neon-green">
-              Founder, MPPL
+              Founder &amp; CEO, MPPL
             </p>
           </div>
 
