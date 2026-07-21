@@ -38,7 +38,7 @@ export default function FormatSection() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 relative z-10">
             {[
               { num: '01', title: 'QUALIFYING ROUNDS', desc: '4 legs across Indore, Bhopal, Jabalpur & Indore. Winner & Runner-up of each category qualify.', icon: <MapPin size={24} className="text-neon-orange" /> },
-              { num: '02', title: 'PLAYER AUCTIONS', desc: '48 total qualified players enter the MPPL auction pool. 8 franchises. One draft.', icon: <Gavel size={24} className="text-net-white" /> },
+              { num: '02', title: 'PLAYER AUCTIONS', desc: '192 total qualified players enter the MPPL auction pool. 8 franchises. One draft.', icon: <Gavel size={24} className="text-net-white" /> },
               { num: '03', title: 'LEAGUE MATCHES', desc: '8 franchise squads. 15+ categories. Intense league championship matches.', icon: <Swords size={24} className="text-net-white" /> },
               { num: '04', title: 'GRAND FINALS', desc: 'One court. One champion. ₹18 Lakhs prize pool. One franchise takes the crown.', icon: <Crown size={24} className="text-neon-green" /> }
             ].map((step, i) => (
@@ -73,7 +73,7 @@ export default function FormatSection() {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 size={15} className="text-neon-green shrink-0" />
-                <span className="font-dm-sans text-xs text-net-white/80">48 total players in the draft pool</span>
+                <span className="font-dm-sans text-xs text-net-white/80">192 total players in the draft pool</span>
               </div>
             </div>
           </div>

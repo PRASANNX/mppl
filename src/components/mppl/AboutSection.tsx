@@ -38,7 +38,7 @@ export default function AboutSection() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-px bg-net-white/10 border border-net-white/10 p-px mt-16 max-w-3xl">
               {[
                 { val: '10-60', label: 'Age Group' },
-                { val: '4', label: 'Qualifiers' },
+                { val: '4', label: 'Legs' },
                 { val: '8', label: 'Pro Teams' },
                 { val: '1', label: 'Crown' }
               ].map((stat, i) => (

@@ -42,8 +42,8 @@ export default function FormatPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
             {[
               { title: "Franchise-Based", desc: "Professional league model with 8 dedicated franchise squads." },
-              { title: "4 City Qualifiers", desc: "Competitive qualifying legs across MP to select top contenders." },
-              { title: "Virtual Auction", desc: "48 qualified players enter the official draft auction pool." },
+              { title: "4 Legs", desc: "Competitive qualifying legs across MP to select top contenders." },
+              { title: "Virtual Auction", desc: "192 qualified players enter the official draft auction pool." },
               { title: "₹18 Lakhs+ Pool", desc: "Substantial cash prizes for both players and franchise owners." },
             ].map((item, index) => (
               <div key={index} className="bg-pure-black border-2 border-neon-orange/40 p-6 flex flex-col justify-between hover:border-neon-orange transition-all">
@@ -113,7 +113,7 @@ export default function FormatPage() {
             <div className="bg-neon-orange/10 border border-neon-orange p-4 rounded flex items-start gap-3">
               <CheckCircle2 className="text-neon-orange shrink-0 mt-1" size={20} />
               <p className="font-dm-sans text-sm text-net-white/90">
-                <strong className="text-neon-orange">Total Draft Pool:</strong> A total of <strong>48 qualified players</strong> (Winners and Runners-up across all legs) will enter the auction after all four qualifying legs conclude.
+                <strong className="text-neon-orange">Total Draft Pool:</strong> A total of <strong>192 qualified players</strong> (Winners and Runners-up across all legs) will enter the auction after all four qualifying legs conclude.
               </p>
             </div>
           </div>
@@ -136,7 +136,7 @@ export default function FormatPage() {
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 rounded-full bg-neon-green mt-2.5 shrink-0"></div>
-                <span><strong>Competitive Bidding:</strong> Franchises will bid strategically for the 48 qualified players to build balanced squads.</span>
+                <span><strong>Competitive Bidding:</strong> Franchises will bid strategically for the 192 qualified players to build balanced squads.</span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 rounded-full bg-neon-green mt-2.5 shrink-0"></div>

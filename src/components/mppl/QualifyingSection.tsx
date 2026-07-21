@@ -78,7 +78,7 @@ export default function QualifyingSection() {
             {
               num: '02',
               title: 'PLAYER AUCTIONS',
-              desc: '48 total qualified players enter the MPPL auction pool. 8 franchises. One draft.'
+              desc: '192 total qualified players enter the MPPL auction pool. 8 franchises. One draft.'
             },
             {
               num: '03',
