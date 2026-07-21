@@ -181,30 +181,38 @@ export default function QualifyingSection() {
 
             {/* Leg 2: Bhopal */}
             <div style={{
-              background: 'transparent',
-              border: '3px dashed #080808',
+              background: '#080808',
+              border: '3px solid #080808',
               padding: '28px',
-              color: '#080808',
+              color: '#ffffff',
               display: 'flex',
               flexDirection: 'column',
-              justifyContent: 'space-between'
+              justifyContent: 'space-between',
+              boxShadow: '10px 10px 0px rgba(0,0,0,0.15)'
             }}>
               <div>
                 <span style={{
                   fontFamily: 'DM Sans, sans-serif',
                   fontSize: '11px',
                   fontWeight: 'bold',
-                  background: 'rgba(0,0,0,0.1)',
+                  background: '#FF6000',
                   color: '#080808',
                   padding: '4px 10px',
                   textTransform: 'uppercase',
                   letterSpacing: '1px'
                 }}>LEG 2 — BHOPAL</span>
-                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: '#080808' }}>BHOPAL</h4>
-                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#080808', marginBottom: '16px' }}>To Be Announced</p>
+                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: '#FF6000' }}>BHOPAL</h4>
+                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#ffffff', marginBottom: '16px' }}>September 2026</p>
+                
+                <div style={{ borderTop: '1px solid rgba(255,255,255,0.15)', paddingTop: '16px', marginBottom: '16px' }}>
+                  <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '14px', fontWeight: 'bold', color: '#FF6000', marginBottom: '4px' }}>House of Dink — The Pickleball Zone</p>
+                  <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '12px', color: 'rgba(255,255,255,0.6)', lineHeight: '1.4' }}>
+                    Plot 81/2, Rohit Nagar, Bawadiya Kalan, Bhopal, MP 462039
+                  </p>
+                </div>
               </div>
-              <div style={{ fontSize: '13px', fontFamily: 'DM Sans, sans-serif', color: 'rgba(0,0,0,0.5)', fontWeight: 'bold' }}>
-                COMING SOON
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontFamily: 'DM Sans, sans-serif', color: '#FF6000', fontWeight: 'bold' }}>
+                ★ 4.9 Google Review
               </div>
             </div>
 
