@@ -48,6 +48,11 @@ export const metadata: Metadata = {
     description: "India's Heart. The Court's Soul.",
     type: "website",
   },
+  icons: {
+    icon: "/images/logo-transparent.png",
+    shortcut: "/images/logo-transparent.png",
+    apple: "/images/logo-transparent.png",
+  },
 };
 
 export default function RootLayout({
