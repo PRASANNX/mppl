@@ -6,6 +6,7 @@ import MPPLLogo from './MPPLLogo';
 
 const navLinks = [
   { label: 'Schedule', href: '#schedule' },
+  { label: 'Format', href: '/format' },
   { label: 'About', href: '#about' },
   { label: 'Register', href: 'https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform' },
 ];
