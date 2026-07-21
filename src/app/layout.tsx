@@ -3,6 +3,7 @@ import { Bebas_Neue, DM_Sans, Montserrat, Hind } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/components/auth/auth-provider";
 import { Providers } from "./providers";
+import CustomCursor from "@/components/mppl/CustomCursor";
 
 const bebas = Bebas_Neue({
   subsets: ["latin"],
@@ -63,6 +64,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="dark">
       <body className={`${bebas.variable} ${dmSans.variable} ${montserrat.variable} ${hind.variable} font-sans bg-deep-court text-net-white section-noise`}>
+        <CustomCursor />
         <Providers>
           <AuthProvider>{children}</AuthProvider>
         </Providers>
