@@ -34,7 +34,7 @@ export default function HeroSection() {
       />
 
       {/* Background Watermark Logo */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] pointer-events-none z-0">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] sm:w-[500px] sm:h-[500px] md:w-[800px] md:h-[800px] pointer-events-none z-0">
         <MPPLLogo variant="light" watermark />
       </div>
 
@@ -101,7 +101,7 @@ export default function HeroSection() {
             </div>
 
             {/* Quick Stats Block matching reference style */}
-            <div className="flex flex-col justify-center border-l-2 border-neon-orange/30 pl-8">
+            <div className="flex flex-col justify-center md:border-l-2 md:pl-8 border-t-2 pt-8 md:pt-0 md:border-t-0 pl-0 border-neon-orange/30">
               <div className="mb-6">
                 <div className="font-bebas text-5xl md:text-7xl text-neon-orange leading-none">₹18L+</div>
                 <div className="font-dm-sans text-xs font-bold uppercase tracking-[3px] text-net-white/90 mt-1">Prize Pool</div>

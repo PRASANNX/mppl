@@ -102,7 +102,7 @@ export default function CategoriesSection() {
           </div>
 
           {/* Right: Two explicit columns — Boys/Men LEFT, Girls/Women/Mixed RIGHT */}
-          <div className="lg:col-span-7 grid grid-cols-2 gap-4 items-start">
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 items-start">
 
             {/* BOYS / MEN column */}
             <div className="flex flex-col gap-4">
