@@ -44,7 +44,7 @@ export default function TeamsSection() {
         </div>
 
         {/* Typographic Teams Grid */}
-        <div className="w-full grid grid-cols-2 md:grid-cols-5 gap-px bg-net-white/10 border border-net-white/10 p-px">
+        <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-px bg-net-white/10 border border-net-white/10 p-px">
           {teams.map((num) => (
             <div
               key={num}
