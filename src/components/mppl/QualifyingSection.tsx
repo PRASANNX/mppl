@@ -2,7 +2,7 @@
 
 export default function QualifyingSection() {
   return (
-    <section className="pattern-sawtooth-orange" style={{
+    <section id="schedule" className="pattern-sawtooth-orange" style={{
       background: '#FF6000',
       padding: '120px 40px',
       position: 'relative',

@@ -4,7 +4,7 @@ import { MapPin, Gavel, Swords, Crown } from 'lucide-react';
 
 export default function FormatSection() {
   return (
-    <section id="schedule" className="bg-neon-orange py-32 px-6 lg:px-16 relative overflow-hidden pattern-sawtooth-dark text-pure-black">
+    <section className="bg-neon-orange py-32 px-6 lg:px-16 relative overflow-hidden pattern-sawtooth-dark text-pure-black">
       
       {/* Massive Background Typography */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-full pointer-events-none select-none z-0 overflow-hidden">
