@@ -51,20 +51,21 @@ export default function QualifyingSection() {
         {/* 4 steps */}
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(4, 1fr)',
-          gap: '0',
-          position: 'relative'
+          gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+          gap: '40px',
+          position: 'relative',
+          marginBottom: '80px'
         }}>
-          {/* Connector line */}
+          {/* Connector line (hidden on smaller screens) */}
           <div style={{
             position: 'absolute',
             top: '32px',
-            left: '12.5%',
-            right: '12.5%',
+            left: '10%',
+            right: '10%',
             height: '2px',
             background: 'rgba(0,0,0,0.2)',
             zIndex: 0
-          }} />
+          }} className="hidden md:block" />
 
           {[
             {
@@ -90,7 +91,7 @@ export default function QualifyingSection() {
           ].map((step, i) => (
             <div key={i} style={{
               textAlign: 'center',
-              padding: '0 20px',
+              padding: '0 10px',
               position: 'relative',
               zIndex: 1
             }}>
@@ -100,11 +101,13 @@ export default function QualifyingSection() {
                 height: '64px',
                 borderRadius: '50%',
                 background: '#080808',
+                color: '#FF6000',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 margin: '0 auto 24px',
                 fontSize: '24px',
+                fontWeight: 'bold',
                 border: '3px solid #080808'
               }}>{step.num}</div>
 
@@ -126,6 +129,146 @@ export default function QualifyingSection() {
           ))}
         </div>
 
+        {/* Schedule Grid */}
+        <div style={{ marginTop: '80px', marginBottom: '80px' }}>
+          <h3 style={{
+            fontFamily: 'Bebas Neue, sans-serif',
+            fontSize: '44px',
+            color: '#080808',
+            marginBottom: '40px',
+            textAlign: 'center',
+            letterSpacing: '1px'
+          }}>QUALIFYING SCHEDULE</h3>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            {/* Leg 1: Indore */}
+            <div style={{
+              background: '#080808',
+              border: '3px solid #080808',
+              padding: '28px',
+              color: '#ffffff',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              boxShadow: '10px 10px 0px rgba(0,0,0,0.15)'
+            }}>
+              <div>
+                <span style={{
+                  fontFamily: 'DM Sans, sans-serif',
+                  fontSize: '11px',
+                  fontWeight: 'bold',
+                  background: '#FF6000',
+                  color: '#080808',
+                  padding: '4px 10px',
+                  textTransform: 'uppercase',
+                  letterSpacing: '1px'
+                }}>LEG 1 — INDORE</span>
+                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: '#FF6000' }}>INDORE</h4>
+                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#ffffff', marginBottom: '16px' }}>Aug 21, 22, 23</p>
+                
+                <div style={{ borderTop: '1px solid rgba(255,255,255,0.15)', paddingTop: '16px', marginBottom: '16px' }}>
+                  <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '14px', fontWeight: 'bold', color: '#FF6000', marginBottom: '4px' }}>Surya Pickleball Academy</p>
+                  <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '12px', color: 'rgba(255,255,255,0.6)', lineHeight: '1.4' }}>
+                    1427, Kanadia Main Rd, Alok Nagar, Indore, MP 452016
+                  </p>
+                </div>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontFamily: 'DM Sans, sans-serif', color: '#FF6000', fontWeight: 'bold' }}>
+                ★ 5.0 Google Review
+              </div>
+            </div>
+
+            {/* Leg 2: Bhopal */}
+            <div style={{
+              background: 'transparent',
+              border: '3px dashed #080808',
+              padding: '28px',
+              color: '#080808',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between'
+            }}>
+              <div>
+                <span style={{
+                  fontFamily: 'DM Sans, sans-serif',
+                  fontSize: '11px',
+                  fontWeight: 'bold',
+                  background: 'rgba(0,0,0,0.1)',
+                  color: '#080808',
+                  padding: '4px 10px',
+                  textTransform: 'uppercase',
+                  letterSpacing: '1px'
+                }}>LEG 2 — BHOPAL</span>
+                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: '#080808' }}>BHOPAL</h4>
+                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#080808', marginBottom: '16px' }}>To Be Announced</p>
+              </div>
+              <div style={{ fontSize: '13px', fontFamily: 'DM Sans, sans-serif', color: 'rgba(0,0,0,0.5)', fontWeight: 'bold' }}>
+                COMING SOON
+              </div>
+            </div>
+
+            {/* Leg 3: Jabalpur */}
+            <div style={{
+              background: 'transparent',
+              border: '3px dashed #080808',
+              padding: '28px',
+              color: '#080808',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between'
+            }}>
+              <div>
+                <span style={{
+                  fontFamily: 'DM Sans, sans-serif',
+                  fontSize: '11px',
+                  fontWeight: 'bold',
+                  background: 'rgba(0,0,0,0.1)',
+                  color: '#080808',
+                  padding: '4px 10px',
+                  textTransform: 'uppercase',
+                  letterSpacing: '1px'
+                }}>LEG 3 — JABALPUR</span>
+                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: '#080808' }}>JABALPUR</h4>
+                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#080808', marginBottom: '16px' }}>To Be Announced</p>
+              </div>
+              <div style={{ fontSize: '13px', fontFamily: 'DM Sans, sans-serif', color: 'rgba(0,0,0,0.5)', fontWeight: 'bold' }}>
+                COMING SOON
+              </div>
+            </div>
+
+            {/* Leg 4: Gwalior */}
+            <div style={{
+              background: 'transparent',
+              border: '3px dashed #080808',
+              padding: '28px',
+              color: '#080808',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between'
+            }}>
+              <div>
+                <span style={{
+                  fontFamily: 'DM Sans, sans-serif',
+                  fontSize: '11px',
+                  fontWeight: 'bold',
+                  background: 'rgba(0,0,0,0.1)',
+                  color: '#080808',
+                  padding: '4px 10px',
+                  textTransform: 'uppercase',
+                  letterSpacing: '1px'
+                }}>LEG 4 — GWALIOR</span>
+                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: '#080808' }}>GWALIOR</h4>
+                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#080808', marginBottom: '16px' }}>To Be Announced</p>
+              </div>
+              <div style={{ fontSize: '13px', fontFamily: 'DM Sans, sans-serif', color: 'rgba(0,0,0,0.5)', fontWeight: 'bold' }}>
+                COMING SOON
+              </div>
+            </div>
+
+          </div>
+        </div>
+
         {/* Announcement strip */}
         <div style={{
           marginTop: '80px',
@@ -143,14 +286,14 @@ export default function QualifyingSection() {
               fontFamily: 'Bebas Neue, sans-serif',
               fontSize: '28px',
               color: '#080808'
-            }}>ROUNDS STARTING JUNE 2026</div>
+            }}>ROUNDS STARTING 2026</div>
             <div style={{
               fontFamily: 'DM Sans, sans-serif',
               fontSize: '14px',
               color: 'rgba(0,0,0,0.6)'
-            }}>First qualifying date announcing soon. Stay tuned.</div>
+            }}>First qualifying date Indore (Aug 21-23) announced. Register now.</div>
           </div>
-          <div style={{
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform" target="_blank" rel="noopener noreferrer" style={{
             background: '#080808',
             color: '#FF6000',
             padding: '14px 28px',
@@ -158,8 +301,9 @@ export default function QualifyingSection() {
             fontFamily: 'Bebas Neue, sans-serif',
             fontSize: '18px',
             letterSpacing: '1px',
-            cursor: 'pointer'
-          }}>REGISTER INTEREST →</div>
+            cursor: 'pointer',
+            textDecoration: 'none'
+          }}>REGISTER NOW →</a>
         </div>
       </div>
     </section>
