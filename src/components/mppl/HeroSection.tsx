@@ -45,12 +45,15 @@ export default function HeroSection() {
         <div className="hidden lg:flex flex-col justify-between col-span-2 border-l border-neon-green/20 pl-6 h-full min-h-[60vh] py-10">
           <div>
             <ul className="space-y-6 font-dm-sans text-xs font-bold uppercase tracking-[3px] text-net-white/90">
-              <li className="text-neon-green flex items-center gap-2">
+              <li className="text-neon-green flex items-center gap-2 mb-2">
                 <span className="w-2 h-2 rounded-full bg-neon-green animate-pulse"></span>
                 Season 2026
               </li>
+              <li className="hover:text-neon-green transition-colors cursor-pointer"><Link href="#schedule" className="block w-full">Schedule</Link></li>
+              <li className="hover:text-neon-green transition-colors cursor-pointer"><Link href="/format" className="block w-full">Format</Link></li>
+              <li className="hover:text-neon-green transition-colors cursor-pointer"><Link href="/rules" className="block w-full">Rules</Link></li>
+              <li className="hover:text-neon-green transition-colors cursor-pointer"><Link href="#about" className="block w-full">About</Link></li>
               <li className="hover:text-neon-green transition-colors cursor-pointer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform" target="_blank" rel="noopener noreferrer" className="block w-full">Register</a></li>
-              <li className="hover:text-neon-green transition-colors cursor-pointer"><a href="#about" className="block w-full">About</a></li>
             </ul>
           </div>
           <div className="font-bebas text-net-white/20 text-6xl tracking-widest -rotate-90 origin-bottom-left absolute bottom-10 -left-6 whitespace-nowrap">
