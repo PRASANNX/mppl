@@ -42,7 +42,7 @@ export default function VisionSection() {
             </div>
             
             <p className="font-dm-sans text-xl md:text-2xl text-net-white font-bold leading-relaxed mb-8 max-w-xl">
-              To establish the Madhya Pradesh Pickleball League as Central India's premier franchise-based pickleball championship.
+              To establish the <span className="text-neon-green font-bold">MPPL</span> as Central India&apos;s premier franchise-based pickleball championship.
             </p>
             
             <p className="font-dm-sans text-lg text-net-white/60 leading-relaxed mb-12 max-w-xl">

@@ -153,7 +153,7 @@ export default function RulesPage() {
           <div className="bg-neon-orange text-pure-black p-8 md:p-12 mb-16 border-4 border-pure-black shadow-[16px_16px_0px_rgba(0,0,0,0.5)]">
             <h2 className="font-bebas text-4xl mb-4 uppercase tracking-wide">MPPL PLAYER PLEDGE</h2>
             <blockquote className="font-dm-sans text-xl md:text-2xl font-bold leading-relaxed italic">
-              &ldquo;I will compete with honesty, respect my opponents and officials, uphold the spirit of fair play, and proudly represent myself and the Madhya Pradesh Pickleball League with integrity, professionalism, and sportsmanship.&rdquo;
+              &ldquo;I will compete with honesty, respect my opponents and officials, uphold the spirit of fair play, and proudly represent myself and the <span className="bg-pure-black text-neon-orange px-2 py-0.5 font-bold mx-1 rounded">MPPL</span> with integrity, professionalism, and sportsmanship.&rdquo;
             </blockquote>
           </div>
         </div>

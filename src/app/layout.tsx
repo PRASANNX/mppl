@@ -34,18 +34,17 @@ const hind = Hind({
 });
 
 export const metadata: Metadata = {
-  title: "MPPL — Madhya Pradesh Pickleball League",
+  title: "MPPL",
   description:
     "India's most serious regional pickleball league. India's Heart. The Court's Soul. 8 teams fight for one crown.",
   keywords: [
     "MPPL",
     "Pickleball",
-    "Madhya Pradesh Pickleball League",
     "Sports",
     "India",
   ],
   openGraph: {
-    title: "MPPL — Madhya Pradesh Pickleball League",
+    title: "MPPL",
     description: "India's Heart. The Court's Soul.",
     type: "website",
   },
