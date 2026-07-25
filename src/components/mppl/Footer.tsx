@@ -1,10 +1,23 @@
 'use client';
 
 import MPPLLogo from './MPPLLogo';
+import Link from 'next/link';
 
-const leagueLinks = ['Schedule', 'Teams', 'Format', 'Results'];
-const involvedLinks = ['Register', 'Partner', 'Sponsor', 'Volunteer'];
-const connectLinks = ['Instagram', 'Twitter', 'YouTube', 'Email'];
+const leagueLinks = [
+  { label: 'Schedule', href: '/#schedule' },
+  { label: 'Format', href: '/format' },
+  { label: 'Rules & Regulations', href: '/rules' }
+];
+
+const involvedLinks = [
+  { label: 'Register', href: 'https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform' },
+  { label: 'Partner / Sponsor', href: 'https://wa.me/919754544265' }
+];
+
+const connectLinks = [
+  { label: 'Instagram', href: 'https://www.instagram.com/reel/Daxu8b2oRaw/' },
+  { label: 'WhatsApp', href: 'https://wa.me/919754544265' }
+];
 
 export default function Footer() {
   return (
@@ -22,57 +35,61 @@ export default function Footer() {
               India&apos;s Heart. The Court&apos;s Soul.
             </p>
           </div>
-          {/* Column 1: League */}
+          {/* Column 2: League */}
           <div>
             <h4 className="font-montserrat font-bold text-xs tracking-widest uppercase text-net-white mb-4">
               LEAGUE
             </h4>
             <ul className="flex flex-col gap-3">
               {leagueLinks.map((link) => (
-                <li key={link}>
-                  <a
-                    href="#"
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
                     className="font-dm-sans text-sm text-net-white/50 hover:text-neon-green transition"
                   >
-                    {link}
-                  </a>
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Column 2: Get Involved */}
+          {/* Column 3: Get Involved */}
           <div>
             <h4 className="font-montserrat font-bold text-xs tracking-widest uppercase text-net-white mb-4">
               GET INVOLVED
             </h4>
             <ul className="flex flex-col gap-3">
               {involvedLinks.map((link) => (
-                <li key={link}>
+                <li key={link.label}>
                   <a
-                    href="#"
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="font-dm-sans text-sm text-net-white/50 hover:text-neon-green transition"
                   >
-                    {link}
+                    {link.label}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Column 3: Connect */}
+          {/* Column 4: Connect */}
           <div>
             <h4 className="font-montserrat font-bold text-xs tracking-widest uppercase text-net-white mb-4">
               CONNECT
             </h4>
             <ul className="flex flex-col gap-3">
               {connectLinks.map((link) => (
-                <li key={link}>
+                <li key={link.label}>
                   <a
-                    href="#"
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="font-dm-sans text-sm text-net-white/50 hover:text-neon-green transition"
                   >
-                    {link}
+                    {link.label}
                   </a>
                 </li>
               ))}

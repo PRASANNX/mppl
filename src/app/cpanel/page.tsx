@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import {
   LayoutDashboard, Calendar, FileText, Link2, Lock, LogOut,
   Save, CheckCircle, Eye, EyeOff, Edit3, Globe, MessageCircle,
-  Trophy, Users, MapPin, ChevronRight, AlertCircle, X, Menu
+  Trophy, Users, MapPin, ChevronRight, AlertCircle, X, Menu, Scale
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -304,6 +304,13 @@ export default function CPanelPage() {
         {/* Bottom */}
         <div className="p-4 border-t border-white/5 flex flex-col gap-2">
           <Link
+            href="/rules"
+            target="_blank"
+            className="flex items-center gap-2 px-4 py-2 rounded-lg text-xs text-white/30 hover:text-white/60 transition-colors"
+          >
+            <Scale size={14} /> View Rules Page
+          </Link>
+          <Link
             href="/"
             target="_blank"
             className="flex items-center gap-2 px-4 py-2 rounded-lg text-xs text-white/30 hover:text-white/60 transition-colors"
@@ -392,7 +399,7 @@ export default function CPanelPage() {
               {/* Quick links */}
               <div className="bg-[#111] border border-white/5 rounded-xl p-6">
                 <h2 className="font-bebas text-xl text-net-white tracking-wide mb-5">QUICK LINKS</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-4 gap-3">
                   <a href={content.registrationLink} target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-white/5 hover:bg-white/10 rounded-lg px-4 py-3 text-sm text-white/60 hover:text-white/90 transition-colors">
                     <Edit3 size={14} /> Registration Form
                   </a>
@@ -401,6 +408,9 @@ export default function CPanelPage() {
                   </a>
                   <Link href="/format" target="_blank" className="flex items-center gap-2 bg-white/5 hover:bg-white/10 rounded-lg px-4 py-3 text-sm text-white/60 hover:text-white/90 transition-colors">
                     <FileText size={14} /> Format Page
+                  </Link>
+                  <Link href="/rules" target="_blank" className="flex items-center gap-2 bg-white/5 hover:bg-white/10 rounded-lg px-4 py-3 text-sm text-white/60 hover:text-white/90 transition-colors">
+                    <Scale size={14} /> Rules Page
                   </Link>
                 </div>
               </div>
