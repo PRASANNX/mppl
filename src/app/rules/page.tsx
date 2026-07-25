@@ -2,182 +2,89 @@
 
 import Navbar from "@/components/mppl/Navbar";
 import Footer from "@/components/mppl/Footer";
-import { Scale, Shield, Award, PlayCircle, Eye, AlertTriangle, FileText, CheckCircle2 } from "lucide-react";
+import { Scale, Shield, Eye, AlertTriangle, Award } from "lucide-react";
 
 export default function RulesPage() {
   const rulesList = [
     {
-      num: "1",
-      title: "Eligibility",
+      num: "01",
+      title: "Code of Ethics",
       points: [
-        "Every player must complete the official MPPL registration process.",
-        "Players must provide a valid government-issued photo ID during registration.",
-        "A player may represent only one franchise during the league season unless officially transferred by the League Management Committee.",
-        "Participation confirms acceptance of all MPPL rules, regulations, and disciplinary policies."
+        "Every MPPL player agrees to:",
+        "• Compete fairly.",
+        "• Avoid cheating or intentional rule violations.",
+        "• Respect officials' decisions.",
+        "• Promote the image and integrity of MPPL.",
+        "• Encourage fair play and positive competition."
+      ],
+      icon: <Shield className="text-neon-green" size={24} />
+    },
+    {
+      num: "02",
+      title: "Disciplinary Action",
+      points: [
+        "The Tournament Committee may impose:",
+        "• Verbal Warning",
+        "• Official Warning",
+        "• Point Penalty",
+        "• Game Penalty",
+        "• Match Forfeit",
+        "• Disqualification",
+        "• Suspension from future MPPL events",
+        "Serious misconduct may also result in financial penalties or franchise disciplinary action."
+      ],
+      icon: <AlertTriangle className="text-neon-orange" size={24} />
+    },
+    {
+      num: "03",
+      title: "Walkovers",
+      points: [
+        "A match may be awarded as a walkover if:",
+        "• A player fails to report on time.",
+        "• A player withdraws before the match.",
+        "• A player is medically unable to continue.",
+        "• A player is disqualified by tournament officials."
+      ],
+      icon: <AlertTriangle className="text-neon-green" size={24} />
+    },
+    {
+      num: "04",
+      title: "Photography & Media Rights",
+      points: [
+        "• MPPL owns all photography, video, television, streaming, and promotional rights.",
+        "• Players consent to the use of their name, image, likeness, and match footage for promotional, commercial, and media purposes without additional compensation."
+      ],
+      icon: <Eye className="text-neon-orange" size={24} />
+    },
+    {
+      num: "05",
+      title: "Sponsorship & Branding",
+      points: [
+        "• Personal sponsorship branding must receive prior written approval from MPPL.",
+        "• Unauthorized advertising or promotional material is prohibited."
       ],
       icon: <Award className="text-neon-green" size={24} />
     },
     {
-      num: "2",
-      title: "Tournament Format",
-      points: [
-        "The tournament will be conducted according to the official MPPL schedule.",
-        "All players must report at least 30 minutes before their scheduled match.",
-        "Failure to report within 10 minutes of the scheduled match time may result in a walkover."
-      ],
-      icon: <PlayCircle className="text-neon-orange" size={24} />
-    },
-    {
-      num: "3",
-      title: "Match Format",
-      points: [
-        <strong>League Stage</strong>,
-        "• One game to 15 Rally Points.",
-        "• Every rally won earns one point.",
-        "• 15-15 (GOLDEN POINT).",
-        <strong>Semi-Finals</strong>,
-        "• One game to 15 Service Points.",
-        "• Only the serving side can score.",
-        "• 14-14 (DEUCE RULE).",
-        <strong>Finals</strong>,
-        "• Best of 3 Games.",
-        "• Each game is played to 11 points.",
-        "• Win by 2 points (Deuce Rule)."
-      ],
-      icon: <Scale className="text-neon-green" size={24} />
-    },
-    {
-      num: "4",
-      title: "Official Playing Rules",
-      points: [
-        "Matches will be played under the latest USA Pickleball/International Pickleball Federation (IPF) rules unless specifically modified by MPPL.",
-        "All line calls made by appointed officials are final.",
-        "Players must respect referees, line judges, and tournament officials at all times."
-      ],
-      icon: <Shield className="text-neon-orange" size={24} />
-    },
-    {
-      num: "5",
-      title: "Equipment",
-      points: [
-        "Only USAP/IPF-approved paddles are permitted.",
-        "Tournament balls will be supplied by MPPL.",
-        "Players must wear proper non-marking court shoes.",
-        "Appropriate sports attire is mandatory."
-      ],
-      icon: <CheckCircle2 className="text-neon-green" size={24} />
-    },
-    {
-      num: "6",
-      title: "Player Conduct",
-      points: [
-        <strong>Players shall:</strong>,
-        "• Display professionalism and sportsmanship.",
-        "• Respect opponents, officials, volunteers, and spectators.",
-        "• Follow the Code of Conduct throughout the event.",
-        "• Shake hands or acknowledge opponents after every match.",
-        <strong>Players shall not:</strong>,
-        "• Use abusive, offensive, or threatening language.",
-        "• Throw paddles or equipment.",
-        "• Deliberately delay play.",
-        "• Damage tournament property.",
-        "• Engage in unsportsmanlike behavior."
-      ],
-      icon: <AlertTriangle className="text-neon-orange" size={24} />
-    },
-    {
-      num: "7",
-      title: "Time-Outs",
-      points: [
-        "Each team is entitled to one time-out per game.",
-        "Time-out duration: 60 seconds.",
-        "Medical time-outs may be granted only with approval from the Tournament Referee."
-      ],
-      icon: <CheckCircle2 className="text-neon-green" size={24} />
-    },
-    {
-      num: "8",
-      title: "Injury & Medical Assistance",
-      points: [
-        "Tournament medical staff will provide first aid.",
-        "Players declared medically unfit may be withdrawn from the competition.",
-        "MPPL is not responsible for injuries sustained during play."
-      ],
-      icon: <AlertTriangle className="text-neon-orange" size={24} />
-    },
-    {
-      num: "9",
-      title: "Code of Ethics",
-      points: [
-        "Every MPPL player agrees to compete fairly.",
-        "Avoid cheating or intentional rule violations.",
-        "Respect officials' decisions.",
-        "Promote the image and integrity of MPPL.",
-        "Encourage fair play and positive competition."
-      ],
-      icon: <Shield className="text-neon-green" size={24} />
-    },
-    {
-      num: "10",
-      title: "Anti-Doping Policy",
-      points: [
-        "MPPL follows a zero-tolerance policy toward banned performance-enhancing substances.",
-        "The League reserves the right to conduct testing whenever deemed necessary.",
-        "Any violation may result in suspension, disqualification, forfeiture of prize money, and future bans."
-      ],
-      icon: <AlertTriangle className="text-neon-orange" size={24} />
-    },
-    {
-      num: "11",
-      title: "Disciplinary Action",
-      points: [
-        "The Tournament Committee may impose: Verbal Warning, Official Warning, Point Penalty, Game Penalty, Match Forfeit, Disqualification, or Suspension from future MPPL events.",
-        "Serious misconduct may also result in financial penalties or franchise disciplinary action."
-      ],
-      icon: <Shield className="text-neon-green" size={24} />
-    },
-    {
-      num: "12",
-      title: "Walkovers",
-      points: [
-        "A match may be awarded as a walkover if: a player fails to report on time, withdraws before the match, is medically unable to continue, or is disqualified by tournament officials."
-      ],
-      icon: <AlertTriangle className="text-neon-orange" size={24} />
-    },
-    {
-      num: "13",
-      title: "Photography & Media Rights",
-      points: [
-        "MPPL owns all photography, video, television, streaming, and promotional rights.",
-        "Players consent to the use of their name, image, likeness, and match footage for promotional, commercial, and media purposes without additional compensation."
-      ],
-      icon: <Eye className="text-neon-green" size={24} />
-    },
-    {
-      num: "14",
-      title: "Sponsorship & Branding",
-      points: [
-        "Personal sponsorship branding must receive prior written approval from MPPL.",
-        "Unauthorized advertising or promotional material is prohibited."
-      ],
-      icon: <Award className="text-neon-orange" size={24} />
-    },
-    {
-      num: "15",
+      num: "06",
       title: "Protest & Appeals",
       points: [
-        "Protests must be submitted in writing within 30 minutes of the match conclusion.",
-        "The decision of the Tournament Committee shall be final and binding."
+        "• Protests must be submitted in writing within 30 minutes of the match conclusion.",
+        "• The decision of the Tournament Committee shall be final and binding."
       ],
-      icon: <Scale className="text-neon-green" size={24} />
+      icon: <Scale className="text-neon-orange" size={24} />
     },
     {
-      num: "16",
+      num: "07",
       title: "Tournament Authority",
       points: [
-        "The MPPL Organizing Committee reserves all rights to amend tournament schedules, modify rules due to unforeseen circumstances, interpret any rule not specifically covered, and make final decisions on all disputes."
+        "The MPPL Organizing Committee reserves all rights to:",
+        "• Amend tournament schedules.",
+        "• Modify rules due to unforeseen circumstances.",
+        "• Interpret any rule not specifically covered in this document.",
+        "• Make final decisions on all disputes."
       ],
-      icon: <Shield className="text-neon-orange" size={24} />
+      icon: <Shield className="text-neon-green" size={24} />
     }
   ];
 
@@ -223,7 +130,7 @@ export default function RulesPage() {
                 <div>
                   <div className="flex items-center justify-between mb-6">
                     <div className="font-bebas text-4xl text-neon-orange">
-                      {rule.num.padStart(2, '0')}
+                      {rule.num}
                     </div>
                     <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
                       {rule.icon}
