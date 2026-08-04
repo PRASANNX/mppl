@@ -10,15 +10,15 @@ export default function SocialMediaSection() {
           <h2 className="font-bebas text-[clamp(40px,6vw,72px)] text-net-white leading-none mb-2 tracking-wide">
             JOIN THE CONVERSATION.
           </h2>
-          <a href="#" className="font-dm-sans text-xl font-bold text-neon-green hover:text-white transition-colors">
-            @MPPLOfficial
+          <a href="https://www.instagram.com/mpplleague?igsh=MWd5MDMweHdmbnZ1dg==" target="_blank" rel="noopener noreferrer" className="font-dm-sans text-xl font-bold text-neon-green hover:text-white transition-colors">
+            @mpplleague
           </a>
         </div>
 
         {/* Social Links Row (removed follower counts and emoji icons) */}
         <div className="flex flex-wrap justify-center gap-6 md:gap-12 mb-16">
           {[
-            { name: 'Instagram', href: '#' },
+            { name: 'Instagram', href: 'https://www.instagram.com/mpplleague?igsh=MWd5MDMweHdmbnZ1dg==' },
             { name: 'YouTube', href: '#' },
             { name: 'X / Twitter', href: '#' }
           ].map((social) => (

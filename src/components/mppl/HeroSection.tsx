@@ -96,8 +96,8 @@ export default function HeroSection() {
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform" target="_blank" rel="noopener noreferrer" className="btn-primary px-10 py-4 text-lg">
                   Register Now
                 </a>
-                <a href="https://www.instagram.com/reel/Daxu8b2oRaw/" target="_blank" rel="noopener noreferrer" className="btn-secondary px-8 py-4 text-lg">
-                  Watch Teaser
+                <a href="https://www.instagram.com/mpplleague?igsh=MWd5MDMweHdmbnZ1dg==" target="_blank" rel="noopener noreferrer" className="btn-secondary px-8 py-4 text-lg">
+                  Follow on Instagram
                 </a>
               </div>
             </div>

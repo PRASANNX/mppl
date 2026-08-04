@@ -86,7 +86,7 @@ const DEFAULT_CONTENT: SiteContent = {
   ],
   whatsapp: '+91 97545 44265',
   registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform',
-  instagramLink: 'https://www.instagram.com/reel/Daxu8b2oRaw/',
+  instagramLink: 'https://www.instagram.com/mpplleague?igsh=MWd5MDMweHdmbnZ1dg==',
   announcementText: 'First qualifying date Indore (Aug 21-23) announced. Register now.',
   founderName: 'Suryansh Yadav',
   founderTitle: 'Founder & CEO, MPPL',

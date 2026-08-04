@@ -15,7 +15,7 @@ const involvedLinks = [
 ];
 
 const connectLinks = [
-  { label: 'Instagram', href: 'https://www.instagram.com/reel/Daxu8b2oRaw/' },
+  { label: 'Instagram', href: 'https://www.instagram.com/mpplleague?igsh=MWd5MDMweHdmbnZ1dg==' },
   { label: 'WhatsApp', href: 'https://wa.me/919754544265' }
 ];
 
