@@ -123,13 +123,6 @@ export default function CategoriesSection() {
               {rightCategories.map((cat) => (
                 <CategoryCard key={cat.id} cat={cat} />
               ))}
-              {/* "More Soon" Block */}
-              <div className="p-6 border-2 border-dashed border-neon-green bg-pure-black flex flex-col items-center justify-center text-center min-h-[160px] hover:bg-neon-green transition-all cursor-pointer group">
-                <span className="font-bebas text-5xl text-neon-green group-hover:text-pure-black transition-colors">+</span>
-                <span className="font-dm-sans text-xs font-bold uppercase tracking-widest text-neon-green group-hover:text-pure-black transition-colors mt-4">
-                  More categories<br/>announcing soon
-                </span>
-              </div>
             </div>
 
           </div>
