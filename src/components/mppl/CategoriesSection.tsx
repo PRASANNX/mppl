@@ -10,6 +10,7 @@ const leftCategories = [
   { id: 14, name: "SINGLES 30+",   tagline: "Senior category",  age: "30+",  type: "Men"  },
   { id: 15, name: "DOUBLES 30+",   tagline: "Senior category",  age: "30+",  type: "Men"  },
   { id: 18, name: "SINGLES 40+",   tagline: "Senior category",  age: "40+",  type: "Men"  },
+  { id: 20, name: "DOUBLES 40+",   tagline: "Senior category",  age: "40+",  type: "Men"  },
   { id: 19, name: "DOUBLES 50+",   tagline: "Senior category",  age: "50+",  type: "Men"  },
 ];
 
