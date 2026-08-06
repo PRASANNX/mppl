@@ -19,6 +19,12 @@ const connectLinks = [
   { label: 'WhatsApp', href: 'https://wa.me/919754544265' }
 ];
 
+const helplineNumbers = [
+  { number: '9109109051' },
+  { number: '9109109052' },
+  { number: '9109109053' }
+];
+
 export default function Footer() {
   return (
     <footer
@@ -94,6 +100,23 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+            <div className="mt-6">
+              <h5 className="font-montserrat font-bold text-[10px] tracking-widest uppercase text-net-white/70 mb-3">
+                HELPLINE
+              </h5>
+              <ul className="flex flex-col gap-2">
+                {helplineNumbers.map((item) => (
+                  <li key={item.number}>
+                    <a
+                      href={`tel:${item.number}`}
+                      className="font-dm-sans text-sm text-net-white/50 hover:text-neon-green transition"
+                    >
+                      {item.number}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 
