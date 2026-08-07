@@ -33,12 +33,12 @@ export default function SponsorsSection() {
               <p className="font-dm-sans text-sm font-bold uppercase tracking-widest text-pure-black/70 mb-2">
                 Contact for sponsorships
               </p>
-              <a href="https://wa.me/919754544265?text=Hi%21%20I%27m%20interested%20in%20partnering%20with%20MPPL%202026%20as%20a%20sponsor.%20Please%20share%20more%20details.%20%F0%9F%A4%9D" target="_blank" rel="noopener noreferrer" className="font-bebas text-4xl text-pure-black hover:opacity-50 transition-opacity">
-                +91 97545 44265
+              <a href="https://wa.me/919109109051?text=Hi%21%20I%27m%20interested%20in%20partnering%20with%20MPPL%202026%20as%20a%20sponsor.%20Please%20share%20more%20details.%20%F0%9F%A4%9D" target="_blank" rel="noopener noreferrer" className="font-bebas text-4xl text-pure-black hover:opacity-50 transition-opacity">
+                +91 91091 09051
               </a>
             </div>
             
-            <a href="https://wa.me/919754544265?text=Hi%21%20I%27m%20interested%20in%20partnering%20with%20MPPL%202026%20as%20a%20sponsor.%20Please%20share%20more%20details.%20%F0%9F%A4%9D" target="_blank" rel="noopener noreferrer" className="inline-block text-center bg-net-white text-pure-black border-2 border-pure-black font-bebas text-3xl px-8 py-6 hover:bg-pure-black hover:text-neon-green hover:border-neon-green transition-colors w-full mt-12 lg:mt-0 shadow-[10px_10px_0px_rgba(0,0,0,0.3)]">
+            <a href="https://wa.me/919109109051?text=Hi%21%20I%27m%20interested%20in%20partnering%20with%20MPPL%202026%20as%20a%20sponsor.%20Please%20share%20more%20details.%20%F0%9F%A4%9D" target="_blank" rel="noopener noreferrer" className="inline-block text-center bg-net-white text-pure-black border-2 border-pure-black font-bebas text-3xl px-8 py-6 hover:bg-pure-black hover:text-neon-green hover:border-neon-green transition-colors w-full mt-12 lg:mt-0 shadow-[10px_10px_0px_rgba(0,0,0,0.3)]">
               BECOME A SPONSOR →
             </a>
           </div>

@@ -11,12 +11,12 @@ const leagueLinks = [
 
 const involvedLinks = [
   { label: 'Register', href: 'https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform' },
-  { label: 'Partner / Sponsor', href: 'https://wa.me/919754544265' }
+  { label: 'Partner / Sponsor', href: 'https://wa.me/919109109051' }
 ];
 
 const connectLinks = [
   { label: 'Instagram', href: 'https://www.instagram.com/mpplleague?igsh=MWd5MDMweHdmbnZ1dg==' },
-  { label: 'WhatsApp', href: 'https://wa.me/919754544265' }
+  { label: 'WhatsApp', href: 'https://wa.me/919109109051' }
 ];
 
 const helplineNumbers = [

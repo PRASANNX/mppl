@@ -84,7 +84,7 @@ const DEFAULT_CONTENT: SiteContent = {
     { question: 'When does MPPL start?', answer: 'The qualifying rounds are planned to start in August 2026. Exact dates and registration details will be announced on our social channels.' },
     { question: 'How many categories are there?', answer: 'MPPL features 15+ categories covering different age groups, skill levels, and formats to ensure everyone has a competitive bracket.' },
   ],
-  whatsapp: '+91 97545 44265',
+  whatsapp: '+91 91091 09051',
   registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform',
   instagramLink: 'https://www.instagram.com/mpplleague?igsh=MWd5MDMweHdmbnZ1dg==',
   announcementText: 'First qualifying date Indore (Aug 21-23) announced. Register now.',
