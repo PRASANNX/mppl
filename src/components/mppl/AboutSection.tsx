@@ -56,7 +56,7 @@ export default function AboutSection() {
               <div className="font-bebas text-8xl text-neon-orange/20 leading-none z-10">2026</div>
               
               {/* Big background watermark logo covering the placeholder */}
-              <div className="absolute inset-0 flex items-center justify-center p-12 z-0 opacity-15 pointer-events-none">
+              <div className="absolute inset-0 flex items-center justify-center p-12 z-0 opacity-100 pointer-events-none">
                 <MPPLLogo variant="light" />
               </div>
               
