@@ -83,11 +83,61 @@ export default function FormatPage() {
             </div>
           </div>
 
-          {/* Section 2: Player Qualification */}
+          {/* Section 2: Leg-I Match Format */}
+          <div className="bg-pure-black border-2 border-neon-orange p-8 md:p-12 mb-16 shadow-[16px_16px_0px_rgba(255,96,0,0.15)]">
+            <div className="flex items-center gap-3 mb-6">
+              <Trophy className="text-neon-orange" size={28} />
+              <h2 className="font-bebas text-4xl text-net-white tracking-wide">2. MATCH FORMAT — LEG-I</h2>
+            </div>
+
+            <p className="font-dm-sans text-base md:text-lg text-net-white/80 mb-8 leading-relaxed">
+              To ensure a fast-paced, competitive, and spectator-friendly tournament, MPPL Leg-I will use the following match formats:
+            </p>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+              <div className="bg-[#161616] p-6 border-t-4 border-neon-green">
+                <div className="font-dm-sans text-xs font-bold text-neon-green uppercase tracking-widest mb-2">League Stage</div>
+                <h3 className="font-bebas text-3xl text-net-white mb-4">RALLY POINT · 15</h3>
+                <ul className="space-y-2 font-dm-sans text-sm text-net-white/75">
+                  <li>• Every rally won earns one point, regardless of which team is serving.</li>
+                  <li>• Each match is one game to 15 points.</li>
+                  <li>• At 14–14, the next point wins the game.</li>
+                </ul>
+              </div>
+
+              <div className="bg-[#161616] p-6 border-t-4 border-neon-orange">
+                <div className="font-dm-sans text-xs font-bold text-neon-orange uppercase tracking-widest mb-2">Semi-Finals</div>
+                <h3 className="font-bebas text-3xl text-net-white mb-4">SERVICE POINT · 15</h3>
+                <ul className="space-y-2 font-dm-sans text-sm text-net-white/75">
+                  <li>• Both semi-final matches use the Traditional Service Point Scoring System.</li>
+                  <li>• Each match is one game to 15 points.</li>
+                  <li>• At 14–14, a team must win by 2 points.</li>
+                </ul>
+              </div>
+
+              <div className="bg-[#161616] p-6 border-t-4 border-neon-green">
+                <div className="font-dm-sans text-xs font-bold text-neon-green uppercase tracking-widest mb-2">Championship Final</div>
+                <h3 className="font-bebas text-3xl text-net-white mb-4">BEST OF THREE · 11</h3>
+                <ul className="space-y-2 font-dm-sans text-sm text-net-white/75">
+                  <li>• Each game is played to 11 points.</li>
+                  <li>• A team must win by 2 points; at 10–10, play continues until a 2-point lead.</li>
+                  <li>• The first team to win two games is crowned MPPL Champion.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-neon-orange/10 border border-neon-orange p-5 rounded">
+              <p className="font-dm-sans text-sm text-net-white/90 leading-relaxed">
+                <strong className="text-neon-orange">Tournament Philosophy:</strong> This progressive format delivers quick league-stage matches, rewards consistency and tactical play in the knockout rounds, and creates a thrilling championship final while maintaining competitive fairness.
+              </p>
+            </div>
+          </div>
+
+          {/* Section 3: Player Qualification */}
           <div className="bg-pure-black border-2 border-neon-orange p-8 md:p-12 mb-16 shadow-[16px_16px_0px_rgba(255,96,0,0.15)]">
             <div className="flex items-center gap-3 mb-6">
               <Award className="text-neon-orange" size={28} />
-              <h2 className="font-bebas text-4xl text-net-white tracking-wide">2. PLAYER QUALIFICATION SYSTEM</h2>
+              <h2 className="font-bebas text-4xl text-net-white tracking-wide">3. PLAYER QUALIFICATION SYSTEM</h2>
             </div>
 
             <p className="font-dm-sans text-base md:text-lg text-net-white/80 mb-8 leading-relaxed">
@@ -118,11 +168,11 @@ export default function FormatPage() {
             </div>
           </div>
 
-          {/* Section 3: Player Auction */}
+          {/* Section 4: Player Auction */}
           <div className="bg-pure-black border-2 border-neon-green p-8 md:p-12 mb-16 shadow-[16px_16px_0px_rgba(202,255,0,0.15)]">
             <div className="flex items-center gap-3 mb-6">
               <Gavel className="text-neon-green" size={28} />
-              <h2 className="font-bebas text-4xl text-net-white tracking-wide">3. MPPL PLAYER AUCTION</h2>
+              <h2 className="font-bebas text-4xl text-net-white tracking-wide">4. MPPL PLAYER AUCTION</h2>
             </div>
 
             <ul className="space-y-4 font-dm-sans text-base text-net-white/80 mb-6">
@@ -145,11 +195,11 @@ export default function FormatPage() {
             </ul>
           </div>
 
-          {/* Section 4: Prize Pool & Distribution Table */}
+          {/* Section 5: Prize Pool & Distribution Table */}
           <div className="bg-pure-black border-2 border-neon-orange p-8 md:p-12 mb-16 shadow-[16px_16px_0px_rgba(255,96,0,0.15)]">
             <div className="flex items-center gap-3 mb-6">
               <Trophy className="text-neon-orange" size={28} />
-              <h2 className="font-bebas text-4xl text-net-white tracking-wide">4. PRIZE POOL DISTRIBUTION (₹18 LAKHS+)</h2>
+              <h2 className="font-bebas text-4xl text-net-white tracking-wide">5. PRIZE POOL DISTRIBUTION (₹18 LAKHS+)</h2>
             </div>
 
             <p className="font-dm-sans text-base md:text-lg text-net-white/80 mb-8 leading-relaxed">
@@ -195,7 +245,7 @@ export default function FormatPage() {
             </p>
           </div>
 
-          {/* Section 5: MPPL Vision */}
+          {/* Section 6: MPPL Vision */}
           <div className="bg-neon-orange text-pure-black p-8 md:p-12 mb-16 border-4 border-pure-black shadow-[16px_16px_0px_rgba(0,0,0,0.5)]">
             <h2 className="font-bebas text-4xl mb-4 uppercase tracking-wide">THE MPPL VISION</h2>
             <blockquote className="font-dm-sans text-xl md:text-2xl font-bold leading-relaxed italic">
