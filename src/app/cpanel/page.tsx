@@ -6,6 +6,7 @@ import {
   Save, CheckCircle, Eye, EyeOff, Edit3, Globe, MessageCircle,
   Trophy, Users, MapPin, ChevronRight, AlertCircle, X, Menu, Scale
 } from 'lucide-react';
+import MPPLLogo from '@/components/mppl/MPPLLogo';
 import Link from 'next/link';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -194,7 +195,7 @@ export default function CPanelPage() {
         <div className="w-full max-w-sm">
           {/* Logo */}
           <div className="text-center mb-10">
-            <div className="font-bebas text-5xl text-neon-orange tracking-widest mb-1">MPPL</div>
+            <MPPLLogo variant="light" height={96} className="mx-auto mb-3" />
             <div className="font-dm-sans text-xs text-white/40 uppercase tracking-[4px]">Control Panel</div>
           </div>
 
@@ -274,7 +275,7 @@ export default function CPanelPage() {
       <aside className={`fixed md:static inset-y-0 left-0 z-50 w-64 bg-[#0d0d0d] border-r border-white/5 flex flex-col transition-transform duration-300 ${sidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}`}>
         {/* Logo */}
         <div className="p-6 border-b border-white/5">
-          <div className="font-bebas text-2xl text-neon-orange tracking-widest">MPPL</div>
+          <MPPLLogo variant="light" height={64} />
           <div className="font-dm-sans text-[10px] text-white/30 uppercase tracking-[3px]">Control Panel</div>
         </div>
 

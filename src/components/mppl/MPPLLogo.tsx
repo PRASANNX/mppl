@@ -27,10 +27,9 @@ export default function MPPLLogo({
     none: 'none',
   };
 
-  // If the source image is black text on transparent, we invert it for the 'light' variant
-  const filterStyle = variant === 'light' 
-    ? 'invert(1) brightness(2)' // Makes black text white and pops
-    : 'none';
+  // The current logo is a full-colour image on a dark background, so it should
+  // remain unfiltered in both light and dark contexts.
+  const filterStyle = 'none';
 
   const containerStyle: React.CSSProperties = {
     opacity: watermark ? 0.05 : 1,
@@ -40,7 +39,7 @@ export default function MPPLLogo({
   };
 
   if (height) {
-    const width = Math.round(height * 0.75); // Approximate aspect ratio
+    const width = height;
     return (
       <div
         className={`relative select-none ${className}`}
@@ -51,7 +50,7 @@ export default function MPPLLogo({
         }}
       >
         <Image
-          src="/images/logo-transparent.png"
+          src="/images/MPPL-new-logo.jpeg"
           alt="MPPL Logo"
           fill
           className="object-contain"
@@ -68,7 +67,7 @@ export default function MPPLLogo({
       style={containerStyle}
     >
       <Image
-        src="/images/logo-transparent.png"
+        src="/images/MPPL-new-logo.jpeg"
         alt="MPPL Logo"
         fill
         className="object-contain"

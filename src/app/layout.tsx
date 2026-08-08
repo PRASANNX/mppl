@@ -49,9 +49,9 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: "/images/logo-transparent.png",
-    shortcut: "/images/logo-transparent.png",
-    apple: "/images/logo-transparent.png",
+    icon: "/images/MPPL-new-logo.jpeg",
+    shortcut: "/images/MPPL-new-logo.jpeg",
+    apple: "/images/MPPL-new-logo.jpeg",
   },
 };
 
