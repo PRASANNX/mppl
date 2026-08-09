@@ -195,54 +195,17 @@ export default function FormatPage() {
             </ul>
           </div>
 
-          {/* Section 5: Prize Pool & Distribution Table */}
+          {/* Section 5: Total Prize Pool */}
           <div className="bg-pure-black border-2 border-neon-orange p-8 md:p-12 mb-16 shadow-[16px_16px_0px_rgba(255,96,0,0.15)]">
             <div className="flex items-center gap-3 mb-6">
               <Trophy className="text-neon-orange" size={28} />
-              <h2 className="font-bebas text-4xl text-net-white tracking-wide">5. PRIZE POOL DISTRIBUTION (₹18 LAKHS+)</h2>
+              <h2 className="font-bebas text-4xl text-net-white tracking-wide">5. TOTAL PRIZE POOL</h2>
             </div>
 
-            <p className="font-dm-sans text-base md:text-lg text-net-white/80 mb-8 leading-relaxed">
-              The total prize pool for the MPPL Championship exceeds <strong>₹18 Lakhs</strong>, structured to reward both winning franchise owners and performing players:
-            </p>
-
-            {/* Table */}
-            <div className="overflow-x-auto mb-8">
-              <table className="w-full text-left border-collapse font-dm-sans">
-                <thead>
-                  <tr className="border-b-2 border-neon-orange bg-[#161616]">
-                    <th className="p-4 font-bebas text-xl text-neon-orange uppercase tracking-wider">Position</th>
-                    <th className="p-4 font-bebas text-xl text-net-white uppercase tracking-wider">Franchise Prize</th>
-                    <th className="p-4 font-bebas text-xl text-net-white uppercase tracking-wider">Players' Prize</th>
-                    <th className="p-4 font-bebas text-xl text-neon-orange uppercase tracking-wider">Total Prize</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-net-white/10 text-sm md:text-base">
-                  <tr className="hover:bg-net-white/5">
-                    <td className="p-4 font-bold text-yellow-400">🥇 Champions</td>
-                    <td className="p-4">₹5.50 Lakhs</td>
-                    <td className="p-4">₹4.50 Lakhs</td>
-                    <td className="p-4 font-bold text-neon-orange">₹10.00 Lakhs</td>
-                  </tr>
-                  <tr className="hover:bg-net-white/5">
-                    <td className="p-4 font-bold text-slate-300">🥈 Runners-up</td>
-                    <td className="p-4">₹3.50 Lakhs</td>
-                    <td className="p-4">₹2.50 Lakhs</td>
-                    <td className="p-4 font-bold text-neon-orange">₹6.00 Lakhs</td>
-                  </tr>
-                  <tr className="hover:bg-net-white/5">
-                    <td className="p-4 font-bold text-amber-600">🥉 Third Place</td>
-                    <td className="p-4">₹1.00 Lakh</td>
-                    <td className="p-4">₹1.00 Lakh</td>
-                    <td className="p-4 font-bold text-neon-orange">₹2.00 Lakhs</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className="bg-[#161616] border border-neon-orange p-10 md:p-16 text-center">
+              <div className="font-bebas text-[clamp(80px,14vw,160px)] leading-none text-neon-orange">₹18L+</div>
+              <div className="font-dm-sans text-sm md:text-base font-bold uppercase tracking-[4px] text-net-white/70 mt-4">Total Prize Pool</div>
             </div>
-
-            <p className="font-dm-sans text-xs text-net-white/60 italic">
-              * Note: Player prize purses are distributed directly to players by the organizers.
-            </p>
           </div>
 
           {/* Section 6: MPPL Vision */}

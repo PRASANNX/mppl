@@ -1,6 +1,6 @@
 'use client';
 
-import { Trophy, Zap, Coins, Star } from 'lucide-react';
+import { Trophy } from 'lucide-react';
 
 export default function PrizePoolSection() {
   return (
@@ -33,30 +33,15 @@ export default function PrizePoolSection() {
             </p>
           </div>
 
-          {/* Right: Breakdown Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-net-white/10 border border-net-white/10 p-px">
-            
-            {[
-              { label: 'Franchise: ₹5.50 Lakhs | Players: ₹4.50 Lakhs', val: '🥇 ₹10.00L', icon: <Trophy size={48} /> },
-              { label: 'Franchise: ₹3.50 Lakhs | Players: ₹2.50 Lakhs', val: '🥈 ₹6.00L', icon: <Zap size={48} /> },
-              { label: 'Franchise: ₹1.00 Lakh | Players: ₹1.00 Lakh', val: '🥉 ₹2.00L', icon: <Coins size={48} /> },
-              { label: 'Player cash rewards distributed directly by organizers', val: 'Direct Payouts', icon: <Star size={48} /> }
-            ].map((item, i) => (
-              <div key={i} className="bg-pure-black p-10 flex flex-col justify-between min-h-[250px] group hover:bg-neon-green transition-colors cursor-pointer">
-                <div className="text-4xl mb-8 group-hover:scale-110 transition-transform origin-left">
-                  {item.icon}
-                </div>
-                <div>
-                  <h3 className="font-bebas text-3xl text-net-white group-hover:text-pure-black mb-2 tracking-wide">
-                    {item.val}
-                  </h3>
-                  <p className="font-dm-sans text-xs font-bold uppercase tracking-widest text-net-white/55 group-hover:text-pure-black/60">
-                    {item.label}
-                  </p>
-                </div>
-              </div>
-            ))}
-            
+          {/* Right: Total Prize Pool */}
+          <div className="bg-pure-black border-2 border-neon-green p-10 md:p-16 min-h-[360px] flex flex-col justify-center items-center text-center group hover:bg-neon-green transition-colors">
+            <Trophy size={64} className="text-neon-green group-hover:text-pure-black mb-8 transition-colors" />
+            <h3 className="font-bebas text-6xl md:text-8xl text-net-white group-hover:text-pure-black tracking-wide transition-colors">
+              ₹18L+
+            </h3>
+            <p className="font-dm-sans text-sm font-bold uppercase tracking-[4px] text-net-white/60 group-hover:text-pure-black/70 transition-colors">
+              Total Prize Pool
+            </p>
           </div>
 
         </div>

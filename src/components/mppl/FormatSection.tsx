@@ -106,20 +106,10 @@ export default function FormatSection() {
               <h3 className="font-bebas text-2xl tracking-wide">₹18 LAKHS+ PRIZE POOL</h3>
             </div>
             <div className="flex flex-col gap-2 font-dm-sans text-sm mt-1">
-              <div className="flex items-center justify-between py-2 border-b border-net-white/10">
-                <span className="text-yellow-400 font-bold">🥇 Champions</span>
-                <span className="text-neon-orange font-bold">₹10.00 Lakhs</span>
-              </div>
-              <div className="flex items-center justify-between py-2 border-b border-net-white/10">
-                <span className="text-slate-300 font-bold">🥈 Runners-up</span>
-                <span className="text-neon-orange font-bold">₹6.00 Lakhs</span>
-              </div>
-              <div className="flex items-center justify-between py-2">
-                <span className="text-amber-600 font-bold">🥉 Third Place</span>
-                <span className="text-neon-orange font-bold">₹2.00 Lakhs</span>
-              </div>
+              <p className="text-net-white/80 leading-relaxed">
+                MPPL offers a total prize pool of <strong className="text-neon-orange">₹18 Lakhs+</strong>.
+              </p>
             </div>
-            <p className="font-dm-sans text-xs text-net-white/50 mt-auto">Split between franchise & players. Full breakdown on the format page.</p>
           </div>
 
         </div>
@@ -128,7 +118,7 @@ export default function FormatSection() {
         <div className="mt-4 max-w-5xl mx-auto bg-neon-orange/80 border-4 border-pure-black p-8 md:p-12 flex flex-col md:flex-row items-center justify-between text-left backdrop-blur-sm gap-6">
           <div>
             <h3 className="font-bebas text-4xl md:text-5xl tracking-wide mb-2">WANT THE FULL PICTURE?</h3>
-            <p className="font-dm-sans font-bold text-pure-black/80">Detailed rules, qualification breakdown, auction mechanics & complete prize distribution.</p>
+            <p className="font-dm-sans font-bold text-pure-black/80">Detailed rules, qualification breakdown, and auction mechanics.</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 shrink-0">
             <Link
