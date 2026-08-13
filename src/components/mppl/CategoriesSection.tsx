@@ -21,6 +21,7 @@ const rightCategories = [
   { id: 8,  name: "GIRLS U18",       tagline: "Junior category",       age: "U18",  type: "Girls"  },
   { id: 10, name: "WOMEN'S SINGLES", tagline: "Open category",         age: "Open", type: "Women"  },
   { id: 12, name: "WOMEN'S DOUBLES", tagline: "Open category",         age: "Open", type: "Women"  },
+  { id: 16, name: "SINGLES 30+",     tagline: "Senior category",       age: "30+",  type: "Women"  },
   { id: 13, name: "MIXED DOUBLES",   tagline: "Open mixed doubles",    age: "Open", type: "Mixed"  },
 ];
 
