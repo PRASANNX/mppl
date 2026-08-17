@@ -9,7 +9,8 @@ const navLinks = [
   { label: 'Format', href: '/format' },
   { label: 'Rules', href: '/rules' },
   { label: 'About', href: '#about' },
-  { label: 'Register', href: 'https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform' },
+  { label: 'Franchise & Sponsors', href: 'https://forms.gle/5WBTzz4bEQmgDpF58', target: '_blank' },
+  { label: 'Player Registration', href: 'https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform', target: '_blank' },
 ];
 
 export default function Navbar() {
@@ -29,24 +30,48 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav Links */}
-          <ul className="hidden items-center gap-8 md:flex">
+          <ul className="hidden items-center gap-7 md:flex">
             {navLinks.map((link) => (
               <li key={link.label}>
-                <Link
-                  href={link.href}
-                  className="font-dm-sans text-sm font-medium text-net-white/60 transition-colors duration-200 hover:text-neon-green"
-                >
-                  {link.label}
-                </Link>
+                {link.target ? (
+                  <a
+                    href={link.href}
+                    target={link.target}
+                    rel="noopener noreferrer"
+                    className="font-dm-sans text-sm font-medium text-net-white/70 transition-colors duration-200 hover:text-neon-green"
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link
+                    href={link.href}
+                    className="font-dm-sans text-sm font-medium text-net-white/70 transition-colors duration-200 hover:text-neon-green"
+                  >
+                    {link.label}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
 
           {/* Right: CTA + Mobile Hamburger */}
-          <div className="flex items-center gap-4">
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform" target="_blank" rel="noopener noreferrer" className="btn-primary hidden text-sm md:inline-flex">
+          <div className="flex items-center gap-3">
+            <a
+              href="https://forms.gle/5WBTzz4bEQmgDpF58"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden lg:inline-flex text-xs font-bold uppercase tracking-wider text-neon-green border border-neon-green/40 hover:border-neon-green px-4 py-2 rounded transition-colors"
+            >
+              Own a Franchise
+            </a>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary hidden text-sm md:inline-flex"
+            >
               Register Now
-            </Link>
+            </a>
 
             {/* Hamburger */}
             <button
@@ -94,27 +119,50 @@ export default function Navbar() {
           </div>
 
           {/* Nav links */}
-          <div className="flex flex-1 flex-col items-center justify-center gap-8">
+          <div className="flex flex-1 flex-col items-center justify-center gap-6">
             {navLinks.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                onClick={() => setMobileOpen(false)}
-                className="font-bebas text-3xl uppercase tracking-wider text-net-white transition-colors hover:text-neon-green"
-              >
-                {link.label}
-              </Link>
+              link.target ? (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target={link.target}
+                  rel="noopener noreferrer"
+                  onClick={() => setMobileOpen(false)}
+                  className="font-bebas text-3xl uppercase tracking-wider text-net-white transition-colors hover:text-neon-green"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="font-bebas text-3xl uppercase tracking-wider text-net-white transition-colors hover:text-neon-green"
+                >
+                  {link.label}
+                </Link>
+              )
             ))}
 
-            <Link
+            <a
+              href="https://forms.gle/5WBTzz4bEQmgDpF58"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileOpen(false)}
+              className="text-center font-bebas text-xl px-8 py-3 bg-neon-green/10 text-neon-green border border-neon-green hover:bg-neon-green hover:text-pure-black transition-colors rounded uppercase tracking-wider"
+            >
+              Franchise &amp; Sponsor Interest
+            </a>
+
+            <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileOpen(false)}
-              className="btn-primary mt-4"
+              className="btn-primary mt-2"
             >
               Register Now
-            </Link>
+            </a>
           </div>
         </div>
       )}

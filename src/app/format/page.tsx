@@ -217,19 +217,29 @@ export default function FormatPage() {
           </div>
 
           {/* CTA Footer Links */}
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 bg-pure-black p-8 border-2 border-neon-green">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6 bg-pure-black p-8 border-2 border-neon-green">
             <div>
-              <h3 className="font-bebas text-3xl text-net-white mb-1">READY TO CLAIM YOUR SPOT?</h3>
-              <p className="font-dm-sans text-sm text-net-white/70">Register for the upcoming qualifying legs now.</p>
+              <h3 className="font-bebas text-3xl text-net-white mb-1">GET INVOLVED WITH MPPL</h3>
+              <p className="font-dm-sans text-sm text-net-white/70">Register as a player or apply for franchise ownership &amp; brand sponsorship.</p>
             </div>
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary px-8 py-4 text-lg inline-flex items-center gap-2"
-            >
-              Register Now <ArrowRight size={20} />
-            </a>
+            <div className="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto">
+              <a
+                href="https://forms.gle/5WBTzz4bEQmgDpF58"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary border-neon-green text-neon-green hover:bg-neon-green hover:text-pure-black px-6 py-4 text-base font-bold inline-flex items-center justify-center gap-2 w-full sm:w-auto"
+              >
+                Franchise &amp; Sponsor Interest
+              </a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary px-6 py-4 text-base inline-flex items-center justify-center gap-2 w-full sm:w-auto"
+              >
+                Register Now <ArrowRight size={20} />
+              </a>
+            </div>
           </div>
 
         </div>

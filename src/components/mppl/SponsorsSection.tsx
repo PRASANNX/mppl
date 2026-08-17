@@ -38,7 +38,7 @@ export default function SponsorsSection() {
               </a>
             </div>
             
-            <a href="https://wa.me/919109109051?text=Hi%21%20I%27m%20interested%20in%20partnering%20with%20MPPL%202026%20as%20a%20sponsor.%20Please%20share%20more%20details.%20%F0%9F%A4%9D" target="_blank" rel="noopener noreferrer" className="inline-block text-center bg-net-white text-pure-black border-2 border-pure-black font-bebas text-3xl px-8 py-6 hover:bg-pure-black hover:text-neon-green hover:border-neon-green transition-colors w-full mt-12 lg:mt-0 shadow-[10px_10px_0px_rgba(0,0,0,0.3)]">
+            <a href="https://forms.gle/5WBTzz4bEQmgDpF58" target="_blank" rel="noopener noreferrer" className="inline-block text-center bg-net-white text-pure-black border-2 border-pure-black font-bebas text-3xl px-8 py-6 hover:bg-pure-black hover:text-neon-green hover:border-neon-green transition-colors w-full mt-12 lg:mt-0 shadow-[10px_10px_0px_rgba(0,0,0,0.3)]">
               BECOME A SPONSOR →
             </a>
           </div>
@@ -47,15 +47,20 @@ export default function SponsorsSection() {
           <div className="lg:col-span-8 flex flex-col gap-8">
             
             {/* Title Sponsor Block */}
-            <div className="bg-pure-black p-10 flex flex-col justify-between min-h-[300px] group cursor-pointer relative overflow-hidden">
+            <a href="https://forms.gle/5WBTzz4bEQmgDpF58" target="_blank" rel="noopener noreferrer" className="bg-pure-black p-10 flex flex-col justify-between min-h-[300px] group cursor-pointer relative overflow-hidden block">
               <div className="absolute top-0 right-0 w-32 h-32 bg-neon-green/10 rounded-bl-[100px] -z-0"></div>
-              <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-neon-green relative z-10 mb-8">
-                Title Sponsor
-              </h3>
+              <div className="flex justify-between items-center relative z-10 mb-8">
+                <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-neon-green">
+                  Title Sponsor
+                </h3>
+                <span className="font-dm-sans text-xs font-bold text-neon-green underline group-hover:text-net-white transition-colors">
+                  Express Interest →
+                </span>
+              </div>
               <div className="font-bebas text-[clamp(40px,8vw,100px)] text-net-white/20 group-hover:text-neon-green leading-[0.85] transition-colors relative z-10">
                 YOUR BRAND<br />HERE
               </div>
-            </div>
+            </a>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Official Partners Block */}

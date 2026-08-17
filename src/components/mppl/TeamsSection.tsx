@@ -33,13 +33,18 @@ export default function TeamsSection() {
             </h2>
           </div>
           
-          <div className="md:text-right max-w-sm">
-            <p className="font-dm-sans text-lg text-net-white/60 mb-6">
-              Franchises and team names announcing soon. Player auctions to follow qualifying rounds.
+          <div className="md:text-right max-w-md flex flex-col items-start md:items-end gap-3">
+            <p className="font-dm-sans text-lg text-net-white/60 mb-2">
+              Interested in owning a franchise or sponsoring a team? Apply for ownership today.
             </p>
-            <a href="https://wa.me/919109109051?text=Hi%21%20I%27d%20like%20to%20get%20Auction%20Alerts%20for%20MPPL%202026.%20Please%20add%20me%20to%20the%20notification%20list.%20%F0%9F%8F%93%E2%9C%85" target="_blank" rel="noopener noreferrer" className="inline-block text-center bg-pure-black text-neon-green border-2 border-neon-green font-bebas text-2xl px-8 py-3 hover:bg-neon-green hover:text-pure-black transition-colors w-full md:w-auto uppercase tracking-wide">
-              GET AUCTION ALERTS
-            </a>
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full md:w-auto">
+              <a href="https://forms.gle/5WBTzz4bEQmgDpF58" target="_blank" rel="noopener noreferrer" className="inline-block text-center bg-neon-green text-pure-black font-bebas text-2xl px-8 py-3 hover:bg-net-white transition-colors w-full md:w-auto uppercase tracking-wide">
+                OWN A FRANCHISE →
+              </a>
+              <a href="https://wa.me/919109109051?text=Hi%21%20I%27d%20like%20to%20get%20Auction%20Alerts%20for%20MPPL%202026.%20Please%20add%20me%20to%20the%20notification%20list.%20%F0%9F%8F%93%E2%9C%85" target="_blank" rel="noopener noreferrer" className="inline-block text-center bg-pure-black text-neon-green border-2 border-neon-green font-bebas text-2xl px-6 py-3 hover:bg-neon-green hover:text-pure-black transition-colors w-full md:w-auto uppercase tracking-wide">
+                GET AUCTION ALERTS
+              </a>
+            </div>
           </div>
         </div>
 

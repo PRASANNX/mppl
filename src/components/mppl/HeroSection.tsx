@@ -53,6 +53,7 @@ export default function HeroSection() {
               <li className="hover:text-neon-green transition-colors cursor-pointer"><Link href="/format" className="block w-full">Format</Link></li>
               <li className="hover:text-neon-green transition-colors cursor-pointer"><Link href="/rules" className="block w-full">Rules</Link></li>
               <li className="hover:text-neon-green transition-colors cursor-pointer"><Link href="#about" className="block w-full">About</Link></li>
+              <li className="hover:text-neon-green transition-colors cursor-pointer"><a href="https://forms.gle/5WBTzz4bEQmgDpF58" target="_blank" rel="noopener noreferrer" className="block w-full">Franchise &amp; Sponsor</a></li>
               <li className="hover:text-neon-green transition-colors cursor-pointer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform" target="_blank" rel="noopener noreferrer" className="block w-full">Register</a></li>
             </ul>
           </div>
@@ -92,12 +93,15 @@ export default function HeroSection() {
               <p className="font-dm-sans text-lg text-net-white/70 leading-relaxed">
                 India's most serious regional pickleball league. This isn't a hobby tournament — this is MPPL. Built for everyone from beginners to pros.
               </p>
-              <div className="mt-8 flex flex-wrap gap-4">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform" target="_blank" rel="noopener noreferrer" className="btn-primary px-10 py-4 text-lg">
-                  Register Now
+              <div className="mt-8 flex flex-wrap gap-3">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform" target="_blank" rel="noopener noreferrer" className="btn-primary px-6 py-3.5 text-base">
+                  Register as Player
                 </a>
-                <a href="https://www.instagram.com/mpplleague?igsh=MWd5MDMweHdmbnZ1dg==" target="_blank" rel="noopener noreferrer" className="btn-secondary px-8 py-4 text-lg">
-                  Follow on Instagram
+                <a href="https://forms.gle/5WBTzz4bEQmgDpF58" target="_blank" rel="noopener noreferrer" className="btn-secondary border-neon-green text-neon-green hover:bg-neon-green hover:text-pure-black px-6 py-3.5 text-base font-bold transition-all">
+                  Franchise &amp; Sponsor Interest
+                </a>
+                <a href="https://www.instagram.com/mpplleague?igsh=MWd5MDMweHdmbnZ1dg==" target="_blank" rel="noopener noreferrer" className="btn-secondary px-5 py-3.5 text-base">
+                  Instagram
                 </a>
               </div>
             </div>

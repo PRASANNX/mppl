@@ -10,8 +10,9 @@ const leagueLinks = [
 ];
 
 const involvedLinks = [
-  { label: 'Register', href: 'https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform' },
-  { label: 'Partner / Sponsor', href: 'https://wa.me/919109109051' }
+  { label: 'Player Registration', href: 'https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform' },
+  { label: 'Franchise & Sponsor Interest Form', href: 'https://forms.gle/5WBTzz4bEQmgDpF58' },
+  { label: 'Partner / WhatsApp Support', href: 'https://wa.me/919109109051' }
 ];
 
 const connectLinks = [
