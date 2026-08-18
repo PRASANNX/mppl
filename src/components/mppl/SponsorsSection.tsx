@@ -94,6 +94,20 @@ export default function SponsorsSection() {
               </div>
             </div>
 
+            {/* Ball Partner for Qualifying Legs */}
+            <div className="border-4 border-pure-black flex flex-col justify-between min-h-[250px] overflow-hidden relative group hover:shadow-[8px_8px_0px_rgba(0,0,0,0.3)] transition-shadow">
+              <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-pure-black absolute top-6 left-6 z-10">
+                Ball Partner for Qualifying Legs
+              </h3>
+              <div className="w-full h-full relative">
+                <img
+                  src="/ball-partner.png"
+                  alt="Ball Partner for Qualifying Legs"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
           </div>
         </div>
 
