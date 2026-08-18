@@ -21,6 +21,19 @@ export default function RulesPage() {
     },
     {
       num: "02",
+      title: "Category Registration",
+      points: [
+        "Players may register in a maximum of 2 categories.",
+        "• Each category requires a separate, individual registration form.",
+        "• Entry fees must be paid separately for each category.",
+        "• No bundled or combined registrations are allowed.",
+        "• Registering for more than 2 categories will result in disqualification from additional entries.",
+        "If you wish to compete in two categories, you must complete the full registration process — including payment — twice."
+      ],
+      icon: <Scale className="text-neon-green" size={24} />
+    },
+    {
+      num: "03",
       title: "Disciplinary Action",
       points: [
         "The Tournament Committee may impose:",
@@ -36,7 +49,7 @@ export default function RulesPage() {
       icon: <AlertTriangle className="text-neon-orange" size={24} />
     },
     {
-      num: "03",
+      num: "04",
       title: "Walkovers",
       points: [
         "A match may be awarded as a walkover if:",
@@ -48,7 +61,7 @@ export default function RulesPage() {
       icon: <AlertTriangle className="text-neon-green" size={24} />
     },
     {
-      num: "04",
+      num: "05",
       title: "Photography & Media Rights",
       points: [
         "• MPPL owns all photography, video, television, streaming, and promotional rights.",
@@ -57,7 +70,7 @@ export default function RulesPage() {
       icon: <Eye className="text-neon-orange" size={24} />
     },
     {
-      num: "05",
+      num: "06",
       title: "Sponsorship & Branding",
       points: [
         "• Personal sponsorship branding must receive prior written approval from MPPL.",
@@ -66,7 +79,7 @@ export default function RulesPage() {
       icon: <Award className="text-neon-green" size={24} />
     },
     {
-      num: "06",
+      num: "07",
       title: "Protest & Appeals",
       points: [
         "• Protests must be submitted in writing within 30 minutes of the match conclusion.",
@@ -75,7 +88,7 @@ export default function RulesPage() {
       icon: <Scale className="text-neon-orange" size={24} />
     },
     {
-      num: "07",
+      num: "08",
       title: "Tournament Authority",
       points: [
         "The MPPL Organizing Committee reserves all rights to:",

@@ -40,6 +40,16 @@ export default function CTASection() {
             </a>
           </div>
 
+          {/* Multi-category info */}
+          <div className="bg-pure-black/15 border border-pure-black/20 rounded-lg px-6 py-4 max-w-xl mb-6">
+            <p className="font-dm-sans text-sm font-bold text-pure-black leading-relaxed">
+              ⚠ Playing in multiple categories?{' '}
+              <span className="font-normal">
+                You can register in up to 2 categories (max). Each category requires a separate registration form and a separate entry fee payment.
+              </span>
+            </p>
+          </div>
+
           <a href="https://wa.me/919109109051?text=Hi%21%20I%27m%20interested%20in%20partnering%20with%20MPPL%202026%20as%20a%20sponsor%20or%20franchise%20partner.%20Please%20share%20more%20details.%20%F0%9F%A4%9D" target="_blank" rel="noopener noreferrer" className="font-dm-sans text-xs font-bold uppercase tracking-widest text-pure-black/80 hover:text-pure-black underline">
             Or Chat directly with us on WhatsApp →
           </a>

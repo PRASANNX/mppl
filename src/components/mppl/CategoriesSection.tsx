@@ -117,7 +117,7 @@ export default function CategoriesSection() {
                 Whether you're 10 or 60 — beginner or pro — there is a bracket built exactly for you. 
                 MPPL leaves no player behind.
                 <span className="block mt-4 text-xs font-bold uppercase tracking-widest text-pure-black/70">
-                  Note: One player is allowed to play only one category.
+                  ⚠ Important: A player can register in a maximum of 2 categories. Each category requires a separate registration form and a separate entry fee.
                 </span>
               </p>
 
@@ -287,6 +287,27 @@ export default function CategoriesSection() {
                 </div>
               </div>
             )}
+
+            {/* Multi-Category Registration Notice */}
+            <div className="mt-8 bg-neon-orange/10 border-2 border-neon-orange/40 p-5 relative">
+              <div className="absolute -top-3 left-4 bg-deep-court px-2">
+                <span className="font-dm-sans text-[10px] font-black uppercase tracking-[3px] text-neon-orange">
+                  Important Notice
+                </span>
+              </div>
+              <div className="flex items-start gap-3 mt-1">
+                <span className="text-neon-orange text-lg leading-none mt-0.5">⚠</span>
+                <div>
+                  <p className="font-dm-sans text-sm font-bold text-net-white leading-relaxed">
+                    A player can register in a maximum of 2 categories.
+                  </p>
+                  <p className="font-dm-sans text-xs text-net-white/60 mt-1 leading-relaxed">
+                    Each category requires a separate registration form and a separate entry fee. 
+                    If you wish to play in two categories, you must complete the registration process — including payment — twice.
+                  </p>
+                </div>
+              </div>
+            </div>
 
           </div>
 

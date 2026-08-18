@@ -33,6 +33,16 @@ const faqs = [
     answer:
       'MPPL features 15+ categories covering different age groups, skill levels, and formats to ensure everyone has a competitive bracket.',
   },
+  {
+    question: 'Can I play in more than one category?',
+    answer:
+      'Yes, a player can register in up to 2 categories — but no more than two. For each category you wish to play in, you must fill out a separate registration form and pay the entry fee individually. For example, if you want to play in both Men\'s Singles and Men\'s Doubles, you need to register and pay twice.',
+  },
+  {
+    question: 'Do I need to pay twice if I register for two categories?',
+    answer:
+      'Yes. Each category requires its own registration form and its own entry fee payment. There are no bundle discounts — each category is treated as a separate entry.',
+  },
 ];
 
 export default function FAQSection() {
