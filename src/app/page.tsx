@@ -1,6 +1,7 @@
 import Navbar from "@/components/mppl/Navbar";
 import HeroSection from "@/components/mppl/HeroSection";
 import StatsBar from "@/components/mppl/StatsBar";
+import Leg1WinnersSection from "@/components/mppl/Leg1WinnersSection";
 import AboutSection from "@/components/mppl/AboutSection";
 import FounderSection from "@/components/mppl/FounderSection";
 import QualifyingSection from "@/components/mppl/QualifyingSection";
@@ -19,6 +20,7 @@ export default function HomePage() {
       <main className="flex-1 flex flex-col w-full">
         <HeroSection />
         <StatsBar />
+        <Leg1WinnersSection />
         <AboutSection />
         <FounderSection />
         <QualifyingSection />

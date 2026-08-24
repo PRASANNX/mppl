@@ -5,6 +5,7 @@ import Link from 'next/link';
 import MPPLLogo from './MPPLLogo';
 
 const navLinks = [
+  { label: 'Leg 1 Results', href: '/leg-1-results' },
   { label: 'Schedule', href: '#schedule' },
   { label: 'Format', href: '/format' },
   { label: 'Rules', href: '/rules' },
