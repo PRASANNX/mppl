@@ -10,7 +10,7 @@ const leagueLinks = [
 ];
 
 const involvedLinks = [
-  { label: 'Player Registration', href: 'https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform' },
+  { label: 'Register for Leg 2 — Bhopal', href: 'https://forms.gle/ReM6crNPXirR3px4A' },
   { label: 'Franchise & Sponsor Interest Form', href: 'https://forms.gle/5WBTzz4bEQmgDpF58' },
   { label: 'Partner / WhatsApp Support', href: 'https://wa.me/919109109051' }
 ];

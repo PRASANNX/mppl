@@ -287,12 +287,12 @@ export default function Leg1ResultsPage() {
                 </p>
               </div>
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform"
+                href="https://forms.gle/ReM6crNPXirR3px4A"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-shrink-0 inline-flex items-center gap-2 px-8 py-4 bg-pure-black text-neon-green font-montserrat font-extrabold text-sm uppercase tracking-wider rounded transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(202,255,0,0.4)]"
               >
-                Register for Leg 2
+                Register for Leg 2 — Bhopal
               </a>
             </div>
           </div>

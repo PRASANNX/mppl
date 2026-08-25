@@ -19,7 +19,7 @@ export default function CTASection() {
 
           {/* Main Heading */}
           <h2 className="font-bebas text-[clamp(80px,14vw,180px)] text-pure-black leading-[0.85] uppercase tracking-tighter mb-6">
-            READY TO PLAY?
+            LEG 2 IS LIVE!
           </h2>
 
           {/* Divider */}
@@ -27,13 +27,13 @@ export default function CTASection() {
 
           {/* Description */}
           <p className="font-dm-sans text-lg md:text-xl text-pure-black font-bold leading-relaxed max-w-xl mb-12">
-            Register your interest for MPPL 2026. Open for players, teams, and sponsors. Don't sit on the sidelines.
+            Leg 1 — Indore is done! Registrations are now open for Leg 2 in Bhopal. Don't miss your shot.
           </p>
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row items-center gap-6 mb-6">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform" target="_blank" rel="noopener noreferrer" className="inline-block text-center bg-net-white text-pure-black border-2 border-pure-black font-bebas text-2xl px-10 py-5 hover:bg-pure-black hover:text-neon-green hover:border-pure-black transition-colors w-full sm:w-auto uppercase tracking-wide shadow-[6px_6px_0px_rgba(0,0,0,0.25)]">
-              REGISTER AS PLAYER
+            <a href="https://forms.gle/ReM6crNPXirR3px4A" target="_blank" rel="noopener noreferrer" className="inline-block text-center bg-net-white text-pure-black border-2 border-pure-black font-bebas text-2xl px-10 py-5 hover:bg-pure-black hover:text-neon-green hover:border-pure-black transition-colors w-full sm:w-auto uppercase tracking-wide shadow-[6px_6px_0px_rgba(0,0,0,0.25)]">
+              REGISTER FOR LEG 2 — BHOPAL
             </a>
             <a href="https://forms.gle/5WBTzz4bEQmgDpF58" target="_blank" rel="noopener noreferrer" className="inline-block text-center bg-pure-black text-neon-green border-2 border-pure-black font-bebas text-2xl px-10 py-5 hover:bg-net-white hover:text-pure-black hover:border-pure-black transition-colors w-full sm:w-auto uppercase tracking-wide shadow-[6px_6px_0px_rgba(0,0,0,0.25)]">
               FRANCHISE &amp; SPONSOR INTEREST

@@ -69,7 +69,7 @@ export default function FormatPage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
               {[
-                { leg: "Leg 1", city: "Indore", detail: "Aug 21, 22, 23 — Surya Pickleball Academy" },
+                { leg: "Leg 1", city: "Indore", detail: "Aug 21, 22, 23 — Concluded ✓" },
                 { leg: "Leg 2", city: "Bhopal", detail: "Sept 2026 — House of Dink" },
                 { leg: "Leg 3", city: "Jabalpur", detail: "Dates TBA — Venue Announcement Soon" },
                 { leg: "Leg 4", city: "Indore", detail: "Dates TBA — Venue Announcement Soon" },
@@ -232,12 +232,12 @@ export default function FormatPage() {
                 Franchise &amp; Sponsor Interest
               </a>
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform"
+                href="https://forms.gle/ReM6crNPXirR3px4A"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary px-6 py-4 text-base inline-flex items-center justify-center gap-2 w-full sm:w-auto"
               >
-                Register Now <ArrowRight size={20} />
+                Register for Leg 2 <ArrowRight size={20} />
               </a>
             </div>
           </div>

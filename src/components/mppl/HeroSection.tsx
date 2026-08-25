@@ -54,7 +54,7 @@ export default function HeroSection() {
               <li className="hover:text-neon-green transition-colors cursor-pointer"><Link href="/rules" className="block w-full">Rules</Link></li>
               <li className="hover:text-neon-green transition-colors cursor-pointer"><Link href="#about" className="block w-full">About</Link></li>
               <li className="hover:text-neon-green transition-colors cursor-pointer"><a href="https://forms.gle/5WBTzz4bEQmgDpF58" target="_blank" rel="noopener noreferrer" className="block w-full">Franchise &amp; Sponsor</a></li>
-              <li className="hover:text-neon-green transition-colors cursor-pointer"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform" target="_blank" rel="noopener noreferrer" className="block w-full">Register</a></li>
+              <li className="hover:text-neon-green transition-colors cursor-pointer"><a href="https://forms.gle/ReM6crNPXirR3px4A" target="_blank" rel="noopener noreferrer" className="block w-full">Register for Leg 2</a></li>
             </ul>
           </div>
           <div className="font-bebas text-net-white/20 text-6xl tracking-widest -rotate-90 origin-bottom-left absolute bottom-10 -left-6 whitespace-nowrap">
@@ -91,11 +91,11 @@ export default function HeroSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-8 max-w-4xl relative z-10">
             <div>
               <p className="font-dm-sans text-lg text-net-white/70 leading-relaxed">
-                India's most serious regional pickleball league. This isn't a hobby tournament — this is MPPL. Built for everyone from beginners to pros.
+                Leg 1 concluded! Leg 2 is now LIVE in Bhopal. Register now for the next qualifying round. Open for beginners to pros.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform" target="_blank" rel="noopener noreferrer" className="btn-primary px-6 py-3.5 text-base">
-                  Register as Player
+                <a href="https://forms.gle/ReM6crNPXirR3px4A" target="_blank" rel="noopener noreferrer" className="btn-primary px-6 py-3.5 text-base">
+                  Register for Leg 2 — Bhopal
                 </a>
                 <a href="https://forms.gle/5WBTzz4bEQmgDpF58" target="_blank" rel="noopener noreferrer" className="btn-secondary border-neon-green text-neon-green hover:bg-neon-green hover:text-pure-black px-6 py-3.5 text-base font-bold transition-all">
                   Franchise &amp; Sponsor Interest

@@ -144,78 +144,110 @@ export default function QualifyingSection() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             
-            {/* Leg 1: Indore */}
+            {/* Leg 1: Indore — CONCLUDED */}
             <div style={{
               background: '#080808',
-              border: '3px solid #080808',
+              border: '3px solid rgba(255,255,255,0.15)',
               padding: '28px',
               color: '#ffffff',
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'space-between',
-              boxShadow: '10px 10px 0px rgba(0,0,0,0.15)'
+              boxShadow: '10px 10px 0px rgba(0,0,0,0.15)',
+              opacity: 0.6,
+              position: 'relative' as const
             }}>
+              <div style={{
+                position: 'absolute' as const,
+                top: '12px',
+                right: '12px',
+                background: '#ff4444',
+                color: '#ffffff',
+                fontFamily: 'DM Sans, sans-serif',
+                fontSize: '10px',
+                fontWeight: 'bold',
+                padding: '4px 10px',
+                textTransform: 'uppercase' as const,
+                letterSpacing: '2px',
+                borderRadius: '2px'
+              }}>CONCLUDED</div>
               <div>
                 <span style={{
                   fontFamily: 'DM Sans, sans-serif',
                   fontSize: '11px',
                   fontWeight: 'bold',
-                  background: '#FF6000',
-                  color: '#080808',
+                  background: 'rgba(255,255,255,0.15)',
+                  color: 'rgba(255,255,255,0.5)',
                   padding: '4px 10px',
-                  textTransform: 'uppercase',
+                  textTransform: 'uppercase' as const,
                   letterSpacing: '1px'
                 }}>LEG 1 — INDORE</span>
-                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: '#FF6000' }}>INDORE</h4>
-                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#ffffff', marginBottom: '16px' }}>Aug 21, 22, 23</p>
+                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: 'rgba(255,255,255,0.5)' }}>INDORE</h4>
+                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: 'rgba(255,255,255,0.5)', marginBottom: '16px' }}>Aug 21, 22, 23</p>
                 
-                <div style={{ borderTop: '1px solid rgba(255,255,255,0.15)', paddingTop: '16px', marginBottom: '16px' }}>
-                  <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '14px', fontWeight: 'bold', color: '#FF6000', marginBottom: '4px' }}>Surya Pickleball Academy</p>
-                  <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '12px', color: 'rgba(255,255,255,0.6)', lineHeight: '1.4' }}>
+                <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '16px', marginBottom: '16px' }}>
+                  <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '14px', fontWeight: 'bold', color: 'rgba(255,255,255,0.4)', marginBottom: '4px' }}>Surya Pickleball Academy</p>
+                  <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '12px', color: 'rgba(255,255,255,0.3)', lineHeight: '1.4' }}>
                     1427, Kanadia Main Rd, Alok Nagar, Indore, MP 452016
                   </p>
                 </div>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontFamily: 'DM Sans, sans-serif', color: '#FF6000', fontWeight: 'bold' }}>
-                ★ 5.0 Google Review
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontFamily: 'DM Sans, sans-serif', color: 'rgba(255,255,255,0.4)', fontWeight: 'bold' }}>
+                ✓ Completed
               </div>
             </div>
 
-            {/* Leg 2: Bhopal */}
+            {/* Leg 2: Bhopal — LIVE NOW */}
             <div style={{
               background: '#080808',
-              border: '3px solid #080808',
+              border: '3px solid #caff00',
               padding: '28px',
               color: '#ffffff',
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'space-between',
-              boxShadow: '10px 10px 0px rgba(0,0,0,0.15)'
+              boxShadow: '0 0 30px rgba(202,255,0,0.2), 10px 10px 0px rgba(0,0,0,0.15)',
+              position: 'relative' as const
             }}>
+              <div style={{
+                position: 'absolute' as const,
+                top: '12px',
+                right: '12px',
+                background: '#caff00',
+                color: '#080808',
+                fontFamily: 'DM Sans, sans-serif',
+                fontSize: '10px',
+                fontWeight: 'bold',
+                padding: '4px 10px',
+                textTransform: 'uppercase' as const,
+                letterSpacing: '2px',
+                borderRadius: '2px',
+                animation: 'pulse 2s ease-in-out infinite'
+              }}>🔴 LIVE NOW</div>
               <div>
                 <span style={{
                   fontFamily: 'DM Sans, sans-serif',
                   fontSize: '11px',
                   fontWeight: 'bold',
-                  background: '#FF6000',
+                  background: '#caff00',
                   color: '#080808',
                   padding: '4px 10px',
-                  textTransform: 'uppercase',
+                  textTransform: 'uppercase' as const,
                   letterSpacing: '1px'
                 }}>LEG 2 — BHOPAL</span>
-                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: '#FF6000' }}>BHOPAL</h4>
+                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: '#caff00' }}>BHOPAL</h4>
                 <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#ffffff', marginBottom: '16px' }}>September 2026</p>
                 
-                <div style={{ borderTop: '1px solid rgba(255,255,255,0.15)', paddingTop: '16px', marginBottom: '16px' }}>
-                  <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '14px', fontWeight: 'bold', color: '#FF6000', marginBottom: '4px' }}>House of Dink — The Pickleball Zone</p>
+                <div style={{ borderTop: '1px solid rgba(202,255,0,0.3)', paddingTop: '16px', marginBottom: '16px' }}>
+                  <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '14px', fontWeight: 'bold', color: '#caff00', marginBottom: '4px' }}>House of Dink — The Pickleball Zone</p>
                   <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '12px', color: 'rgba(255,255,255,0.6)', lineHeight: '1.4' }}>
                     Plot 81/2, Rohit Nagar, Bawadiya Kalan, Bhopal, MP 462039
                   </p>
                 </div>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontFamily: 'DM Sans, sans-serif', color: '#FF6000', fontWeight: 'bold' }}>
-                ★ 4.9 Google Review
-              </div>
+              <a href="https://forms.gle/ReM6crNPXirR3px4A" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', background: '#caff00', color: '#080808', fontFamily: 'Bebas Neue, sans-serif', fontSize: '18px', padding: '10px 20px', textAlign: 'center' as const, textDecoration: 'none', letterSpacing: '1px', fontWeight: 'bold' }}>
+                REGISTER NOW →
+              </a>
             </div>
 
             {/* Leg 3: Jabalpur */}
@@ -296,12 +328,12 @@ export default function QualifyingSection() {
               fontFamily: 'Bebas Neue, sans-serif',
               fontSize: '28px',
               color: '#080808'
-            }}>ROUNDS STARTING 2026</div>
+            }}>LEG 1 CONCLUDED · LEG 2 IS LIVE!</div>
             <div style={{
               fontFamily: 'DM Sans, sans-serif',
               fontSize: '14px',
               color: 'rgba(0,0,0,0.6)'
-            }}>First qualifying date Indore (Aug 21-23) announced. Register now.</div>
+            }}>Leg 2 registrations are now open — Bhopal, September 2026. Register now!</div>
           </div>
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
             <Link href="/format" style={{
@@ -315,10 +347,10 @@ export default function QualifyingSection() {
               letterSpacing: '1px',
               cursor: 'pointer',
               textDecoration: 'none'
-            }}>FULL FORMAT &amp; RULES →</Link>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform" target="_blank" rel="noopener noreferrer" style={{
+            }}>FULL FORMAT & RULES →</Link>
+            <a href="https://forms.gle/ReM6crNPXirR3px4A" target="_blank" rel="noopener noreferrer" style={{
               background: '#080808',
-              color: '#FF6000',
+              color: '#caff00',
               padding: '14px 28px',
               borderRadius: '4px',
               fontFamily: 'Bebas Neue, sans-serif',
@@ -326,7 +358,7 @@ export default function QualifyingSection() {
               letterSpacing: '1px',
               cursor: 'pointer',
               textDecoration: 'none'
-            }}>REGISTER NOW →</a>
+            }}>REGISTER FOR LEG 2 →</a>
           </div>
         </div>
       </div>

@@ -128,12 +128,12 @@ export default function FormatSection() {
               READ MORE <ArrowRight size={22} />
             </Link>
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform"
+              href="https://forms.gle/ReM6crNPXirR3px4A"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-center bg-net-white text-pure-black border-2 border-pure-black font-bebas text-2xl px-8 py-4 hover:bg-pure-black hover:text-neon-orange transition-colors shadow-[8px_8px_0px_rgba(0,0,0,0.5)]"
             >
-              REGISTER NOW →
+              REGISTER FOR LEG 2 →
             </a>
           </div>
         </div>

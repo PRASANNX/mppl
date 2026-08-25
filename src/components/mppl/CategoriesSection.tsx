@@ -53,7 +53,7 @@ const seniorCategoriesRight: Category[] = [
 function CategoryCard({ cat }: { cat: Category }) {
   return (
     <a
-      href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform"
+      href="https://forms.gle/ReM6crNPXirR3px4A"
       target="_blank"
       rel="noopener noreferrer"
       className="block p-5 border-2 border-neon-green bg-pure-black text-net-white transition-all cursor-pointer group hover:bg-neon-green hover:text-pure-black"

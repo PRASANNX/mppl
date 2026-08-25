@@ -11,7 +11,7 @@ const navLinks = [
   { label: 'Rules', href: '/rules' },
   { label: 'About', href: '#about' },
   { label: 'Franchise & Sponsors', href: 'https://forms.gle/5WBTzz4bEQmgDpF58', target: '_blank' },
-  { label: 'Player Registration', href: 'https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform', target: '_blank' },
+  { label: 'Register for Leg 2', href: 'https://forms.gle/ReM6crNPXirR3px4A', target: '_blank' },
 ];
 
 export default function Navbar() {
@@ -66,12 +66,12 @@ export default function Navbar() {
               Own a Franchise
             </a>
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform"
+              href="https://forms.gle/ReM6crNPXirR3px4A"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary hidden text-sm md:inline-flex"
             >
-              Register Now
+              Register for Leg 2
             </a>
 
             {/* Hamburger */}
@@ -156,13 +156,13 @@ export default function Navbar() {
             </a>
 
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdk_8gc2OUA3sY-QJO_PjPnK98PIC9xzeYEFQRwNyxDDpiHbg/viewform"
+              href="https://forms.gle/ReM6crNPXirR3px4A"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileOpen(false)}
               className="btn-primary mt-2"
             >
-              Register Now
+              Register for Leg 2
             </a>
           </div>
         </div>
