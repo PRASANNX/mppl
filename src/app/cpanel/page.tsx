@@ -52,7 +52,7 @@ const DEFAULT_CONTENT: SiteContent = {
     {
       label: 'LEG 2 — BHOPAL',
       city: 'BHOPAL',
-      date: 'September 2026',
+      date: 'Sept 25, 26, 27',
       venue: 'House of Dink — The Pickleball Zone',
       address: 'Plot 81/2, Rohit Nagar, Bawadiya Kalan, Bhopal, MP 462039',
       rating: '4.9',
@@ -88,7 +88,7 @@ const DEFAULT_CONTENT: SiteContent = {
   whatsapp: '+91 91091 09051',
   registrationLink: 'https://forms.gle/ReM6crNPXirR3px4A',
   instagramLink: 'https://www.instagram.com/mpplleague?igsh=MWd5MDMweHdmbnZ1dg==',
-  announcementText: 'Leg 1 concluded! Leg 2 registrations now open — Bhopal, September 2026.',
+  announcementText: 'Leg 1 concluded! Leg 2 registrations now open — Bhopal, Sept 25, 26, 27.',
   founderName: 'Suryansh Yadav',
   founderTitle: 'Founder & CEO, MPPL',
   prizePool: '₹18 Lakhs+',

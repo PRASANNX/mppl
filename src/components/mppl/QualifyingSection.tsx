@@ -236,7 +236,7 @@ export default function QualifyingSection() {
                   letterSpacing: '1px'
                 }}>LEG 2 — BHOPAL</span>
                 <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: '#caff00' }}>BHOPAL</h4>
-                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#ffffff', marginBottom: '16px' }}>September 2026</p>
+                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#ffffff', marginBottom: '16px' }}>Sept 25, 26, 27</p>
                 
                 <div style={{ borderTop: '1px solid rgba(202,255,0,0.3)', paddingTop: '16px', marginBottom: '16px' }}>
                   <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '14px', fontWeight: 'bold', color: '#caff00', marginBottom: '4px' }}>House of Dink — The Pickleball Zone</p>
@@ -333,7 +333,7 @@ export default function QualifyingSection() {
               fontFamily: 'DM Sans, sans-serif',
               fontSize: '14px',
               color: 'rgba(0,0,0,0.6)'
-            }}>Leg 2 registrations are now open — Bhopal, September 2026. Register now!</div>
+            }}>Leg 2 registrations are now open — Bhopal, Sept 25, 26, 27. Register now!</div>
           </div>
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
             <Link href="/format" style={{

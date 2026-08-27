@@ -70,7 +70,7 @@ export default function FormatPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
               {[
                 { leg: "Leg 1", city: "Indore", detail: "Aug 21, 22, 23 — Concluded ✓" },
-                { leg: "Leg 2", city: "Bhopal", detail: "Sept 2026 — House of Dink" },
+                { leg: "Leg 2", city: "Bhopal", detail: "Sept 25, 26, 27 — House of Dink" },
                 { leg: "Leg 3", city: "Jabalpur", detail: "Dates TBA — Venue Announcement Soon" },
                 { leg: "Leg 4", city: "Indore", detail: "Dates TBA — Venue Announcement Soon" },
               ].map((item, idx) => (
