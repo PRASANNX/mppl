@@ -9,6 +9,7 @@ const navLinks = [
   { label: 'Schedule', href: '#schedule' },
   { label: 'Format', href: '/format' },
   { label: 'Rules', href: '/rules' },
+  { label: 'Media Coverage', href: '/media-coverage' },
   { label: 'About', href: '#about' },
   { label: 'Franchise & Sponsors', href: 'https://forms.gle/5WBTzz4bEQmgDpF58', target: '_blank' },
   { label: 'Register for Leg 2', href: 'https://forms.gle/ReM6crNPXirR3px4A', target: '_blank' },
