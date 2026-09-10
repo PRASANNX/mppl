@@ -4,19 +4,38 @@ import { useState } from 'react';
 import Link from 'next/link';
 import MPPLLogo from './MPPLLogo';
 
-const navLinks = [
-  { label: 'Leg 1 Results', href: '/leg-1-results' },
-  { label: 'Schedule', href: '#schedule' },
-  { label: 'Format', href: '/format' },
-  { label: 'Rules', href: '/rules' },
+type NavLink = {
+  label: string;
+  href?: string;
+  target?: string;
+  children?: { label: string; href: string; target?: string }[];
+};
+
+const navLinks: NavLink[] = [
+  {
+    label: 'Tournament',
+    children: [
+      { label: 'Format', href: '/format' },
+      { label: 'Rules', href: '/rules' },
+      { label: 'Schedule', href: '/#schedule' },
+      { label: 'Leg 1 Results', href: '/leg-1-results' },
+    ],
+  },
   { label: 'Media Coverage', href: '/media-coverage' },
-  { label: 'About', href: '#about' },
-  { label: 'Franchise & Sponsors', href: 'https://forms.gle/5WBTzz4bEQmgDpF58', target: '_blank' },
-  { label: 'Register for Leg 2', href: 'https://forms.gle/ReM6crNPXirR3px4A', target: '_blank' },
+  { label: 'About', href: '/#about' },
 ];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
+  const toggleDropdown = (label: string) => {
+    if (openDropdown === label) {
+      setOpenDropdown(null);
+    } else {
+      setOpenDropdown(label);
+    }
+  };
 
   return (
     <>
@@ -34,8 +53,42 @@ export default function Navbar() {
           {/* Desktop Nav Links */}
           <ul className="hidden items-center gap-7 md:flex">
             {navLinks.map((link) => (
-              <li key={link.label}>
-                {link.target ? (
+              <li key={link.label} className="relative group">
+                {link.children ? (
+                  <>
+                    <button className="font-dm-sans py-6 text-sm font-medium text-net-white/70 transition-colors duration-200 group-hover:text-neon-green flex items-center gap-1">
+                      {link.label}
+                      <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    <div className="absolute top-full left-0 w-48 rounded-md bg-[#161616] border border-neon-green/20 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                      <ul className="py-2">
+                        {link.children.map(child => (
+                          <li key={child.label}>
+                            {child.target ? (
+                              <a 
+                                href={child.href} 
+                                target={child.target} 
+                                rel="noopener noreferrer" 
+                                className="block px-4 py-2 font-dm-sans text-sm text-net-white/70 hover:bg-neon-green/10 hover:text-neon-green transition-colors"
+                              >
+                                {child.label}
+                              </a>
+                            ) : (
+                              <Link 
+                                href={child.href} 
+                                className="block px-4 py-2 font-dm-sans text-sm text-net-white/70 hover:bg-neon-green/10 hover:text-neon-green transition-colors"
+                              >
+                                {child.label}
+                              </Link>
+                            )}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </>
+                ) : link.target ? (
                   <a
                     href={link.href}
                     target={link.target}
@@ -46,7 +99,7 @@ export default function Navbar() {
                   </a>
                 ) : (
                   <Link
-                    href={link.href}
+                    href={link.href!}
                     className="font-dm-sans text-sm font-medium text-net-white/70 transition-colors duration-200 hover:text-neon-green"
                   >
                     {link.label}
@@ -91,9 +144,9 @@ export default function Navbar() {
 
       {/* ── Mobile Overlay ── */}
       {mobileOpen && (
-        <div className="fixed inset-0 z-[60] flex flex-col bg-league-black">
+        <div className="fixed inset-0 z-[60] flex flex-col bg-league-black overflow-y-auto">
           {/* Top bar: logo + close */}
-          <div className="flex h-[72px] items-center justify-between px-5">
+          <div className="flex h-[72px] items-center justify-between px-5 shrink-0">
             <Link href="/" onClick={() => setMobileOpen(false)} className="block">
               <MPPLLogo variant="light" height={36} />
             </Link>
@@ -121,37 +174,80 @@ export default function Navbar() {
           </div>
 
           {/* Nav links */}
-          <div className="flex flex-1 flex-col items-center justify-center gap-6">
+          <div className="flex flex-1 flex-col items-center py-10 px-5 gap-6">
             {navLinks.map((link) => (
-              link.target ? (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  target={link.target}
-                  rel="noopener noreferrer"
-                  onClick={() => setMobileOpen(false)}
-                  className="font-bebas text-3xl uppercase tracking-wider text-net-white transition-colors hover:text-neon-green"
-                >
-                  {link.label}
-                </a>
-              ) : (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="font-bebas text-3xl uppercase tracking-wider text-net-white transition-colors hover:text-neon-green"
-                >
-                  {link.label}
-                </Link>
-              )
+              <div key={link.label} className="w-full flex flex-col items-center">
+                {link.children ? (
+                  <>
+                    <button 
+                      onClick={() => toggleDropdown(link.label)}
+                      className="font-bebas text-3xl uppercase tracking-wider text-net-white flex items-center gap-2 mb-2 transition-colors hover:text-neon-green"
+                    >
+                      {link.label}
+                      <svg className={`w-5 h-5 transition-transform ${openDropdown === link.label ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    {openDropdown === link.label && (
+                      <div className="flex flex-col items-center gap-4 py-4 w-full bg-[#161616]/50 rounded-lg border border-neon-green/10">
+                        {link.children.map(child => (
+                          child.target ? (
+                            <a
+                              key={child.label}
+                              href={child.href}
+                              target={child.target}
+                              rel="noopener noreferrer"
+                              onClick={() => setMobileOpen(false)}
+                              className="font-bebas text-2xl uppercase tracking-wider text-net-white/80 transition-colors hover:text-neon-green"
+                            >
+                              {child.label}
+                            </a>
+                          ) : (
+                            <Link
+                              key={child.label}
+                              href={child.href}
+                              onClick={() => setMobileOpen(false)}
+                              className="font-bebas text-2xl uppercase tracking-wider text-net-white/80 transition-colors hover:text-neon-green"
+                            >
+                              {child.label}
+                            </Link>
+                          )
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : link.target ? (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    target={link.target}
+                    rel="noopener noreferrer"
+                    onClick={() => setMobileOpen(false)}
+                    className="font-bebas text-3xl uppercase tracking-wider text-net-white transition-colors hover:text-neon-green"
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link
+                    key={link.label}
+                    href={link.href!}
+                    onClick={() => setMobileOpen(false)}
+                    className="font-bebas text-3xl uppercase tracking-wider text-net-white transition-colors hover:text-neon-green"
+                  >
+                    {link.label}
+                  </Link>
+                )}
+              </div>
             ))}
+
+            <div className="w-full h-px bg-net-white/10 my-4"></div>
 
             <a
               href="https://forms.gle/5WBTzz4bEQmgDpF58"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileOpen(false)}
-              className="text-center font-bebas text-xl px-8 py-3 bg-neon-green/10 text-neon-green border border-neon-green hover:bg-neon-green hover:text-pure-black transition-colors rounded uppercase tracking-wider"
+              className="w-full text-center font-bebas text-xl px-8 py-4 bg-neon-green/10 text-neon-green border border-neon-green hover:bg-neon-green hover:text-pure-black transition-colors rounded uppercase tracking-wider"
             >
               Franchise &amp; Sponsor Interest
             </a>
@@ -161,7 +257,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileOpen(false)}
-              className="btn-primary mt-2"
+              className="btn-primary w-full text-center mt-2"
             >
               Register for Leg 2
             </a>
