@@ -62,13 +62,13 @@ export default function SponsorsSection() {
               </div>
             </a>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8">
               {/* Official Partners Block */}
-              <a href="https://www.franklinpickleball.in" target="_blank" rel="noopener noreferrer" className="border-4 border-pure-black flex flex-col justify-between min-h-[250px] hover:bg-pure-black group transition-colors relative overflow-hidden bg-net-white">
+              <a href="https://www.franklinpickleball.in" target="_blank" rel="noopener noreferrer" className="border-2 border-pure-black flex flex-col justify-between min-h-[250px] hover:bg-pure-black group transition-all relative overflow-hidden bg-transparent">
                 <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-pure-black group-hover:text-neon-green absolute top-6 left-6 z-10 transition-colors">
                   Official Partner
                 </h3>
-                <div className="w-full h-full relative flex items-center justify-center p-12 mt-8">
+                <div className="w-full h-full relative flex items-center justify-center p-8 pt-16">
                   <img
                     src="/franklin-logo.jpeg"
                     alt="Franklin Pickleball"
@@ -77,14 +77,14 @@ export default function SponsorsSection() {
                   <img
                     src="/franklin-logo.jpeg"
                     alt="Franklin Pickleball"
-                    className="w-full h-full object-contain absolute inset-0 invert opacity-0 group-hover:opacity-100 transition-opacity p-12 mt-8"
+                    className="w-full h-full object-contain absolute invert opacity-0 group-hover:opacity-100 transition-opacity p-8 pt-16 inset-0"
                   />
                 </div>
               </a>
 
               {/* Ball Partner Block */}
-              <div className="border-4 border-pure-black flex flex-col justify-between min-h-[250px] overflow-hidden relative group hover:shadow-[8px_8px_0px_rgba(0,0,0,0.3)] transition-shadow">
-                <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-net-white absolute top-6 left-6 z-10">
+              <div className="border-2 border-pure-black flex flex-col justify-between min-h-[250px] overflow-hidden relative group hover:shadow-[8px_8px_0px_rgba(0,0,0,0.3)] transition-all">
+                <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-white absolute top-6 left-6 z-10 drop-shadow-md">
                   Ball Partner
                 </h3>
                 <div className="w-full h-full relative">
@@ -97,21 +97,21 @@ export default function SponsorsSection() {
               </div>
 
               {/* Associate Sponsor 1 Block */}
-              <div className="border-4 border-pure-black flex flex-col justify-between min-h-[250px] relative overflow-hidden bg-net-white">
+              <div className="border-2 border-pure-black flex flex-col justify-between min-h-[250px] relative overflow-hidden bg-transparent hover:bg-pure-black/5 transition-colors">
                 <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-pure-black absolute top-6 left-6 z-10">
                   Associate Sponsor
                 </h3>
-                <div className="w-full h-full relative flex items-center justify-center p-12 mt-8">
+                <div className="w-full h-full relative flex items-center justify-center p-8 pt-16">
                   <img src="/images/sponsors/sponsor-2.jpeg" alt="Associate Sponsor 1" className="w-full h-full object-contain mix-blend-multiply" />
                 </div>
               </div>
 
               {/* Associate Sponsor 2 Block */}
-              <div className="border-4 border-pure-black flex flex-col justify-between min-h-[250px] relative overflow-hidden bg-net-white">
+              <div className="border-2 border-pure-black flex flex-col justify-between min-h-[250px] relative overflow-hidden bg-transparent hover:bg-pure-black/5 transition-colors">
                 <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-pure-black absolute top-6 left-6 z-10">
                   Associate Sponsor
                 </h3>
-                <div className="w-full h-full relative flex items-center justify-center p-12 mt-8">
+                <div className="w-full h-full relative flex items-center justify-center p-8 pt-16">
                   <img src="/images/sponsors/sponsor-3.jpeg" alt="Associate Sponsor 2" className="w-full h-full object-contain mix-blend-multiply" />
                 </div>
               </div>
