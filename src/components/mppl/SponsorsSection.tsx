@@ -64,48 +64,56 @@ export default function SponsorsSection() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Official Partners Block */}
-              <a href="https://www.franklinpickleball.in" target="_blank" rel="noopener noreferrer" className="border-4 border-pure-black flex flex-col justify-between min-h-[250px] hover:bg-pure-black group transition-colors relative overflow-hidden">
+              <a href="https://www.franklinpickleball.in" target="_blank" rel="noopener noreferrer" className="border-4 border-pure-black flex flex-col justify-between min-h-[250px] hover:bg-pure-black group transition-colors relative overflow-hidden bg-net-white">
                 <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-pure-black group-hover:text-neon-green absolute top-6 left-6 z-10 transition-colors">
-                  Official Partners
+                  Official Partner
                 </h3>
-                <div className="w-full h-full relative">
+                <div className="w-full h-full relative flex items-center justify-center p-12 mt-8">
                   <img
                     src="/franklin-logo.jpeg"
                     alt="Franklin Pickleball"
-                    className="w-full h-full object-cover mix-blend-multiply group-hover:opacity-0 transition-opacity"
+                    className="w-full h-full object-contain mix-blend-multiply group-hover:opacity-0 transition-opacity"
                   />
-                  {/* Show white version on dark hover */}
                   <img
                     src="/franklin-logo.jpeg"
                     alt="Franklin Pickleball"
-                    className="w-full h-full object-cover absolute inset-0 invert opacity-0 group-hover:opacity-100 transition-opacity"
+                    className="w-full h-full object-contain absolute inset-0 invert opacity-0 group-hover:opacity-100 transition-opacity p-12 mt-8"
                   />
                 </div>
               </a>
 
-              {/* Associate Sponsors Block */}
-              <div className="border-4 border-pure-black p-6 flex flex-col justify-between min-h-[250px]">
-                <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-pure-black mb-6">
-                  Associate Sponsors
+              {/* Ball Partner Block */}
+              <div className="border-4 border-pure-black flex flex-col justify-between min-h-[250px] overflow-hidden relative group hover:shadow-[8px_8px_0px_rgba(0,0,0,0.3)] transition-shadow">
+                <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-net-white absolute top-6 left-6 z-10">
+                  Ball Partner
                 </h3>
-                <div className="grid grid-cols-2 gap-4 h-full items-center place-items-center">
-                  <img src="/images/sponsors/sponsor-2.jpeg" alt="Sponsor 2" className="w-full object-contain max-h-24 mix-blend-multiply" />
-                  <img src="/images/sponsors/sponsor-3.jpeg" alt="Sponsor 3" className="w-full object-contain max-h-24 mix-blend-multiply" />
+                <div className="w-full h-full relative">
+                  <img
+                    src="/images/sponsors/sponsor-1.png"
+                    alt="Ball Partner"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
-            </div>
 
-            {/* Ball Partner for Qualifying Legs */}
-            <div className="border-4 border-pure-black flex flex-col justify-between min-h-[250px] overflow-hidden relative group hover:shadow-[8px_8px_0px_rgba(0,0,0,0.3)] transition-shadow">
-              <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-pure-black absolute top-6 left-6 z-10">
-                Ball Partner for Qualifying Legs
-              </h3>
-              <div className="w-full h-full relative">
-                <img
-                  src="/images/sponsors/sponsor-1.png"
-                  alt="Ball Partner for Qualifying Legs"
-                  className="w-full h-full object-cover mix-blend-multiply"
-                />
+              {/* Associate Sponsor 1 Block */}
+              <div className="border-4 border-pure-black flex flex-col justify-between min-h-[250px] relative overflow-hidden bg-net-white">
+                <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-pure-black absolute top-6 left-6 z-10">
+                  Associate Sponsor
+                </h3>
+                <div className="w-full h-full relative flex items-center justify-center p-12 mt-8">
+                  <img src="/images/sponsors/sponsor-2.jpeg" alt="Associate Sponsor 1" className="w-full h-full object-contain mix-blend-multiply" />
+                </div>
+              </div>
+
+              {/* Associate Sponsor 2 Block */}
+              <div className="border-4 border-pure-black flex flex-col justify-between min-h-[250px] relative overflow-hidden bg-net-white">
+                <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-pure-black absolute top-6 left-6 z-10">
+                  Associate Sponsor
+                </h3>
+                <div className="w-full h-full relative flex items-center justify-center p-12 mt-8">
+                  <img src="/images/sponsors/sponsor-3.jpeg" alt="Associate Sponsor 2" className="w-full h-full object-contain mix-blend-multiply" />
+                </div>
               </div>
             </div>
 
