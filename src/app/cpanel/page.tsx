@@ -68,9 +68,9 @@ const DEFAULT_CONTENT: SiteContent = {
       confirmed: false,
     },
     {
-      label: 'LEG 4 — INDORE',
-      city: 'INDORE',
-      date: 'To Be Announced',
+      label: 'LEG 4 — JABALPUR',
+      city: 'JABALPUR',
+      date: 'November 2026',
       venue: '',
       address: '',
       rating: '',

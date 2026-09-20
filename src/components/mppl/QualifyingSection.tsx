@@ -279,7 +279,7 @@ export default function QualifyingSection() {
               </div>
             </div>
 
-            {/* Leg 4: Indore */}
+            {/* Leg 4: Jabalpur */}
             <div style={{
               background: 'transparent',
               border: '3px dashed #080808',
@@ -299,9 +299,9 @@ export default function QualifyingSection() {
                   padding: '4px 10px',
                   textTransform: 'uppercase',
                   letterSpacing: '1px'
-                }}>LEG 4 — INDORE</span>
-                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: '#080808' }}>INDORE</h4>
-                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#080808', marginBottom: '16px' }}>To Be Announced</p>
+                }}>LEG 4 — JABALPUR</span>
+                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: '#080808' }}>JABALPUR</h4>
+                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#080808', marginBottom: '16px' }}>November 2026</p>
               </div>
               <div style={{ fontSize: '13px', fontFamily: 'DM Sans, sans-serif', color: 'rgba(0,0,0,0.5)', fontWeight: 'bold' }}>
                 COMING SOON
