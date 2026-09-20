@@ -84,14 +84,14 @@ export default function SponsorsSection() {
 
               {/* Ball Partner Block */}
               <div className="border-2 border-pure-black flex flex-col justify-between min-h-[250px] overflow-hidden relative group hover:shadow-[8px_8px_0px_rgba(0,0,0,0.3)] transition-all">
-                <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-white absolute top-6 left-6 z-10 drop-shadow-md">
+                <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-pure-black absolute top-6 left-6 z-10">
                   Ball Partner
                 </h3>
-                <div className="w-full h-full relative">
+                <div className="w-full h-full relative flex items-center justify-center p-8 pt-16">
                   <img
                     src="/images/sponsors/sponsor-1.png"
                     alt="Ball Partner"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </div>
