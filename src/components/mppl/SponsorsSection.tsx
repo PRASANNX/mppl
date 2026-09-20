@@ -84,12 +84,14 @@ export default function SponsorsSection() {
               </a>
 
               {/* Associate Sponsors Block */}
-              <div className="border-4 border-pure-black p-8 flex flex-col justify-between min-h-[250px]">
-                <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-pure-black mb-8">
+              <div className="border-4 border-pure-black p-6 flex flex-col justify-between min-h-[250px]">
+                <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-pure-black mb-6">
                   Associate Sponsors
                 </h3>
-                <div className="font-bebas text-5xl text-pure-black/40 leading-[0.9]">
-                  ANNOUNCING<br />SOON
+                <div className="grid grid-cols-3 gap-4 h-full items-center place-items-center">
+                  <img src="/images/sponsors/sponsor-1.png" alt="Sponsor 1" className="w-full object-contain max-h-24 mix-blend-multiply" />
+                  <img src="/images/sponsors/sponsor-2.jpeg" alt="Sponsor 2" className="w-full object-contain max-h-24 mix-blend-multiply" />
+                  <img src="/images/sponsors/sponsor-3.jpeg" alt="Sponsor 3" className="w-full object-contain max-h-24 mix-blend-multiply" />
                 </div>
               </div>
             </div>
