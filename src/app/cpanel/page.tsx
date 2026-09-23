@@ -59,8 +59,8 @@ const DEFAULT_CONTENT: SiteContent = {
       confirmed: true,
     },
     {
-      label: 'LEG 3',
-      city: 'VENUE TBA',
+      label: 'LEG 3 — GWALIOR',
+      city: 'GWALIOR',
       date: '23-24, 25 Oct',
       venue: 'To Be Announced',
       address: '',
