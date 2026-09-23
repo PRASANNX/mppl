@@ -270,9 +270,9 @@ export default function QualifyingSection() {
                   padding: '4px 10px',
                   textTransform: 'uppercase',
                   letterSpacing: '1px'
-                }}>LEG 3</span>
-                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '32px', marginTop: '20px', marginBottom: '6px', color: '#080808', letterSpacing: '0.5px' }}>23-24, 25 OCT</h4>
-                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#080808', marginBottom: '16px' }}>Venue To Be Announced</p>
+                }}>LEG 3 — GWALIOR</span>
+                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '32px', marginTop: '20px', marginBottom: '6px', color: '#080808', letterSpacing: '0.5px' }}>GWALIOR</h4>
+                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#080808', marginBottom: '16px' }}>23,24 & 25 oct</p>
               </div>
               <div style={{ fontSize: '13px', fontFamily: 'DM Sans, sans-serif', color: 'rgba(0,0,0,0.5)', fontWeight: 'bold' }}>
                 COMING SOON
