@@ -16,6 +16,7 @@ export default function MediaCoveragePage() {
     { src: "/images/media-coverage/coverage-8.jpeg", alt: "Media Coverage 8" },
     { src: "/images/media-coverage/coverage-9.jpeg", alt: "Media Coverage 9" },
     { src: "/images/media-coverage/coverage-10.jpeg", alt: "Media Coverage 10" },
+    { src: "/images/media-coverage/coverage-11.jpeg", alt: "Media Coverage 11" },
   ];
 
   return (
