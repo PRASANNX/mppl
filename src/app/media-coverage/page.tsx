@@ -54,18 +54,18 @@ export default function MediaCoveragePage() {
           </div>
 
           {/* Photo Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
             {photos.map((photo, index) => (
               <div 
                 key={index} 
-                className="bg-pure-black border-2 border-neon-green/30 rounded-lg overflow-hidden hover:border-neon-green transition-colors duration-300 group"
+                className="break-inside-avoid bg-pure-black border-2 border-neon-green/30 rounded-lg overflow-hidden hover:border-neon-green transition-colors duration-300 group mb-8"
               >
-                <div className="relative w-full aspect-[4/3] overflow-hidden">
-                  <Image
+                <div className="relative w-full overflow-hidden">
+                  <img
                     src={photo.src}
                     alt={photo.alt}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    className="w-full h-auto block object-contain group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
               </div>
