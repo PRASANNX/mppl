@@ -231,14 +231,6 @@ export default function FormatPage() {
               >
                 Franchise &amp; Sponsor Interest
               </a>
-              <a
-                href="https://forms.gle/ReM6crNPXirR3px4A"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary px-6 py-4 text-base inline-flex items-center justify-center gap-2 w-full sm:w-auto"
-              >
-                Register for Leg 2 <ArrowRight size={20} />
-              </a>
             </div>
           </div>
 

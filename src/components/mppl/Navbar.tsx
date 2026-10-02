@@ -119,14 +119,6 @@ export default function Navbar() {
             >
               Own a Franchise
             </a>
-            <a
-              href="https://forms.gle/ReM6crNPXirR3px4A"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary hidden text-sm md:inline-flex"
-            >
-              Register for Leg 2
-            </a>
 
             {/* Hamburger */}
             <button
@@ -250,16 +242,6 @@ export default function Navbar() {
               className="w-full text-center font-bebas text-xl px-8 py-4 bg-neon-green/10 text-neon-green border border-neon-green hover:bg-neon-green hover:text-pure-black transition-colors rounded uppercase tracking-wider"
             >
               Franchise &amp; Sponsor Interest
-            </a>
-
-            <a
-              href="https://forms.gle/ReM6crNPXirR3px4A"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setMobileOpen(false)}
-              className="btn-primary w-full text-center mt-2"
-            >
-              Register for Leg 2
             </a>
           </div>
         </div>
