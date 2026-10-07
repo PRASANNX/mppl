@@ -10,6 +10,7 @@ const leagueLinks = [
 ];
 
 const involvedLinks = [
+  { label: '🏓 Register – Leg 3 Gwalior (LIVE!)', href: 'https://forms.gle/KtkSbrDLgZ3BYuaV7' },
   { label: 'Franchise & Sponsor Interest Form', href: 'https://forms.gle/5WBTzz4bEQmgDpF58' },
   { label: 'Partner / WhatsApp Support', href: 'https://wa.me/919109109051' }
 ];

@@ -9,7 +9,7 @@ export default function CTASection() {
         <div className="flex flex-col items-center">
           
           {/* Label */}
-          <div className="flex items-center gap-4 mb-10">
+          <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-[4px] bg-pure-black"></div>
             <span className="font-dm-sans text-sm font-black uppercase tracking-[4px] text-pure-black">
               Take Action
@@ -17,9 +17,15 @@ export default function CTASection() {
             <div className="w-12 h-[4px] bg-pure-black"></div>
           </div>
 
+          {/* Live Badge */}
+          <div className="inline-flex items-center gap-2 bg-pure-black text-neon-green px-4 py-2 rounded-full mb-6">
+            <span className="w-2 h-2 rounded-full bg-neon-green animate-pulse"></span>
+            <span className="font-dm-sans text-xs font-black uppercase tracking-[3px]">Registrations Live</span>
+          </div>
+
           {/* Main Heading */}
           <h2 className="font-bebas text-[clamp(60px,10vw,140px)] text-pure-black leading-[0.85] uppercase tracking-tighter mb-6">
-            LEG 1 & 2 CONCLUDED
+            LEG 3 GWALIOR
           </h2>
 
           {/* Divider */}
@@ -27,12 +33,15 @@ export default function CTASection() {
 
           {/* Description */}
           <p className="font-dm-sans text-lg md:text-xl text-pure-black font-bold leading-relaxed max-w-xl mb-12">
-            Leg 1 Indore and Leg 2 Bhopal have concluded! Stay tuned for Leg 3 Gwalior announcements.
+            Leg 3 Gwalior registrations are now open! Oct 23, 24 &amp; 25 &mdash; register your spot before it&apos;s gone.
           </p>
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row items-center gap-6 mb-6">
-            <a href="https://forms.gle/5WBTzz4bEQmgDpF58" target="_blank" rel="noopener noreferrer" className="inline-block text-center bg-pure-black text-neon-green border-2 border-pure-black font-bebas text-2xl px-10 py-5 hover:bg-net-white hover:text-pure-black hover:border-pure-black transition-colors w-full sm:w-auto uppercase tracking-wide shadow-[6px_6px_0px_rgba(0,0,0,0.25)]">
+            <a href="https://forms.gle/KtkSbrDLgZ3BYuaV7" target="_blank" rel="noopener noreferrer" className="inline-block text-center bg-pure-black text-neon-green border-2 border-pure-black font-bebas text-2xl px-10 py-5 hover:bg-net-white hover:text-pure-black hover:border-pure-black transition-colors w-full sm:w-auto uppercase tracking-wide shadow-[6px_6px_0px_rgba(0,0,0,0.25)]">
+              🏓 REGISTER FOR LEG 3 — GWALIOR
+            </a>
+            <a href="https://forms.gle/5WBTzz4bEQmgDpF58" target="_blank" rel="noopener noreferrer" className="inline-block text-center bg-transparent text-pure-black border-2 border-pure-black font-bebas text-2xl px-10 py-5 hover:bg-pure-black hover:text-neon-green transition-colors w-full sm:w-auto uppercase tracking-wide">
               FRANCHISE &amp; SPONSOR INTEREST
             </a>
           </div>

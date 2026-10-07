@@ -19,6 +19,7 @@ const navLinks: NavLink[] = [
       { label: 'Rules', href: '/rules' },
       { label: 'Schedule', href: '/#schedule' },
       { label: 'Leg 1 Results', href: '/leg-1-results' },
+      { label: '🏓 Register – Leg 3 Gwalior', href: 'https://forms.gle/KtkSbrDLgZ3BYuaV7', target: '_blank' },
     ],
   },
   { label: 'Media Coverage', href: '/media-coverage' },
@@ -112,12 +113,12 @@ export default function Navbar() {
           {/* Right: CTA + Mobile Hamburger */}
           <div className="flex items-center gap-3">
             <a
-              href="https://forms.gle/5WBTzz4bEQmgDpF58"
+              href="https://forms.gle/KtkSbrDLgZ3BYuaV7"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden lg:inline-flex text-xs font-bold uppercase tracking-wider text-neon-green border border-neon-green/40 hover:border-neon-green px-4 py-2 rounded transition-colors"
+              className="hidden lg:inline-flex text-xs font-bold uppercase tracking-wider text-pure-black bg-neon-green border border-neon-green hover:bg-transparent hover:text-neon-green px-4 py-2 rounded transition-colors animate-pulse"
             >
-              Own a Franchise
+              🏓 Register – Leg 3
             </a>
 
             {/* Hamburger */}
@@ -235,13 +236,13 @@ export default function Navbar() {
             <div className="w-full h-px bg-net-white/10 my-4"></div>
 
             <a
-              href="https://forms.gle/5WBTzz4bEQmgDpF58"
+              href="https://forms.gle/KtkSbrDLgZ3BYuaV7"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileOpen(false)}
-              className="w-full text-center font-bebas text-xl px-8 py-4 bg-neon-green/10 text-neon-green border border-neon-green hover:bg-neon-green hover:text-pure-black transition-colors rounded uppercase tracking-wider"
+              className="w-full text-center font-bebas text-xl px-8 py-4 bg-neon-green text-pure-black border border-neon-green hover:bg-transparent hover:text-neon-green transition-colors rounded uppercase tracking-wider"
             >
-              Franchise &amp; Sponsor Interest
+              🏓 Register – Leg 3 Gwalior
             </a>
           </div>
         </div>

@@ -250,16 +250,38 @@ export default function QualifyingSection() {
               </div>
             </div>
 
-            {/* Leg 3 */}
+            {/* Leg 3: Gwalior — REGISTRATIONS OPEN */}
             <div style={{
-              background: 'transparent',
-              border: '3px dashed #080808',
+              background: '#CAFF00',
+              border: '3px solid #080808',
               padding: '28px',
               color: '#080808',
               display: 'flex',
               flexDirection: 'column',
-              justifyContent: 'space-between'
+              justifyContent: 'space-between',
+              boxShadow: '10px 10px 0px rgba(0,0,0,0.2)',
+              position: 'relative' as const
             }}>
+              <div style={{
+                position: 'absolute' as const,
+                top: '12px',
+                right: '12px',
+                background: '#080808',
+                color: '#CAFF00',
+                fontFamily: 'DM Sans, sans-serif',
+                fontSize: '10px',
+                fontWeight: 'bold',
+                padding: '4px 10px',
+                textTransform: 'uppercase' as const,
+                letterSpacing: '2px',
+                borderRadius: '2px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '5px'
+              }}>
+                <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#CAFF00', display: 'inline-block', animation: 'pulse 1.5s infinite' }}></span>
+                LIVE
+              </div>
               <div>
                 <span style={{
                   fontFamily: 'DM Sans, sans-serif',
@@ -268,15 +290,31 @@ export default function QualifyingSection() {
                   background: 'rgba(0,0,0,0.1)',
                   color: '#080808',
                   padding: '4px 10px',
-                  textTransform: 'uppercase',
+                  textTransform: 'uppercase' as const,
                   letterSpacing: '1px'
                 }}>LEG 3 — GWALIOR</span>
-                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '32px', marginTop: '20px', marginBottom: '6px', color: '#080808', letterSpacing: '0.5px' }}>GWALIOR</h4>
-                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#080808', marginBottom: '16px' }}>23,24 & 25 oct</p>
+                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: '#080808', letterSpacing: '0.5px' }}>GWALIOR</h4>
+                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#080808', marginBottom: '16px' }}>Oct 23, 24 &amp; 25</p>
               </div>
-              <div style={{ fontSize: '13px', fontFamily: 'DM Sans, sans-serif', color: 'rgba(0,0,0,0.5)', fontWeight: 'bold' }}>
-                COMING SOON
-              </div>
+              <a
+                href="https://forms.gle/KtkSbrDLgZ3BYuaV7"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-block',
+                  background: '#080808',
+                  color: '#CAFF00',
+                  fontFamily: 'Bebas Neue, sans-serif',
+                  fontSize: '18px',
+                  padding: '12px 20px',
+                  textDecoration: 'none',
+                  letterSpacing: '1px',
+                  textAlign: 'center' as const,
+                  border: '2px solid #080808'
+                }}
+              >
+                🏓 REGISTER NOW →
+              </a>
             </div>
 
             {/* Leg 4: Jabalpur */}
@@ -328,14 +366,26 @@ export default function QualifyingSection() {
               fontFamily: 'Bebas Neue, sans-serif',
               fontSize: '28px',
               color: '#080808'
-            }}>LEG 1 & LEG 2 CONCLUDED</div>
+            }}>🏓 LEG 3 GWALIOR — REGISTRATIONS NOW OPEN</div>
             <div style={{
               fontFamily: 'DM Sans, sans-serif',
               fontSize: '14px',
               color: 'rgba(0,0,0,0.6)'
-            }}>Stay tuned for Leg 3 Gwalior announcements!</div>
+            }}>Oct 23, 24 &amp; 25 — Register before spots fill up!</div>
           </div>
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            <a href="https://forms.gle/KtkSbrDLgZ3BYuaV7" target="_blank" rel="noopener noreferrer" style={{
+              background: '#080808',
+              color: '#CAFF00',
+              border: '2px solid #080808',
+              padding: '14px 24px',
+              borderRadius: '4px',
+              fontFamily: 'Bebas Neue, sans-serif',
+              fontSize: '18px',
+              letterSpacing: '1px',
+              cursor: 'pointer',
+              textDecoration: 'none'
+            }}>REGISTER NOW →</a>
             <Link href="/format" style={{
               background: '#ffffff',
               color: '#080808',
