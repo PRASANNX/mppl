@@ -97,7 +97,13 @@ export default function HeroSection() {
                 Legs 1 &amp; 2 concluded. <span className="text-neon-green font-bold">Leg 3 Gwalior</span> registrations are now open — Oct 23, 24 &amp; 25!
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <a href="https://forms.gle/KtkSbrDLgZ3BYuaV7" target="_blank" rel="noopener noreferrer" className="btn-secondary border-neon-green bg-neon-green text-pure-black hover:bg-transparent hover:text-neon-green px-6 py-3.5 text-base font-bold transition-all">
+                <a
+                  href="https://forms.gle/KtkSbrDLgZ3BYuaV7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ background: '#CAFF00', color: '#080808', border: '2px solid #CAFF00' }}
+                  className="inline-block px-6 py-3.5 text-base font-bold font-dm-sans uppercase tracking-wide hover:opacity-80 transition-opacity"
+                >
                   🏓 Register — Leg 3 Gwalior
                 </a>
                 <a href="https://www.instagram.com/mpplleague?igsh=MWd5MDMweHdmbnZ1dg==" target="_blank" rel="noopener noreferrer" className="btn-secondary px-5 py-3.5 text-base">

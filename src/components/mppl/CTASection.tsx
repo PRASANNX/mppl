@@ -38,10 +38,22 @@ export default function CTASection() {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row items-center gap-6 mb-6">
-            <a href="https://forms.gle/KtkSbrDLgZ3BYuaV7" target="_blank" rel="noopener noreferrer" className="inline-block text-center bg-pure-black text-neon-green border-2 border-pure-black font-bebas text-2xl px-10 py-5 hover:bg-net-white hover:text-pure-black hover:border-pure-black transition-colors w-full sm:w-auto uppercase tracking-wide shadow-[6px_6px_0px_rgba(0,0,0,0.25)]">
+            <a
+              href="https://forms.gle/KtkSbrDLgZ3BYuaV7"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ background: '#080808', color: '#ffffff', border: '2px solid #080808' }}
+              className="inline-block text-center font-bebas text-2xl px-10 py-5 w-full sm:w-auto uppercase tracking-wide shadow-[6px_6px_0px_rgba(0,0,0,0.25)] hover:opacity-80 transition-opacity"
+            >
               🏓 REGISTER FOR LEG 3 — GWALIOR
             </a>
-            <a href="https://forms.gle/5WBTzz4bEQmgDpF58" target="_blank" rel="noopener noreferrer" className="inline-block text-center bg-transparent text-pure-black border-2 border-pure-black font-bebas text-2xl px-10 py-5 hover:bg-pure-black hover:text-neon-green transition-colors w-full sm:w-auto uppercase tracking-wide">
+            <a
+              href="https://forms.gle/5WBTzz4bEQmgDpF58"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ background: '#ffffff', color: '#080808', border: '2px solid #080808' }}
+              className="inline-block text-center font-bebas text-2xl px-10 py-5 w-full sm:w-auto uppercase tracking-wide hover:opacity-80 transition-opacity"
+            >
               FRANCHISE &amp; SPONSOR INTEREST
             </a>
           </div>
