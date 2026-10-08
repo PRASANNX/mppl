@@ -299,7 +299,6 @@ export default function QualifyingSection() {
                   <img src="/jiwaji-club-logo.png" alt="Jiwaji Club Logo" style={{ width: '42px', height: '42px', borderRadius: '50%', objectFit: 'cover', border: '2px solid #080808' }} />
                   <div>
                     <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '13px', fontWeight: 'bold', color: '#080808', textTransform: 'uppercase', letterSpacing: '0.5px' }}>JIWAJI CLUB</div>
-                    <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '11px', color: 'rgba(0,0,0,0.6)' }}>Venue, Gwalior</div>
                   </div>
                 </div>
               </div>
