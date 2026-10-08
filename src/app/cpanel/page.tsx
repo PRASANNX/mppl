@@ -62,10 +62,10 @@ const DEFAULT_CONTENT: SiteContent = {
       label: 'LEG 3 — GWALIOR',
       city: 'GWALIOR',
       date: '23-24, 25 Oct',
-      venue: 'To Be Announced',
+      venue: 'Jiwaji Club',
       address: '',
       rating: '',
-      confirmed: false,
+      confirmed: true,
     },
     {
       label: 'LEG 4 — JABALPUR',

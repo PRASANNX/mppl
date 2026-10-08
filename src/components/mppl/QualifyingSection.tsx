@@ -294,7 +294,14 @@ export default function QualifyingSection() {
                   letterSpacing: '1px'
                 }}>LEG 3 — GWALIOR</span>
                 <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: '#080808', letterSpacing: '0.5px' }}>GWALIOR</h4>
-                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#080808', marginBottom: '16px' }}>Oct 23, 24 &amp; 25</p>
+                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#080808', marginBottom: '8px' }}>Oct 23, 24 &amp; 25</p>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
+                  <img src="/jiwaji-club-logo.png" alt="Jiwaji Club Logo" style={{ width: '42px', height: '42px', borderRadius: '50%', objectFit: 'cover', border: '2px solid #080808' }} />
+                  <div>
+                    <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '13px', fontWeight: 'bold', color: '#080808', textTransform: 'uppercase', letterSpacing: '0.5px' }}>JIWAJI CLUB</div>
+                    <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '11px', color: 'rgba(0,0,0,0.6)' }}>Venue, Gwalior</div>
+                  </div>
+                </div>
               </div>
               <a
                 href="https://forms.gle/KtkSbrDLgZ3BYuaV7"
