@@ -63,7 +63,7 @@ export default function SponsorsSection() {
             </a>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8">
-              {/* Official Partners Block */}
+              {/* Official Partners Block - Franklin */}
               <a href="https://www.franklinpickleball.in" target="_blank" rel="noopener noreferrer" className="border-2 border-pure-black flex flex-col justify-between min-h-[250px] hover:bg-pure-black group transition-all relative overflow-hidden bg-transparent">
                 <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-pure-black group-hover:text-neon-green absolute top-6 left-6 z-10 transition-colors">
                   Official Partner
@@ -96,23 +96,43 @@ export default function SponsorsSection() {
                 </div>
               </div>
 
-              {/* Associate Sponsor 1 Block */}
-              <div className="border-2 border-pure-black flex flex-col justify-between min-h-[250px] relative overflow-hidden bg-transparent hover:bg-pure-black/5 transition-colors">
+              {/* Rajwade Partner Block */}
+              <div className="border-2 border-pure-black flex flex-col justify-between min-h-[250px] relative overflow-hidden bg-white hover:bg-pure-black/5 transition-colors group">
                 <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-pure-black absolute top-6 left-6 z-10">
-                  Associate Sponsor
+                  Partner
                 </h3>
                 <div className="w-full h-full relative flex items-center justify-center p-8 pt-16">
-                  <img src="/images/sponsors/sponsor-2.jpeg" alt="Associate Sponsor 1" className="w-full h-full object-contain mix-blend-multiply" />
+                  <img src="/images/sponsors/rajwade.jpeg" alt="Rajwade" className="w-full h-full object-contain mix-blend-multiply" />
                 </div>
               </div>
 
-              {/* Associate Sponsor 2 Block */}
-              <div className="border-2 border-pure-black flex flex-col justify-between min-h-[250px] relative overflow-hidden bg-transparent hover:bg-pure-black/5 transition-colors">
+              {/* Pearl Partner Block */}
+              <div className="border-2 border-pure-black flex flex-col justify-between min-h-[250px] relative overflow-hidden bg-white hover:bg-pure-black/5 transition-colors group">
                 <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-pure-black absolute top-6 left-6 z-10">
-                  Associate Sponsor
+                  Partner
                 </h3>
                 <div className="w-full h-full relative flex items-center justify-center p-8 pt-16">
-                  <img src="/images/sponsors/sponsor-3.jpeg" alt="Associate Sponsor 2" className="w-full h-full object-contain mix-blend-multiply" />
+                  <img src="/images/sponsors/pearl.jpeg" alt="Pearl" className="w-full h-full object-contain mix-blend-multiply" />
+                </div>
+              </div>
+
+              {/* Nidhivan Partner Block */}
+              <div className="border-2 border-pure-black flex flex-col justify-between min-h-[250px] relative overflow-hidden bg-white hover:bg-pure-black/5 transition-colors group">
+                <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-pure-black absolute top-6 left-6 z-10">
+                  Partner
+                </h3>
+                <div className="w-full h-full relative flex items-center justify-center p-8 pt-16">
+                  <img src="/images/sponsors/nidhivan.jpeg" alt="Nidhivan" className="w-full h-full object-contain mix-blend-multiply" />
+                </div>
+              </div>
+
+              {/* KK Global Partner Block */}
+              <div className="border-2 border-pure-black flex flex-col justify-between min-h-[250px] relative overflow-hidden bg-white hover:bg-pure-black/5 transition-colors group">
+                <h3 className="font-dm-sans text-xs font-bold uppercase tracking-[4px] text-pure-black absolute top-6 left-6 z-10">
+                  Partner
+                </h3>
+                <div className="w-full h-full relative flex items-center justify-center p-8 pt-16">
+                  <img src="/images/sponsors/kk-global.jpeg" alt="KK Global" className="w-full h-full object-contain mix-blend-multiply" />
                 </div>
               </div>
             </div>
