@@ -18,6 +18,7 @@ const navLinks: NavLink[] = [
       { label: 'Format', href: '/format' },
       { label: 'Rules', href: '/rules' },
       { label: 'Schedule', href: '/#schedule' },
+      { label: 'Leg 2 Results', href: '/leg-2-results' },
       { label: 'Leg 1 Results', href: '/leg-1-results' },
       { label: '🏓 Register – Leg 3 Gwalior', href: 'https://forms.gle/KtkSbrDLgZ3BYuaV7', target: '_blank' },
     ],

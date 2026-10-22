@@ -2,9 +2,10 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Navbar from '@/components/mppl/Navbar';
 import Footer from '@/components/mppl/Footer';
-import { Trophy, Medal, ChevronDown } from 'lucide-react';
+import { Trophy, Medal, ChevronDown, ArrowRight } from 'lucide-react';
 
 const categories = [
   {
@@ -80,6 +81,18 @@ export default function Leg1ResultsPage() {
         </div>
 
         <div className="max-w-[1300px] mx-auto px-5 lg:px-10 relative z-10">
+          {/* ── Navigation Link ── */}
+          <Link
+            href="/leg-2-results"
+            className="group inline-flex items-center gap-2 font-dm-sans text-xs font-bold uppercase tracking-[3px] text-neon-green hover:text-net-white transition-colors duration-300 mb-8"
+          >
+            View Leg 2 Results (Latest)
+            <ArrowRight
+              size={14}
+              className="transition-transform duration-300 group-hover:translate-x-1"
+            />
+          </Link>
+
           {/* ── Hero Header ── */}
           <div className="mb-16 md:mb-24">
             {/* Eyebrow */}
