@@ -323,7 +323,7 @@ export default function QualifyingSection() {
               </a>
             </div>
 
-            {/* Leg 4: Jabalpur */}
+            {/* Leg 4: Indore */}
             <div style={{
               background: 'transparent',
               border: '3px dashed #080808',
@@ -343,9 +343,16 @@ export default function QualifyingSection() {
                   padding: '4px 10px',
                   textTransform: 'uppercase',
                   letterSpacing: '1px'
-                }}>LEG 4 — JABALPUR</span>
-                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: '#080808' }}>JABALPUR</h4>
-                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#080808', marginBottom: '16px' }}>November 2026</p>
+                }}>LEG 4 — INDORE</span>
+                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: '#080808' }}>INDORE</h4>
+                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#080808', marginBottom: '16px' }}>14-15 Nov</p>
+
+                <div style={{ borderTop: '1px solid rgba(0,0,0,0.15)', paddingTop: '16px', marginBottom: '16px' }}>
+                  <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '14px', fontWeight: 'bold', color: '#080808', marginBottom: '4px' }}>Surya Pickleball Academy</p>
+                  <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '12px', color: 'rgba(0,0,0,0.6)', lineHeight: '1.4' }}>
+                    1427, Kanadia Main Rd, Alok Nagar, Indore, MP 452016
+                  </p>
+                </div>
               </div>
               <div style={{ fontSize: '13px', fontFamily: 'DM Sans, sans-serif', color: 'rgba(0,0,0,0.5)', fontWeight: 'bold' }}>
                 COMING SOON
