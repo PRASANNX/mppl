@@ -11,22 +11,13 @@ const leaders = [
     textClass: 'text-neon-green',
   },
   {
-    name: 'KESHAV PATIDAR',
-    role: 'Director, MPPL',
-    image: '/images/director.jpg',
+    name: 'MUKTA SINGH',
+    role: 'Managing Director, MPPL',
+    image: '/images/managing-director.jpg',
     borderClass: 'border-neon-orange',
     shadowStyle: { boxShadow: '16px 16px 0px rgba(255,96,0,1)' },
     accentClass: 'bg-neon-orange',
     textClass: 'text-neon-orange',
-  },
-  {
-    name: 'MUKTA SINGH',
-    role: 'Managing Director, MPPL',
-    image: '/images/managing-director.jpg',
-    borderClass: 'border-neon-green',
-    shadowStyle: { boxShadow: '16px 16px 0px rgba(202,255,0,1)' },
-    accentClass: 'bg-neon-green',
-    textClass: 'text-neon-green',
   },
 ];
 
@@ -59,7 +50,7 @@ export default function FounderSection() {
         </div>
 
         {/* Leaders Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 max-w-3xl mx-auto">
           {leaders.map((leader, i) => (
             <div
               key={i}

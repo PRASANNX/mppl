@@ -90,21 +90,20 @@ export default function HeroSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-8 max-w-4xl relative z-10">
             <div>
               <div className="flex items-center gap-2 mb-3">
-                <span className="w-2 h-2 rounded-full bg-neon-green animate-pulse"></span>
-                <span className="font-dm-sans text-xs font-bold uppercase tracking-[3px] text-neon-green">Leg 3 Registrations Live</span>
+                <span className="w-2 h-2 rounded-full bg-neon-green"></span>
+                <span className="font-dm-sans text-xs font-bold uppercase tracking-[3px] text-neon-green">Legs 1, 2 &amp; 3 Concluded</span>
               </div>
               <p className="font-dm-sans text-lg text-net-white/70 leading-relaxed">
-                Legs 1 &amp; 2 concluded. <span className="text-neon-green font-bold">Leg 3 Gwalior</span> registrations are now open — Oct 23, 24 &amp; 25!
+                Legs 1, 2 &amp; 3 concluded. Stay tuned for <span className="text-neon-green font-bold">Leg 4 Indore</span> announcements!
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
-                  href="https://forms.gle/KtkSbrDLgZ3BYuaV7"
+                  href="https://forms.gle/5WBTzz4bEQmgDpF58"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ background: '#CAFF00', color: '#080808', border: '2px solid #CAFF00' }}
-                  className="inline-block px-6 py-3.5 text-base font-bold font-dm-sans uppercase tracking-wide hover:opacity-80 transition-opacity"
+                  className="btn-primary px-6 py-3.5 text-base"
                 >
-                  🏓 Register — Leg 3 Gwalior
+                  Franchise &amp; Sponsor Interest
                 </a>
                 <a href="https://www.instagram.com/mpplleague?igsh=MWd5MDMweHdmbnZ1dg==" target="_blank" rel="noopener noreferrer" className="btn-secondary px-5 py-3.5 text-base">
                   Instagram

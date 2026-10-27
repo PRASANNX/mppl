@@ -250,77 +250,56 @@ export default function QualifyingSection() {
               </div>
             </div>
 
-            {/* Leg 3: Gwalior — REGISTRATIONS OPEN */}
+            {/* Leg 3: Gwalior — CONCLUDED */}
             <div style={{
-              background: '#CAFF00',
-              border: '3px solid #080808',
+              background: '#080808',
+              border: '3px solid rgba(255,255,255,0.15)',
               padding: '28px',
-              color: '#080808',
+              color: '#ffffff',
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'space-between',
-              boxShadow: '10px 10px 0px rgba(0,0,0,0.2)',
+              boxShadow: '10px 10px 0px rgba(0,0,0,0.15)',
+              opacity: 0.6,
               position: 'relative' as const
             }}>
               <div style={{
                 position: 'absolute' as const,
                 top: '12px',
                 right: '12px',
-                background: '#080808',
-                color: '#CAFF00',
+                background: '#ff4444',
+                color: '#ffffff',
                 fontFamily: 'DM Sans, sans-serif',
                 fontSize: '10px',
                 fontWeight: 'bold',
                 padding: '4px 10px',
                 textTransform: 'uppercase' as const,
                 letterSpacing: '2px',
-                borderRadius: '2px',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '5px'
-              }}>
-                <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#CAFF00', display: 'inline-block', animation: 'pulse 1.5s infinite' }}></span>
-                LIVE
-              </div>
+                borderRadius: '2px'
+              }}>CONCLUDED</div>
               <div>
                 <span style={{
                   fontFamily: 'DM Sans, sans-serif',
                   fontSize: '11px',
                   fontWeight: 'bold',
-                  background: 'rgba(0,0,0,0.1)',
-                  color: '#080808',
+                  background: 'rgba(255,255,255,0.15)',
+                  color: 'rgba(255,255,255,0.5)',
                   padding: '4px 10px',
                   textTransform: 'uppercase' as const,
                   letterSpacing: '1px'
                 }}>LEG 3 — GWALIOR</span>
-                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: '#080808', letterSpacing: '0.5px' }}>GWALIOR</h4>
-                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#080808', marginBottom: '8px' }}>Oct 23, 24 &amp; 25</p>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
-                  <img src="/jiwaji-club-logo.png" alt="Jiwaji Club Logo" style={{ width: '42px', height: '42px', borderRadius: '50%', objectFit: 'cover', border: '2px solid #080808' }} />
-                  <div>
-                    <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '13px', fontWeight: 'bold', color: '#080808', textTransform: 'uppercase', letterSpacing: '0.5px' }}>JIWAJI CLUB</div>
-                  </div>
+                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: 'rgba(255,255,255,0.5)' }}>GWALIOR</h4>
+                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: 'rgba(255,255,255,0.5)', marginBottom: '16px' }}>Oct 23, 24 &amp; 25</p>
+                <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '16px', marginBottom: '16px' }}>
+                  <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '14px', fontWeight: 'bold', color: 'rgba(255,255,255,0.4)', marginBottom: '4px' }}>Jiwaji Club</p>
+                  <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '12px', color: 'rgba(255,255,255,0.3)', lineHeight: '1.4' }}>
+                    Gwalior, Madhya Pradesh
+                  </p>
                 </div>
               </div>
-              <a
-                href="https://forms.gle/KtkSbrDLgZ3BYuaV7"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: 'inline-block',
-                  background: '#080808',
-                  color: '#CAFF00',
-                  fontFamily: 'Bebas Neue, sans-serif',
-                  fontSize: '18px',
-                  padding: '12px 20px',
-                  textDecoration: 'none',
-                  letterSpacing: '1px',
-                  textAlign: 'center' as const,
-                  border: '2px solid #080808'
-                }}
-              >
-                🏓 REGISTER NOW →
-              </a>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontFamily: 'DM Sans, sans-serif', color: 'rgba(255,255,255,0.4)', fontWeight: 'bold' }}>
+                ✓ Completed
+              </div>
             </div>
 
             {/* Leg 4: Indore */}
@@ -372,26 +351,14 @@ export default function QualifyingSection() {
               fontFamily: 'Bebas Neue, sans-serif',
               fontSize: '28px',
               color: '#080808'
-            }}>🏓 LEG 3 GWALIOR — REGISTRATIONS NOW OPEN</div>
+            }}>🏓 LEGS 1, 2 &amp; 3 CONCLUDED</div>
             <div style={{
               fontFamily: 'DM Sans, sans-serif',
               fontSize: '14px',
               color: 'rgba(0,0,0,0.6)'
-            }}>Oct 23, 24 &amp; 25 — Register before spots fill up!</div>
+            }}>Stay tuned for Leg 4 Indore announcements &amp; registrations!</div>
           </div>
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-            <a href="https://forms.gle/KtkSbrDLgZ3BYuaV7" target="_blank" rel="noopener noreferrer" style={{
-              background: '#080808',
-              color: '#CAFF00',
-              border: '2px solid #080808',
-              padding: '14px 24px',
-              borderRadius: '4px',
-              fontFamily: 'Bebas Neue, sans-serif',
-              fontSize: '18px',
-              letterSpacing: '1px',
-              cursor: 'pointer',
-              textDecoration: 'none'
-            }}>REGISTER NOW →</a>
             <Link href="/format" style={{
               background: '#ffffff',
               color: '#080808',

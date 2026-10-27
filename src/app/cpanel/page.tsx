@@ -88,7 +88,7 @@ const DEFAULT_CONTENT: SiteContent = {
   whatsapp: '+91 91091 09051',
   registrationLink: 'https://forms.gle/ReM6crNPXirR3px4A',
   instagramLink: 'https://www.instagram.com/mpplleague?igsh=MWd5MDMweHdmbnZ1dg==',
-  announcementText: 'Leg 1 & Leg 2 concluded! Stay tuned for Leg 3 Gwalior announcements.',
+  announcementText: 'Legs 1, 2 & 3 concluded! Stay tuned for Leg 4 Indore announcements.',
   founderName: 'Suryansh Yadav',
   founderTitle: 'Founder & CEO, MPPL',
   prizePool: '₹18 Lakhs+',

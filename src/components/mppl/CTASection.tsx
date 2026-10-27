@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 export default function CTASection() {
   return (
     <section className="bg-neon-green py-32 px-6 lg:px-16 relative overflow-hidden pattern-sawtooth-dark" id="register">
@@ -17,15 +19,14 @@ export default function CTASection() {
             <div className="w-12 h-[4px] bg-pure-black"></div>
           </div>
 
-          {/* Live Badge */}
+          {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-pure-black text-neon-green px-4 py-2 rounded-full mb-6">
-            <span className="w-2 h-2 rounded-full bg-neon-green animate-pulse"></span>
-            <span className="font-dm-sans text-xs font-black uppercase tracking-[3px]">Registrations Live</span>
+            <span className="font-dm-sans text-xs font-black uppercase tracking-[3px]">Next: Leg 4 Indore</span>
           </div>
 
           {/* Main Heading */}
           <h2 className="font-bebas text-[clamp(60px,10vw,140px)] text-pure-black leading-[0.85] uppercase tracking-tighter mb-6">
-            LEG 3 GWALIOR
+            LEGS 1, 2 &amp; 3 CONCLUDED
           </h2>
 
           {/* Divider */}
@@ -33,39 +34,27 @@ export default function CTASection() {
 
           {/* Description */}
           <p className="font-dm-sans text-lg md:text-xl text-pure-black font-bold leading-relaxed max-w-xl mb-12">
-            Leg 3 Gwalior registrations are now open! Oct 23, 24 &amp; 25 &mdash; register your spot before it&apos;s gone.
+            Legs 1, 2 &amp; 3 (Indore, Bhopal &amp; Gwalior) have officially wrapped up! Stay tuned for Leg 4 Indore announcements.
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row items-center gap-6 mb-6">
+          <div className="flex flex-col sm:flex-row items-center gap-6 mb-8">
             <a
-              href="https://forms.gle/KtkSbrDLgZ3BYuaV7"
+              href="https://forms.gle/5WBTzz4bEQmgDpF58"
               target="_blank"
               rel="noopener noreferrer"
               style={{ background: '#080808', color: '#ffffff', border: '2px solid #080808' }}
               className="inline-block text-center font-bebas text-2xl px-10 py-5 w-full sm:w-auto uppercase tracking-wide shadow-[6px_6px_0px_rgba(0,0,0,0.25)] hover:opacity-80 transition-opacity"
             >
-              🏓 REGISTER FOR LEG 3 — GWALIOR
+              FRANCHISE &amp; SPONSOR INTEREST
             </a>
-            <a
-              href="https://forms.gle/5WBTzz4bEQmgDpF58"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/format"
               style={{ background: '#ffffff', color: '#080808', border: '2px solid #080808' }}
               className="inline-block text-center font-bebas text-2xl px-10 py-5 w-full sm:w-auto uppercase tracking-wide hover:opacity-80 transition-opacity"
             >
-              FRANCHISE &amp; SPONSOR INTEREST
-            </a>
-          </div>
-
-          {/* Multi-category info */}
-          <div className="bg-pure-black/15 border border-pure-black/20 rounded-lg px-6 py-4 max-w-xl mb-6">
-            <p className="font-dm-sans text-sm font-bold text-pure-black leading-relaxed">
-              ⚠ Playing in multiple categories?{' '}
-              <span className="font-normal">
-                You can register in up to 2 categories (max). Each category requires a separate registration form and a separate entry fee payment.
-              </span>
-            </p>
+              VIEW FORMAT &amp; RULES
+            </Link>
           </div>
 
           <a href="https://wa.me/919109109051?text=Hi%21%20I%27m%20interested%20in%20partnering%20with%20MPPL%202026%20as%20a%20sponsor%20or%20franchise%20partner.%20Please%20share%20more%20details.%20%F0%9F%A4%9D" target="_blank" rel="noopener noreferrer" className="font-dm-sans text-xs font-bold uppercase tracking-widest text-pure-black/80 hover:text-pure-black underline">
