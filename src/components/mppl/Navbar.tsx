@@ -113,6 +113,14 @@ export default function Navbar() {
           {/* Right: CTA + Mobile Hamburger */}
           <div className="flex items-center gap-3">
             <a
+              href="https://forms.gle/sk57cEiq4qqCzKs68"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:inline-flex text-xs font-bold uppercase tracking-wider bg-neon-green text-pure-black hover:bg-net-white px-4 py-2 rounded transition-all shadow-[0_0_15px_rgba(202,255,0,0.35)]"
+            >
+              Register Leg 4
+            </a>
+            <a
               href="https://forms.gle/5WBTzz4bEQmgDpF58"
               target="_blank"
               rel="noopener noreferrer"
@@ -234,6 +242,16 @@ export default function Navbar() {
             ))}
 
             <div className="w-full h-px bg-net-white/10 my-4"></div>
+
+            <a
+              href="https://forms.gle/sk57cEiq4qqCzKs68"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileOpen(false)}
+              className="w-full text-center font-bebas text-xl px-8 py-4 bg-neon-green text-pure-black hover:bg-net-white transition-colors rounded uppercase tracking-wider mb-3 shadow-[0_0_20px_rgba(202,255,0,0.4)]"
+            >
+              Register For Leg 4 →
+            </a>
 
             <a
               href="https://forms.gle/5WBTzz4bEQmgDpF58"

@@ -53,7 +53,7 @@ const seniorCategoriesRight: Category[] = [
 function CategoryCard({ cat }: { cat: Category }) {
   return (
     <a
-      href="https://forms.gle/ReM6crNPXirR3px4A"
+      href="https://forms.gle/sk57cEiq4qqCzKs68"
       target="_blank"
       rel="noopener noreferrer"
       className="block p-5 border-2 border-neon-green bg-pure-black text-net-white transition-all cursor-pointer group hover:bg-neon-green hover:text-pure-black"
@@ -128,6 +128,17 @@ export default function CategoriesSection() {
               </div>
               <div className="font-dm-sans text-xs font-bold uppercase tracking-widest text-pure-black/90 mt-1">
                 Teams / Brackets / Cities
+              </div>
+
+              <div className="mt-8">
+                <a
+                  href="https://forms.gle/sk57cEiq4qqCzKs68"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-pure-black text-neon-green font-bebas text-2xl px-6 py-3 border-2 border-pure-black hover:bg-net-white hover:text-pure-black transition-all shadow-[6px_6px_0px_rgba(0,0,0,0.3)] tracking-wide"
+                >
+                  REGISTER FOR LEG 4 →
+                </a>
               </div>
             </div>
 
@@ -308,6 +319,16 @@ export default function CategoriesSection() {
                   <p className="font-dm-sans text-xs text-neon-orange mt-2 font-bold leading-relaxed">
                     * In whichever category there are no registrations, that category will be closed.
                   </p>
+                  <div className="mt-4">
+                    <a
+                      href="https://forms.gle/sk57cEiq4qqCzKs68"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block bg-neon-green text-pure-black font-bebas text-lg px-5 py-2.5 hover:bg-net-white transition-colors tracking-wider font-bold"
+                    >
+                      Open Leg 4 Registration Form →
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

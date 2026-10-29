@@ -72,7 +72,7 @@ export default function FormatPage() {
                 { leg: "Leg 1", city: "Indore", detail: "Aug 21, 22, 23 — Concluded ✓" },
                 { leg: "Leg 2", city: "Bhopal", detail: "Sept 25, 26, 27 — Concluded ✓" },
                 { leg: "Leg 3", city: "Gwalior", detail: "23-24, 25 Oct — Concluded ✓" },
-                { leg: "Leg 4", city: "Indore", detail: "21-22 Nov — Venue Announcement Soon" },
+                { leg: "Leg 4", city: "Indore", detail: "21-22 Nov — Registrations Live!" },
               ].map((item, idx) => (
                 <div key={idx} className="bg-[#161616] p-5 border border-neon-green/30">
                   <div className="font-dm-sans text-xs font-bold text-neon-green uppercase tracking-widest mb-1">{item.leg}</div>
@@ -97,6 +97,16 @@ export default function FormatPage() {
                 <p className="font-dm-sans text-sm text-net-white/80 leading-relaxed">
                   In whichever category there are no registrations, that category will be closed. Players may register in a maximum of 3 categories per leg.
                 </p>
+                <div className="mt-4">
+                  <a
+                    href="https://forms.gle/sk57cEiq4qqCzKs68"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-neon-orange text-pure-black font-bebas text-lg px-6 py-2.5 hover:bg-net-white transition-colors tracking-wider font-bold"
+                  >
+                    REGISTER FOR LEG 4 NOW →
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -241,6 +251,14 @@ export default function FormatPage() {
               <p className="font-dm-sans text-sm text-net-white/70">Register as a player or apply for franchise ownership &amp; brand sponsorship.</p>
             </div>
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto">
+              <a
+                href="https://forms.gle/sk57cEiq4qqCzKs68"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary px-6 py-4 text-base font-bold inline-flex items-center justify-center gap-2 w-full sm:w-auto"
+              >
+                Register For Leg 4 →
+              </a>
               <a
                 href="https://forms.gle/5WBTzz4bEQmgDpF58"
                 target="_blank"

@@ -10,6 +10,7 @@ const leagueLinks = [
 ];
 
 const involvedLinks = [
+  { label: 'Register for Leg 4 (Indore)', href: 'https://forms.gle/sk57cEiq4qqCzKs68' },
   { label: 'Franchise & Sponsor Interest Form', href: 'https://forms.gle/5WBTzz4bEQmgDpF58' },
   { label: 'Partner / WhatsApp Support', href: 'https://wa.me/919109109051' }
 ];

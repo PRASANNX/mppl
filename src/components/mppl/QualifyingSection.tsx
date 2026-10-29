@@ -304,31 +304,48 @@ export default function QualifyingSection() {
 
             {/* Leg 4: Indore */}
             <div style={{
-              background: 'transparent',
-              border: '3px dashed #080808',
+              background: '#080808',
+              border: '3px solid #080808',
               padding: '28px',
-              color: '#080808',
+              color: '#FBFBFB',
               display: 'flex',
               flexDirection: 'column',
-              justifyContent: 'space-between'
+              justifyContent: 'space-between',
+              boxShadow: '8px 8px 0px rgba(0,0,0,0.3)'
             }}>
               <div>
                 <span style={{
                   fontFamily: 'DM Sans, sans-serif',
                   fontSize: '11px',
                   fontWeight: 'bold',
-                  background: 'rgba(0,0,0,0.1)',
+                  background: '#CAFF00',
                   color: '#080808',
                   padding: '4px 10px',
                   textTransform: 'uppercase',
                   letterSpacing: '1px'
-                }}>LEG 4 — INDORE</span>
-                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: '#080808' }}>INDORE</h4>
-                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#080808', marginBottom: '16px' }}>21-22 Nov</p>
+                }}>LEG 4 — INDORE · LIVE</span>
+                <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: '#FBFBFB' }}>INDORE</h4>
+                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#CAFF00', marginBottom: '16px' }}>21-22 Nov</p>
               </div>
-              <div style={{ fontSize: '13px', fontFamily: 'DM Sans, sans-serif', color: 'rgba(0,0,0,0.5)', fontWeight: 'bold' }}>
-                COMING SOON
-              </div>
+              <a
+                href="https://forms.gle/sk57cEiq4qqCzKs68"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  background: '#CAFF00',
+                  color: '#080808',
+                  fontFamily: 'Bebas Neue, sans-serif',
+                  fontSize: '18px',
+                  letterSpacing: '1px',
+                  padding: '12px 18px',
+                  textAlign: 'center',
+                  textDecoration: 'none',
+                  display: 'inline-block',
+                  fontWeight: 'bold'
+                }}
+              >
+                REGISTER NOW →
+              </a>
             </div>
 
           </div>
@@ -351,14 +368,33 @@ export default function QualifyingSection() {
               fontFamily: 'Bebas Neue, sans-serif',
               fontSize: '28px',
               color: '#080808'
-            }}>🏓 LEGS 1, 2 &amp; 3 CONCLUDED</div>
+            }}>🏓 LEG 4 INDORE REGISTRATIONS ARE LIVE!</div>
             <div style={{
               fontFamily: 'DM Sans, sans-serif',
               fontSize: '14px',
-              color: 'rgba(0,0,0,0.6)'
-            }}>Stay tuned for Leg 4 Indore announcements &amp; registrations!</div>
+              color: 'rgba(0,0,0,0.7)',
+              fontWeight: 'bold'
+            }}>21–22 Nov. Winners &amp; Runners-Up qualify for the official MPPL Player Auction.</div>
           </div>
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            <a
+              href="https://forms.gle/sk57cEiq4qqCzKs68"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                background: '#080808',
+                color: '#CAFF00',
+                border: '2px solid #080808',
+                padding: '14px 24px',
+                borderRadius: '4px',
+                fontFamily: 'Bebas Neue, sans-serif',
+                fontSize: '18px',
+                letterSpacing: '1px',
+                cursor: 'pointer',
+                textDecoration: 'none',
+                fontWeight: 'bold'
+              }}
+            >REGISTER FOR LEG 4 →</a>
             <Link href="/format" style={{
               background: '#ffffff',
               color: '#080808',

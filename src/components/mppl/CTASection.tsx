@@ -21,12 +21,13 @@ export default function CTASection() {
 
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-pure-black text-neon-green px-4 py-2 rounded-full mb-6">
-            <span className="font-dm-sans text-xs font-black uppercase tracking-[3px]">Next: Leg 4 Indore</span>
+            <span className="w-2 h-2 rounded-full bg-neon-green animate-pulse"></span>
+            <span className="font-dm-sans text-xs font-black uppercase tracking-[3px]">Leg 4 Indore · Registrations Live</span>
           </div>
 
           {/* Main Heading */}
           <h2 className="font-bebas text-[clamp(60px,10vw,140px)] text-pure-black leading-[0.85] uppercase tracking-tighter mb-6">
-            LEGS 1, 2 &amp; 3 CONCLUDED
+            REGISTER FOR LEG 4 INDORE
           </h2>
 
           {/* Divider */}
@@ -34,26 +35,35 @@ export default function CTASection() {
 
           {/* Description */}
           <p className="font-dm-sans text-lg md:text-xl text-pure-black font-bold leading-relaxed max-w-xl mb-12">
-            Legs 1, 2 &amp; 3 (Indore, Bhopal &amp; Gwalior) have officially wrapped up! Stay tuned for Leg 4 Indore announcements.
+            Legs 1, 2 &amp; 3 wrapped up with high-voltage action! Registrations are now LIVE for Leg 4 Indore (21–22 Nov). Secure your bracket and qualify for the ₹18L+ auction draft.
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row items-center gap-6 mb-8">
+          <div className="flex flex-col sm:flex-row items-center gap-4 mb-8">
+            <a
+              href="https://forms.gle/sk57cEiq4qqCzKs68"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ background: '#080808', color: '#CAFF00', border: '3px solid #080808' }}
+              className="inline-block text-center font-bebas text-2xl px-10 py-5 w-full sm:w-auto uppercase tracking-wide shadow-[8px_8px_0px_rgba(0,0,0,0.35)] hover:bg-net-white hover:text-pure-black transition-all"
+            >
+              REGISTER FOR LEG 4 NOW →
+            </a>
             <a
               href="https://forms.gle/5WBTzz4bEQmgDpF58"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ background: '#080808', color: '#ffffff', border: '2px solid #080808' }}
-              className="inline-block text-center font-bebas text-2xl px-10 py-5 w-full sm:w-auto uppercase tracking-wide shadow-[6px_6px_0px_rgba(0,0,0,0.25)] hover:opacity-80 transition-opacity"
+              style={{ background: 'transparent', color: '#080808', border: '2px solid #080808' }}
+              className="inline-block text-center font-bebas text-2xl px-8 py-5 w-full sm:w-auto uppercase tracking-wide hover:bg-pure-black hover:text-net-white transition-all"
             >
-              FRANCHISE &amp; SPONSOR INTEREST
+              OWN A FRANCHISE
             </a>
             <Link
               href="/format"
               style={{ background: '#ffffff', color: '#080808', border: '2px solid #080808' }}
-              className="inline-block text-center font-bebas text-2xl px-10 py-5 w-full sm:w-auto uppercase tracking-wide hover:opacity-80 transition-opacity"
+              className="inline-block text-center font-bebas text-2xl px-8 py-5 w-full sm:w-auto uppercase tracking-wide hover:opacity-80 transition-opacity"
             >
-              VIEW FORMAT &amp; RULES
+              RULES &amp; FORMAT
             </Link>
           </div>
 

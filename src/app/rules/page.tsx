@@ -147,6 +147,16 @@ export default function RulesPage() {
               <p className="font-dm-sans text-sm md:text-base text-net-white/80 leading-relaxed">
                 In whichever category there are no registrations, that category will be closed. Players must register before the cutoff deadline to ensure their category remains active in the tournament schedule.
               </p>
+              <div className="mt-4">
+                <a
+                  href="https://forms.gle/sk57cEiq4qqCzKs68"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-neon-orange text-pure-black font-bebas text-lg px-6 py-2.5 hover:bg-net-white transition-colors tracking-wider font-bold"
+                >
+                  REGISTER FOR LEG 4 (INDORE) →
+                </a>
+              </div>
             </div>
           </div>
 
