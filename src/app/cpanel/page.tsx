@@ -70,7 +70,7 @@ const DEFAULT_CONTENT: SiteContent = {
     {
       label: 'LEG 4 — INDORE',
       city: 'INDORE',
-      date: '14-15 Nov',
+      date: '21-22 Nov',
       venue: '',
       address: '',
       rating: '',

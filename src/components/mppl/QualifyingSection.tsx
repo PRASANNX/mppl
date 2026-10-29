@@ -324,7 +324,7 @@ export default function QualifyingSection() {
                   letterSpacing: '1px'
                 }}>LEG 4 — INDORE</span>
                 <h4 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '36px', marginTop: '20px', marginBottom: '6px', color: '#080808' }}>INDORE</h4>
-                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#080808', marginBottom: '16px' }}>14-15 Nov</p>
+                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', fontWeight: 'bold', color: '#080808', marginBottom: '16px' }}>21-22 Nov</p>
               </div>
               <div style={{ fontSize: '13px', fontFamily: 'DM Sans, sans-serif', color: 'rgba(0,0,0,0.5)', fontWeight: 'bold' }}>
                 COMING SOON

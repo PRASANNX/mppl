@@ -23,12 +23,13 @@ export default function RulesPage() {
       num: "02",
       title: "Category Registration",
       points: [
-        "Players may register in a maximum of 2 categories.",
+        "Players may register in a maximum of 3 categories.",
         "• Each category requires a separate, individual registration form.",
         "• Entry fees must be paid separately for each category.",
         "• No bundled or combined registrations are allowed.",
-        "• Registering for more than 2 categories will result in disqualification from additional entries.",
-        "If you wish to compete in two categories, you must complete the full registration process — including payment — twice."
+        "• Category Closure Policy: Whichever category does not receive any registrations will be closed.",
+        "• Registering for more than 3 categories will result in disqualification from additional entries.",
+        "If you wish to compete in multiple categories (up to 3), you must complete the full registration process — including payment — separately for each category."
       ],
       icon: <Scale className="text-neon-green" size={24} />
     },
@@ -94,6 +95,7 @@ export default function RulesPage() {
         "The MPPL Organizing Committee reserves all rights to:",
         "• Amend tournament schedules.",
         "• Modify rules due to unforeseen circumstances.",
+        "• Close any category in which there are no registrations.",
         "• Interpret any rule not specifically covered in this document.",
         "• Make final decisions on all disputes."
       ],
@@ -113,7 +115,7 @@ export default function RulesPage() {
 
         <div className="max-w-[1200px] mx-auto relative z-10">
           {/* Header */}
-          <div className="mb-16">
+          <div className="mb-12">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-[2px] bg-neon-orange"></div>
               <span className="font-dm-sans text-sm font-bold uppercase tracking-[4px] text-neon-orange">
@@ -128,6 +130,24 @@ export default function RulesPage() {
             <p className="font-dm-sans text-xl md:text-2xl text-net-white/80 font-bold max-w-3xl leading-relaxed">
               Madhya Pradesh Premier League (MPPL) Official Player Rules &amp; Regulations. All participants must review and adhere to these standards.
             </p>
+          </div>
+
+          {/* Important Category Rule Notice */}
+          <div className="bg-pure-black border-2 border-neon-orange p-6 md:p-8 mb-12 flex flex-col sm:flex-row items-start gap-4 shadow-[8px_8px_0px_rgba(255,96,0,0.15)]">
+            <div className="w-12 h-12 rounded-full bg-neon-orange/10 border border-neon-orange flex items-center justify-center shrink-0">
+              <AlertTriangle className="text-neon-orange" size={24} />
+            </div>
+            <div>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="font-dm-sans text-xs font-bold uppercase tracking-[3px] text-neon-orange">Official Tournament Notice</span>
+              </div>
+              <h2 className="font-bebas text-2xl md:text-3xl text-net-white tracking-wide mb-2 uppercase">
+                CATEGORY PARTICIPATION &amp; CLOSURE RULE
+              </h2>
+              <p className="font-dm-sans text-sm md:text-base text-net-white/80 leading-relaxed">
+                In whichever category there are no registrations, that category will be closed. Players must register before the cutoff deadline to ensure their category remains active in the tournament schedule.
+              </p>
+            </div>
           </div>
 
           {/* Rules Grid */}

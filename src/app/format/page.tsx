@@ -3,7 +3,7 @@
 import Navbar from "@/components/mppl/Navbar";
 import Footer from "@/components/mppl/Footer";
 import Link from "next/link";
-import { Trophy, Award, Gavel, MapPin, CheckCircle2, ArrowRight } from "lucide-react";
+import { Trophy, Award, Gavel, MapPin, CheckCircle2, ArrowRight, AlertTriangle } from "lucide-react";
 
 export default function FormatPage() {
   return (
@@ -72,7 +72,7 @@ export default function FormatPage() {
                 { leg: "Leg 1", city: "Indore", detail: "Aug 21, 22, 23 — Concluded ✓" },
                 { leg: "Leg 2", city: "Bhopal", detail: "Sept 25, 26, 27 — Concluded ✓" },
                 { leg: "Leg 3", city: "Gwalior", detail: "23-24, 25 Oct — Concluded ✓" },
-                { leg: "Leg 4", city: "Indore", detail: "14-15 Nov — Venue Announcement Soon" },
+                { leg: "Leg 4", city: "Indore", detail: "21-22 Nov — Venue Announcement Soon" },
               ].map((item, idx) => (
                 <div key={idx} className="bg-[#161616] p-5 border border-neon-green/30">
                   <div className="font-dm-sans text-xs font-bold text-neon-green uppercase tracking-widest mb-1">{item.leg}</div>
@@ -80,6 +80,24 @@ export default function FormatPage() {
                   <div className="font-dm-sans text-xs text-net-white/60">{item.detail}</div>
                 </div>
               ))}
+            </div>
+
+            {/* Category Registration & Closure Notice */}
+            <div className="bg-[#161616] border-2 border-neon-orange p-6 flex flex-col sm:flex-row items-start gap-4">
+              <div className="w-10 h-10 rounded-full bg-neon-orange/10 border border-neon-orange flex items-center justify-center shrink-0">
+                <AlertTriangle className="text-neon-orange" size={22} />
+              </div>
+              <div>
+                <span className="font-dm-sans text-xs font-bold text-neon-orange uppercase tracking-widest block mb-1">
+                  Official Category Rule
+                </span>
+                <h3 className="font-bebas text-2xl text-net-white mb-2 tracking-wide uppercase">
+                  Zero-Registration Category Closure
+                </h3>
+                <p className="font-dm-sans text-sm text-net-white/80 leading-relaxed">
+                  In whichever category there are no registrations, that category will be closed. Players may register in a maximum of 3 categories per leg.
+                </p>
+              </div>
             </div>
           </div>
 
